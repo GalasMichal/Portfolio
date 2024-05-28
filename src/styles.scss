@@ -1,18 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
-*{
+
+/* Variables global */
+// Colors //
+
+$white: #FFFCF3;
+$black: #000000;
+$light_green: #00BC8F;
+
+
+
+* {
     border: unset;
+    box-sizing: border-box;
+    text-decoration: none;
+    
 }
 
-body{
+body {
     margin: 0;
-    background-color: #FFFFFF;
-    
+    background-color: $black;
+   
 }
 
 app-root {
     max-width: 1440px;
-    margin:auto;
+    margin: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
-  }
+    background-color: $white;
+}
+
+html {
+    font-size: 1px;
+}

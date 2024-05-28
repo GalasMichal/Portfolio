@@ -1,6 +1,92 @@
-.content-div{
+@import './../../../styles.scss';
+
+.content-div {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
+}
+
+
+
+.lower-contact-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    >a {
+        display: flex;
+        font-size: 23rem;
+        line-height: 23rem;
+        font-weight: 300;
+        width: 346rem;
+        height: 27rem;
+        transform: rotate(-90deg);
+        margin-top: 125rem;
+        color: $black;
+    }
+    >div{
+        margin-top: 100rem;
+        margin-right: 103rem;
+        width: 116rem;
+        height: 232rem;
+        gap: 6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        >img{
+            width: 138%;
+            height: 138%;
+        }
+        >span{
+            font-size: 23rem;
+            font-weight: 300;
+            text-align: center;
+        }
+    }
+}
+
+.name {
+    color: $light_green;
+    font-weight: 700;
+    font-size: 48rem;
+    line-height: 48rem;
+    padding-left: 20rem;
+    width: 346rem;
+}
+
+.upper-text,
+.lower-text {
+    font-size: 128rem;
+    text-align: center;
+    height: 157rem;
+    font-weight: 800;
+}
+
+.upper-text {
+    width: 926rem;
+    line-height: 128rem;
+    margin-top: 204rem;
+}
+
+.lower-text {
+    width: 1022rem;
+    margin-top: -37rem;
+}
+
+.border-name-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 88rem;
+    height: 60rem;
+}
+
+.sep-line {
+    height: 0;
+    width: 628rem;
+    border: solid 2rem;
 }

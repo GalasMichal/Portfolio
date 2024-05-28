@@ -1,0 +1,65 @@
+@import './../../../styles.scss';
+
+section {
+    margin-left: 100rem;
+    margin-right: 100rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20rem;
+    height: 690rem;
+    margin-top: -150rem;
+    >img {
+        width: 480rem;
+        height: 519rem;
+        margin-bottom: -142rem;
+
+    }
+}
+
+.about-me-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 619rem;
+    min-height: 326rem;
+
+    >h1 {
+        font-size: 78rem;
+        line-height: 78rem;
+        font-weight: 800;
+        width: 100%;
+        &:hover{
+            color: $light_green;
+        }
+    }
+
+    >span {
+        font-size: 23rem;
+        font-weight: 400;
+    }
+
+    >.button {
+        text-decoration: none;
+        cursor: pointer;
+        color: $black;
+        margin-top: 76rem;
+        width: 213rem;
+        height: 68rem;
+        border: 4px solid $black;
+        background-color: $white;
+        transition: width 0.3s ease;
+        font-size: 23rem;
+        font-weight: 500;
+        line-height: 27.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            
+            width: 250rem;
+            font-weight: bold;
+        }
+    }
+}
