@@ -9,4 +9,14 @@ import { Component } from '@angular/core';
 })
 export class AboutMeComponent {
 
+
+  isAnimating = false;
+
+  startAnimation() {
+    this.isAnimating = true;
+    setTimeout(() => {
+      this.isAnimating = false; 
+    }, 3000);  
+  }
+
 }

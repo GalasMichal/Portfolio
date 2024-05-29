@@ -11,6 +11,10 @@
         </span>
         <a href="" class="button fontOverpass">Let's talk</a>
     </div>
-    <img src="/assets/img/mg.png" alt="">
+    <img src="assets/img/mg.png" alt="">
 </section>
-<div><img src="" alt=""></div>
+<div class="arrow-separator">
+    <div class="arrow-container" (mouseenter)="startAnimation()">
+        <div class="arrow-animation" [class.animate]="isAnimating"></div>
+    </div>
+</div>
