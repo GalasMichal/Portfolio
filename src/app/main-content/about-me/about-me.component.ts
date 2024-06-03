@@ -14,9 +14,6 @@ export class AboutMeComponent {
 
   startAnimation() {
     this.isAnimating = true;
-    setTimeout(() => {
-      this.isAnimating = false; 
-    }, 3000);  
+    
   }
-
 }

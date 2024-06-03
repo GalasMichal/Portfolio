@@ -1,5 +1,19 @@
 <section>
-    <div>
-        <h1 class="fontSyne">My Skills</h1>
+    <div class="skills-container">
+        <span class="fontSyne">My Skills</span>
+        <div class="icon-container">
+            @for (item of skills.mySkills; track item; let i = $index) {
+            <div>
+                <img src="assets/img/icons/{{item.path}}" alt="">
+                <span class="fontOverpass">{{item.name}}</span>
+            </div>
+            }
+        </div>
+    </div>
+    <div class="arrow-separator">
+        <div class="arrow-container" (mouseenter)="startAnimation()">
+            <div class="arrow-animation" [class.animate]="isAnimate"></div>
+        </div>
+        
     </div>
 </section>

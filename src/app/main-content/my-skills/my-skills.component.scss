@@ -2,21 +2,128 @@
 
 section {
     display: flex;
-    height: 592rem;
     margin: 0 100rem;
+    flex-direction: column;
 
-    >div {
+    >.skills-container {
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 1239rem;
         border: 4px solid $black;
-        >h1{
-            width: 516rem;
-            height: 89rem;
+        height: 592rem;
+
+
+        >span {
+            position: absolute;
+            top: -53rem;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            width: 561rem;
+            height: 98rem;
             font-size: 78rem;
             line-height: 78rem;
             color: $black;
             font-weight: 800;
+            background-color: $white;
+            gap: 10rem;
+            padding: 10rem;
+
+            &:hover {
+                color: $light_green;
+            }
         }
     }
+
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1012rem;
+    height: 271rem;
+    gap: 75rem 125rem;
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+        width: 100rem;
+        height: 104rem;
+
+        >img {
+            width: 75rem;
+            height: 75rem;
+        }
+
+        >span {
+            font-size: 16rem;
+            color: $black;
+            text-align: center;
+            font-weight: 700;
+
+            &:hover {
+                color: $light_green;
+            }
+        }
+    }
+
+}
+
+.arrow-separator {
+    height: 300rem;
+    width: 1239rem;
+    display: flex;
+
+    >.arrow-container {
+        display: flex;
+        width: 200px;
+        height: 250px;
+        position: relative;
+        left: 82rem;
+        top: 39rem;
+
+        >.arrow-animation.animate {
+            transform: translate(50rem, 50rem);
+            animation: arrowAnimation 1s forwards;
+            transition: all 1s ease-in-out;
+        }
+    }
+}
+
+.arrow-animation {
+    position: absolute;
+    background-image: url('./../../../assets/img/animated/arrowR1.png');
+    width: 200rem;
+    height: 250rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
     
+}
+
+
+
+@keyframes arrowAnimation {
+
+    0% {
+        background-image: url('./../../../assets/img/animated/arrowR1.png');
+    }
+
+    50% {
+        background-image: url('./../../../assets/img/animated/arrowR2.png');
+    }
+
+    100% {
+        background-image: url('./../../../assets/img/animated/arrowR3.png');
+    }
+
 }
