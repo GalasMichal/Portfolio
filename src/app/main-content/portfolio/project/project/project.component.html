@@ -8,7 +8,7 @@
         <h1 class="fontSyne"> {{ projects.title }} </h1>
         <p class="stack fontOverpass">{{ projects.stack }}</p>
         <p class="description fontOverpass"> {{ projects.about }} </p>
-        <a href="{{ projects.github }}"><button class="fontOverpass">Github</button></a>
+        <a [href]="projects.github" target="_blank"><button class="fontOverpass">Github</button></a>
 
     </div>
 

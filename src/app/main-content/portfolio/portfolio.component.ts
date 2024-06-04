@@ -18,7 +18,7 @@ export class PortfolioComponent {
       about:
         'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       path: 'https://michal-galas.developerakademie.net/Join/index.html',
-      github: '#',
+      github: 'https://github.com/M-Nafi/Join',
       number: '01',
     },
     {
@@ -28,7 +28,7 @@ export class PortfolioComponent {
       about:
         'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.',
       path: 'https://michal-galas.developerakademie.net/Sharkie/index.html',
-      github: '#',
+      github: 'https://github.com/GalasMichal/Sharkie',
       number: '02',
     },
   ];
