@@ -3,7 +3,10 @@
         <h1 class="fontSyne">Portfolio</h1>
         <p class="fontOverpass">Explore a selection of my work here - Interact with projects to see my skills in action</p>
     </div>
-    <app-project></app-project>
+    @for (item of [1,2,3]; track $index) {
+        <app-project></app-project>
+    }
+    
 
 
 
