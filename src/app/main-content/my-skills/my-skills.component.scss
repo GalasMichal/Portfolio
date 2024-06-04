@@ -87,13 +87,13 @@ section {
         width: 200px;
         height: 250px;
         position: relative;
-        left: 82rem;
+        left: 110rem;
         top: 39rem;
 
         >.arrow-animation.animate {
-            transform: translate(50rem, 50rem);
-            animation: arrowAnimation 1s forwards;
-            transition: all 1s ease-in-out;
+            transform: translate(70rem, 50rem);
+            animation: arrowAnimation 125ms forwards;
+            transition: all 125ms ease-in-out;
         }
     }
 }

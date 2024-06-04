@@ -13,9 +13,6 @@ export class MySkillsComponent {
   isAnimate = false;
   startAnimation() {
     this.isAnimate = true;
-    setTimeout(() => {
-      this.isAnimate = false;
-    }, 2000);
   }
 
 }
