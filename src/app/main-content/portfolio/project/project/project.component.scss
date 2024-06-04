@@ -7,9 +7,12 @@
 }
 
 section {
+    padding-top: 100rem;
     display: flex;
     max-width: 1239rem;
     max-height: 460rem;
+    display: flex;
+    
 }
 
 .project-view {
@@ -17,6 +20,7 @@ section {
 
     >img {
         width: 100%;
+        height: 100%;
     }
 }
 

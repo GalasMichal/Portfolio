@@ -3,12 +3,12 @@
         <h1 class="fontSyne">Portfolio</h1>
         <p class="fontOverpass">Explore a selection of my work here - Interact with projects to see my skills in action</p>
     </div>
-    @for (item of [1,2,3]; track $index) {
-        <app-project></app-project>
+    @for (singleProject of projects; track singleProject.title; let i = $index) {
+        @if(i % 2 !== 0){
+            <app-project [projects]="singleProject" [flexDirection]="'row-reverse'"></app-project>
+        }@else {
+            <app-project [projects]="singleProject"></app-project>
+        }
+        
     }
-    
-
-
-
-
 </section>

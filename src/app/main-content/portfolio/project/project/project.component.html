@@ -1,15 +1,14 @@
-<section>
+<section [style.flex-direction]="flexDirection">
     <div class="project-view">
-        <img src="assets/img/projects/join.png" alt="img">
-        <a [classList]="'d-none'" href="" class="viewBorder"></a>
+        <img src="assets/img/projects/{{ projects.img }}" alt="img">
+        <a [classList]="'d-none'" href="{{ projects.path }}" class="viewBorder"></a>
     </div>
     <div class="about">
 
-        <h1 class="fontSyne">Join </h1>
-        <p class="stack fontOverpass">HTML | CSS | JavaScript | Firebase</p>
-        <p class="description fontOverpass">Task manager inspired by the Kanban System. Create and organize tasks using
-            drag and drop functions, assign users and categories. </p>
-        <a href=""><button class="fontOverpass">Github</button></a>
+        <h1 class="fontSyne"> {{ projects.title }} </h1>
+        <p class="stack fontOverpass">{{ projects.stack }}</p>
+        <p class="description fontOverpass"> {{ projects.about }} </p>
+        <a href="{{ projects.github }}"><button class="fontOverpass">Github</button></a>
 
     </div>
 

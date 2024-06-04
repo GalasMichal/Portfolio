@@ -7,8 +7,29 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [ProjectComponent, CommonModule],
   templateUrl: './portfolio.component.html',
-  styleUrl: './portfolio.component.scss'
+  styleUrl: './portfolio.component.scss',
 })
 export class PortfolioComponent {
-
+  projects = [
+    {
+      title: 'Join',
+      img: 'join.png',
+      stack: 'JavaScript | HTML | CSS | Firebase',
+      about:
+        'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      path: 'https://michal-galas.developerakademie.net/Join/index.html',
+      github: '#',
+      number: '01',
+    },
+    {
+      title: 'Sharkie',
+      img: 'sharkie.png',
+      stack: 'JavaScript | HTML | CSS',
+      about:
+        'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.',
+      path: 'https://michal-galas.developerakademie.net/Sharkie/index.html',
+      github: '#',
+      number: '02',
+    },
+  ];
 }
