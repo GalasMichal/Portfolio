@@ -1,32 +1,94 @@
 @import './../../../../../styles.scss';
 
 
-
+// [classList]="'d-none'"
 .d-none {
     display: none;
 }
 
 section {
+
     padding-top: 100rem;
     display: flex;
     max-width: 1239rem;
     max-height: 460rem;
     display: flex;
-    
+   
+    &:hover .view-border {
+        position: absolute;
+        top: 25rem;
+        left: 25rem;
+        border: 4px solid $black;
+        width: 100%;
+        height: 100%;
+        max-width: 620rem;
+        max-height: 393rem;
+        z-index: 1;
+        box-sizing: border-box;
+        
+    }
+
+    &:hover .about{
+        animation: animateRight 125ms forwards;
+    }
+
+    &:hover img {
+        filter: grayscale(0);
+    }
+}
+
+
+
+.view-border {
+    position: absolute;
+    top: 25rem;
+    left: 25rem;
+    border: 4px solid $black;
+    width: 100%;
+    height: 100%;
+    max-width: 620rem;
+    max-height: 393rem;
+    z-index: 1;
+    box-sizing: border-box;
+
+    >img {
+        // display: none;
+        position: absolute;
+        width: 50rem;
+        top: 150rem;
+        right: -27rem;
+        
+    }
 }
 
 .project-view {
+    position: relative;
     width: 50%;
+
 
     >img {
         width: 100%;
         height: 100%;
+        filter: grayscale(1);
+    }
+}
+
+@keyframes animateRight {
+    0% {
+        transform: translateX(-500rem);
+    opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+    opacity: 1;
     }
 }
 
 .about {
     padding-left: 100rem;
     width: 50%;
+    transform: translateX(-500rem);
+    opacity: 0;
 
     >h1 {
         margin-top: 100rem;

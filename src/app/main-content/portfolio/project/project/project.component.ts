@@ -19,7 +19,9 @@ export class ProjectComponent {
     github: 'https://github.com/GalasMichal/Sharkie',
     number: '01',
   };
+  isAnimate = true;
 
+  
 
 
 }

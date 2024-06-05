@@ -1,7 +1,7 @@
-<section [style.flex-direction]="flexDirection">
+<section [style.flex-direction]="flexDirection" >
     <div class="project-view">
         <img src="assets/img/projects/{{ projects.img }}" alt="img">
-        <a [classList]="'d-none'" href="{{ projects.path }}" class="viewBorder"></a>
+        <a  href="{{ projects.path }}" class="view-border"><img src="assets/img/icons/blackArrow.svg" alt="" srcset=""></a>
     </div>
     <div class="about">
 
@@ -9,7 +9,7 @@
         <p class="stack fontOverpass">{{ projects.stack }}</p>
         <p class="description fontOverpass"> {{ projects.about }} </p>
         <a [href]="projects.github" target="_blank"><button class="fontOverpass">Github</button></a>
-
+      
     </div>
 
 
