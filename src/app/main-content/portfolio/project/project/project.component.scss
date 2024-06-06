@@ -1,5 +1,5 @@
 @import './../../../../../styles.scss';
-
+$rot: 
 
 // [classList]="'d-none'"
 .d-none {
@@ -13,22 +13,19 @@ section {
     max-width: 1239rem;
     max-height: 460rem;
     display: flex;
-   
+
     &:hover .view-border {
+        opacity: 1;
+        visibility: visible;
         position: absolute;
-        top: 25rem;
-        left: 25rem;
-        border: 4px solid $black;
-        width: 100%;
-        height: 100%;
-        max-width: 620rem;
-        max-height: 393rem;
-        z-index: 1;
-        box-sizing: border-box;
-        
+
+        >img {
+            transition: transform 125ms ease-in-out;
+            transform: scale(1.5) rotate(-130deg);
+        }
     }
 
-    &:hover .about{
+    &:hover .about {
         animation: animateRight 125ms forwards;
     }
 
@@ -40,6 +37,8 @@ section {
 
 
 .view-border {
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     top: 25rem;
     left: 25rem;
@@ -50,15 +49,16 @@ section {
     max-height: 393rem;
     z-index: 1;
     box-sizing: border-box;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 
     >img {
-        // display: none;
         position: absolute;
         width: 50rem;
         top: 150rem;
         right: -27rem;
-        
+
     }
+    
 }
 
 .project-view {
@@ -76,11 +76,12 @@ section {
 @keyframes animateRight {
     0% {
         transform: translateX(-500rem);
-    opacity: 0;
+        opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateX(0);
-    opacity: 1;
+        opacity: 1;
     }
 }
 
