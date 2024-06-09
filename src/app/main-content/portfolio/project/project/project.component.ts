@@ -1,13 +1,15 @@
-import { Component, Input, input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-project',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './project.component.html',
   styleUrl: './project.component.scss'
 })
-export class ProjectComponent {
+export class ProjectComponent implements OnInit {
+  isOdd!: boolean;
   @Input() flexDirection!: string;
   @Input()projects = {
     title: 'Join',
@@ -20,8 +22,10 @@ export class ProjectComponent {
     number: '01',
   };
   isAnimate = true;
-
+  
   
 
-
+  ngOnInit(): void {
+    this.isOdd = this.flexDirection === 'row-reverse';
+  }
 }

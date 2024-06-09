@@ -1,4 +1,4 @@
-<section [style.flex-direction]="flexDirection" >
+<section [style.flex-direction]="flexDirection" [ngClass]="{'odd': isOdd, 'even': !isOdd}">
     <div class="project-view">
         <img src="assets/img/projects/{{ projects.img }}" alt="img">
         <a  href="{{ projects.path }}" class="view-border"><img src="assets/img/icons/blackArrow.svg" alt="" srcset=""></a>

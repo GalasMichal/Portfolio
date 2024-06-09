@@ -1,0 +1,32 @@
+@import './../../../styles.scss';
+
+section {
+    margin-top: -50rem;
+    background-image: url('./../../../assets/img/Rectangle.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1440rem;
+    width: 100%;
+    min-height: 1061rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 100rem;
+
+    >h1 {
+        font-size: 78rem;
+        font-weight: 800;
+        line-height: 78rem;
+        margin-top: 140rem;
+        color: $white;
+        padding: 4rem;
+    }
+
+}
+
+.contact-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

@@ -32,4 +32,11 @@ export class PortfolioComponent {
       number: '02',
     },
   ];
+  
+  isAnimating = false;
+
+  startAnimation() {
+    this.isAnimating = true;
+    
+  }
 }
