@@ -1,20 +1,34 @@
 <section>
     <h1 class="fontSyne">Say Hi!</h1>
-    
-        <form class="contact-div">
 
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Your name...">
+    <form class="contact-div" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Your email...">
+        <label for="name">Name</label>
+        <input #name="ngModel" minlength="2" [(ngModel)]="contactData.name" type="text" name="name" id="name" placeholder="Your name..." required>
 
-            <label for="message">Subject</label>
-            <textarea name="message" id="message" placeholder="Write something"></textarea>
+        @if (!name.valid && name.touched ) {
+            <span style="font-size: 32rem; color: aliceblue;">Please enter a name</span>
+        }
 
-            <input type="submit" value="submit">
+        <label for="email">Email</label>
+        <input #email="ngModel" type="email" [(ngModel)]="contactData.email" name="email" id="email" placeholder="Your email..." required
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
 
-        </form>
+            @if (!email.valid && email.touched) {
+                <span style="font-size: 32rem; color: aliceblue;">Please enter a email</span>
+            }
 
-   
+        <label for="message">Subject</label>
+        <textarea #message="ngModel" name="message" minlength="4" [(ngModel)]="contactData.message" id="message"
+            placeholder="Write something" required></textarea>
+
+        @if (!message.valid && message.touched) {
+        <span style="font-size: 32rem; color: aliceblue;">Please enter a message</span>
+        }
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+
 </section>
