@@ -47,7 +47,7 @@ section{
     width: 200px;
     height: 200px;
     position: relative;
-
+    margin-right: 100rem;
     >.arrow-animation.animate {
         animation: moveAndChangeArrow 125ms  forwards;
     }
@@ -78,7 +78,7 @@ section{
     }
 
     100% {
-        transform: translate(-100rem, 100rem);
+        transform: translate(-100rem, 60rem);
         background-image: url('../../../assets/img/animated/d-arrow2.png');
     }
 
