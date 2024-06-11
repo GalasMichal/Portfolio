@@ -1,8 +1,8 @@
 <section>
     <h1 class="fontSyne">Say Hi!</h1>
     <div>
-        <div>Want to discuss a new project?</div>
-    <div>Say hello! let's discuss your ideas and make it happen</div>
+        <div class="fontOverpass">Want to discuss a new project?</div>
+    <div class="fontOverpass">Say hello! let's discuss your ideas and make it happen</div>
     <form class="contact-div" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
         <div>
@@ -32,10 +32,10 @@
             }
        </div>
 
-       <div>
+       <div class="message">
         <label for="message">Subject</label>
         <textarea #message="ngModel" name="message" minlength="4" [(ngModel)]="contactData.message" id="message"
-            placeholder="Write something" required></textarea>
+            placeholder="Your message" required></textarea>
 
         @if (!message.valid && message.touched) {
         <span class="feedback-container fontOverpass">Please enter a message </span>
@@ -45,6 +45,8 @@
             <img class="feedback-icon" src="assets/img/icons/correct.png" alt="correctImg">
         }
        </div>
+       <mat-checkbox>I've read the Private Policy and agree to the processing of my data as outlined
+    </mat-checkbox>
 
         <input type="submit" value="Submit">
 
