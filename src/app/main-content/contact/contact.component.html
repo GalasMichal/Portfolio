@@ -2,55 +2,58 @@
     <h1 class="fontSyne">Say Hi!</h1>
     <div>
         <div class="fontOverpass">Want to discuss a new project?</div>
-    <div class="fontOverpass">Say hello! let's discuss your ideas and make it happen</div>
-    <form class="contact-div" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <div class="fontOverpass">Say hello! let's discuss your ideas and make it happen</div>
+        <form class="contact-div" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
-        <div>
-            <label for="name">Name</label>
-        <input #name="ngModel" minlength="2" [(ngModel)]="contactData.name" type="text" name="name" id="name" placeholder="Your name..." required>
+            <div>
+                <label for="name">Name</label>
+                <input #name="ngModel" minlength="2" [(ngModel)]="contactData.name" type="text" name="name" id="name"
+                    placeholder="Your name..." required>
 
-        @if (!name.valid && name.touched ) {
-            <span class="feedback-container fontOverpass">Please enter a name</span>
-            <img class="feedback-icon shake-horizontal icon-red" src="assets/img/icons/warn.png" alt="warning img">
-        }
-        @if(name.valid){
-            <img class="feedback-icon" src="assets/img/icons/correct.png" alt="correctImg">
-        }
-        </div>
+                @if (!name.valid && name.touched ) {
+                <span class="feedback-container fontOverpass">Please enter a name</span>
+                <img class="feedback-icon shake-horizontal icon-red" src="assets/img/icons/warn.png" alt="warning img">
+                }
+                @if(name.valid){
+                <img class="feedback-icon" src="assets/img/icons/correct.png" alt="correctImg">
+                }
+            </div>
 
-       <div>
-        <label for="email">Email</label>
-        <input #email="ngModel" type="email" [(ngModel)]="contactData.email" name="email" id="email" placeholder="Your email..." required
-            pattern="[a-zA-Z0-9.%+\-]+@[a-zA-Z0-9.\-]+.[a-zA-Z]{2,}">
+            <div>
+                <label for="email">Email</label>
+                <input #email="ngModel" type="email" [(ngModel)]="contactData.email" name="email" id="email"
+                    placeholder="Your email..." required pattern="[a-zA-Z0-9.%+\-]+@[a-zA-Z0-9.\-]+.[a-zA-Z]{2,}">
 
-            @if (!email.valid && email.touched) {
+                @if (!email.valid && email.touched) {
                 <span class="feedback-container fontOverpass">Please enter a email</span>
                 <img class="feedback-icon shake-horizontal icon-red" src="assets/img/icons/warn.png" alt="warning img">
-            }
-            @if(email.valid){
+                }
+                @if(email.valid){
                 <img class="feedback-icon" src="assets/img/icons/correct.png" alt="correctImg">
-            }
-       </div>
+                }
+            </div>
 
-       <div class="message">
-        <label for="message">Subject</label>
-        <textarea #message="ngModel" name="message" minlength="4" [(ngModel)]="contactData.message" id="message"
-            placeholder="Your message" required></textarea>
+            <div class="message">
+                <label for="message">Subject</label>
+                <textarea #message="ngModel" name="message" minlength="4" [(ngModel)]="contactData.message" id="message"
+                    placeholder="Your message" required></textarea>
 
-        @if (!message.valid && message.touched) {
-        <span class="feedback-container fontOverpass">Please enter a message </span>
-        <img class="feedback-icon shake-horizontal icon-red" src="assets/img/icons/warn.png" alt="warning img">
-        }
-        @if(message.valid){
-            <img class="feedback-icon" src="assets/img/icons/correct.png" alt="correctImg">
-        }
-       </div>
-       <mat-checkbox>I've read the Private Policy and agree to the processing of my data as outlined
-    </mat-checkbox>
+                @if (!message.valid && message.touched) {
+                <span class="feedback-container fontOverpass">Please enter a message </span>
+                <img class="feedback-icon shake-horizontal icon-red" src="assets/img/icons/warn.png" alt="warning img">
+                }
+                @if(message.valid){
+                <img class="feedback-icon icon-green" src="assets/img/icons/correct.png" alt="correctImg">
+                }
+            </div>
+            <div class="checkbox fontOverpass">
+                <input type="checkbox" name="myCheckbox" id="myCheckbox" required>
+                <label class="label" for="myCheckbox">I've read the Private Policy and agree to the processing of my data as outlined</label>
+              </div>
+            
+            <input type="submit" value="Submit">
 
-        <input type="submit" value="Submit">
-
-    </form>
+        </form>
     </div>
 
 
