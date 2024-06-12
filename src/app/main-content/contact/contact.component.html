@@ -47,18 +47,20 @@
                 }
             </div>
             <div class="checkbox fontOverpass">
-                <input  [(ngModel)]="agree.value" #agree="ngModel" type="checkbox" name="agree" id="agree" required>
+                <input [(ngModel)]="checkboxState" type="checkbox" name="agree" id="agree" required>
                 <label class="label" for="agree">I've read the Private Policy and agree to the processing of my data as
                     outlined</label>
-                @if(!agree.value && contactForm.form.valid && submit.disabled){
+                    
+                @if(!checkboxState && message.valid && email.valid && name.valid){
                 <span class="fontOverpass feedback-container not-checked-msg">You must agree to the privacy policy</span>
                 }
+                
             </div>
 
-            <input #submit class="submit" type="submit" value="Submit" [disabled]="!contactForm.form.valid || agree.value == false">
+            <button  class="submit" type="submit" value="Submit" [disabled]="!contactForm.form.valid || !checkboxState"> Send message</button>
 
         </form>
     </div>
-
+    
 
 </section>

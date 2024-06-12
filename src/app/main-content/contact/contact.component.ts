@@ -1,12 +1,14 @@
+import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { CheckboxControlValueAccessor, CheckboxRequiredValidator, FormsModule, NgForm, NgModel } from '@angular/forms';
 
 
+
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, ],
+  imports: [FormsModule, CommonModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -14,8 +16,7 @@ export class ContactComponent {
   
   http = inject(HttpClient);
 
-  
-  agree = false
+  checkboxState = false;
 
   contactData = {
     name: '',
@@ -23,8 +24,6 @@ export class ContactComponent {
     message: '',
   }
 
-
-  
 
   post = {
     endPoint: 'https://michal-galas.de/sendMail.php',
@@ -44,7 +43,6 @@ export class ContactComponent {
           next: (response) => {
 
             ngForm.resetForm();
-            this.agree = false;
           },
           error: (error) => {
             console.error(error);
