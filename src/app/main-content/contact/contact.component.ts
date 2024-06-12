@@ -14,7 +14,8 @@ export class ContactComponent {
   
   http = inject(HttpClient);
 
-  agree = false;
+  
+  agree = false
 
   contactData = {
     name: '',
