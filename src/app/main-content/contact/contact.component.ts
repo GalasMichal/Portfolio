@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
-import { CheckboxRequiredValidator, FormsModule, NgForm } from '@angular/forms';
+import { CheckboxControlValueAccessor, CheckboxRequiredValidator, FormsModule, NgForm, NgModel } from '@angular/forms';
 
 
 @Component({
@@ -13,6 +13,8 @@ import { CheckboxRequiredValidator, FormsModule, NgForm } from '@angular/forms';
 export class ContactComponent {
   
   http = inject(HttpClient);
+
+  agree = false;
 
   contactData = {
     name: '',
@@ -41,6 +43,7 @@ export class ContactComponent {
           next: (response) => {
 
             ngForm.resetForm();
+            this.agree = false;
           },
           error: (error) => {
             console.error(error);
