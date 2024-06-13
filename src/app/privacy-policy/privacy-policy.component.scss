@@ -1,0 +1,50 @@
+@import './../../styles.scss';
+
+
+section{
+    padding: 0 100rem;
+    background-color: $white;
+    width: 100%;
+    padding: 0 100rem;
+    color: $black;
+    min-height: 80vh;
+    
+}
+
+
+.privacy-policy h1 {
+    font-size: 48rem;
+    margin-bottom: 50rem;
+    
+}
+
+.privacy-policy h2 {
+    font-size: 36rem;
+    margin-bottom: 8rem;
+   
+}
+
+.privacy-policy h3 {
+    font-size: 30rem;
+    margin-bottom: 6rem;
+    
+}
+
+.privacy-policy p {
+    font-size: 26rem;
+    margin-bottom: 10rem;
+}
+
+.privacy-policy ul {
+    font-size: 18rem;
+    margin-bottom: 10rem;
+    padding-left: 20rem;
+}
+
+.privacy-policy li {
+    margin-bottom: 20rem;
+}
+
+
+
+

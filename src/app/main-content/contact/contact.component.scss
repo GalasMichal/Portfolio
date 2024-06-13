@@ -97,6 +97,10 @@ section {
 .label{
     padding-top: 5rem;
     padding-left: 7rem;
+    >span{
+        color: $light_green;
+        cursor: pointer;
+    }
 }
 
 .checkbox {
