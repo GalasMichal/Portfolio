@@ -7,7 +7,7 @@ import { MenuComponent } from './shared/components/header/menu/menu/menu.compone
 
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'main-content', component: MainContentComponent, },
+  { path: '', component: MainContentComponent, },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
   { path: 'menu', component: MenuComponent },
 ];
