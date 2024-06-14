@@ -1,4 +1,17 @@
-<nav class="navbar container">
-    <img class="logo" src="assets/img/logo1.png" alt="logo">
-    <img routerLink="/menu" src="assets/img/icons/burger_menu.png" alt="">
-</nav>
+<section>
+
+    <nav class="navbar container">
+        <img class="logo" src="assets/img/logo1.png" alt="logo">
+        <img (click)="isMenuOpen = !isMenuOpen" src="assets/img/icons/burger_menu.png" alt="">
+       
+    </nav>
+    <div (click)="closeMenu()" [ngClass]="{'menu': isMenuOpen,}" class="fontSyne">
+       @for (item of menu; track item.name; let index = $index) {
+        <a href="{{ item.path }}"  class="animate">{{ item.name }}</a>
+       }
+    </div>
+    
+
+
+</section>
+

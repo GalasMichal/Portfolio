@@ -1,14 +1,42 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { MenuComponent } from './menu/menu/menu.component';
-import { RouterModule, RouterOutlet } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [MenuComponent, RouterModule, RouterOutlet],
+  imports: [CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  isMenuOpen = false;
+
+  closeMenu(){
+    this.isMenuOpen = false;
+  }
+
+  menu = [
+    {
+      name: 'About me',
+      path: '#about-me',
+    },
+
+    {
+      name: 'My skills',
+      path: '#my-skills',
+    },
+
+    {
+      name: 'Portfolio',
+      path: '#portfolio',
+    },
+
+  ]
+    
+  
+
+  
 
 }
