@@ -1,0 +1,60 @@
+@import './../../../../../../styles.scss';
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    max-width: 580rem;
+    width: 100%;
+    max-height: 579rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 96rem;
+    font-weight: 700;
+    line-height: 96rem;
+    gap: 39rem;
+
+   
+}
+
+.animate {
+    color: $black;
+    text-decoration: none;
+    width: 100%;
+    height: 167rem;
+    text-align: center;
+    background-image: url('./../../../../../../assets/img/animated/bg1.png');
+
+    &:hover {
+        animation: bgAnimation 125ms forwards;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+.clickbg{
+    background-image: url('./../../../../../../assets/img/animated/bg4.png')!important;
+}
+
+@keyframes bgAnimation {
+    0% {
+        background-image: url('./../../../../../../assets/img/animated/bg1.png');
+    }
+
+    50% {
+        background-image: url('./../../../../../../assets/img/animated/bg2.png');
+    }
+
+    100% {
+        background-image: url('./../../../../../../assets/img/animated/bg3.png');
+    }
+
+   
+}
