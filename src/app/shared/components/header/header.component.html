@@ -2,16 +2,15 @@
 
     <nav class="navbar container">
         <img class="logo" src="assets/img/logo1.png" alt="logo">
-        <img (click)="isMenuOpen = !isMenuOpen" src="assets/img/icons/burger_menu.png" alt="">
+        <div (click)="isMenuOpen = !isMenuOpen" [ngClass]="{'burger-icon-animate': isMenuOpen}" class="burger-menu"></div>
+        <!-- <img (click)="isMenuOpen = !isMenuOpen" [ngClass]="{'burger-icon-animate': isMenuOpen}" src="assets/img/icons/burger_menu.png" alt=""> -->
        
     </nav>
-    <div (click)="closeMenu()" [ngClass]="{'menu': isMenuOpen,}" class="fontSyne">
+    <div (click)="closeMenu()" [ngClass]="{'menu': isMenuOpen, 'menu-animate': isMenuOpen, 'menu-animate-close': !isMenuOpen}" class="fontSyne">
        @for (item of menu; track item.name; let index = $index) {
         <a href="{{ item.path }}"  class="animate">{{ item.name }}</a>
        }
     </div>
     
-
-
 </section>
 

@@ -20,16 +20,81 @@ section{
     }
 }
 
+.burger-menu{
+    width: 45rem;
+    height: 40rem;
+    background-image: url('./../../../../assets/img/animated/burger1.png');
+    background-size: cover;
+}
+
+.burger-icon-animate{
+    animation: icon-animate 1s forwards;
+    z-index: 2;
+    
+    background-size: cover;
+}
+
+@keyframes icon-animate {
+    0%{
+        background-image: url('./../../../../assets/img/animated/burger2.png');
+    }
+    15%{
+        background-image: url('./../../../../assets/img/animated/burger3.png');
+    }
+    35%{
+        background-image: url('./../../../../assets/img/animated/burger4.png');
+    }
+    50%{
+        background-image: url('./../../../../assets/img/animated/burger5.png');
+    }
+    65%{
+        background-image: url('./../../../../assets/img/animated/burger6.png');
+    }
+    80%{
+        background-image: url('./../../../../assets/img/animated/burger7.png');
+    }
+    100%{
+        background-image: url('./../../../../assets/img/animated/burger8.png');
+    }
+
+}
+
 .logo{
     width: 110px!important;
     height: 40px!important;
 }
 
+.menu-animate-close{
+    animation: min-height 50ms forwards;
+}
+
+@keyframes min-height {
+    0% {
+        height: 100%;
+    }
+    100%{
+        height: 0;
+    }
+}
+
+.menu-animate{
+    animation: max-height 125ms forwards; 
+}
+
+@keyframes max-height {
+    0% {
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+
 .menu {
     max-width: 580rem;
     width: 100%;
-    height: calc(100vh - 92rem);
-    max-height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
