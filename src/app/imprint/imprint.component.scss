@@ -1,7 +1,16 @@
+:root{
+    display: flex;
+    height: 100%;
+}
+
 section{
     display: flex;
     flex-direction: column;
+    flex: 1;
     >h1{
         font-size: 64rem;
+    }
+    >h2{
+        font-size: 44rem;
     }
 }

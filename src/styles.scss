@@ -3,7 +3,7 @@
 /* Variables global */
 // Colors //
 
-$white: #FFFCF3;
+$white: #d2d1cf;
 $black: #000000;
 $light_green: #00BC8F;
 
@@ -18,22 +18,33 @@ $light_green: #00BC8F;
 
 body {
     margin: 0;
-    background-color: $black;
-   
+    background-color: $white;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    max-width: 1440rem;
+    flex-direction: column;
+}
+
+app-privacy-policy{
+    flex: 1;
+    padding: 0 100rem;
+}
+
+app-imprint{
+    flex: 1;
+    padding: 0 100rem;
 }
 
 app-root {
-    max-width: 1440rem;
-    margin: auto;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    background-color: $white;
+    height: 100%;
 }
 
 html {
     scroll-behavior: smooth;
     font-size: 1px;
 }
-html, body { height: 100%; }
-body {font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body 
+ {font-family: Roboto, "Helvetica Neue", sans-serif; }

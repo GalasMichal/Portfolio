@@ -48,7 +48,7 @@
             </div>
             <div class="checkbox fontOverpass">
                 <input [(ngModel)]="checkboxState" type="checkbox" name="agree" id="agree" required>
-                <label class="label" for="agree">I've read the <span routerLink="/privacy-policy">private policy</span> and agree to the processing of my data as
+                <label class="label" for="agree">I've read the  <a  href="/privacy-policy" >private policy</a> and agree to the processing of my data as
                     outlined</label>
                     
                 @if(!checkboxState && message.valid && email.valid && name.valid){
