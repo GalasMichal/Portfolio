@@ -6,10 +6,13 @@
         <!-- <img (click)="isMenuOpen = !isMenuOpen" [ngClass]="{'burger-icon-animate': isMenuOpen}" src="assets/img/icons/burger_menu.png" alt=""> -->
        
     </nav>
-    <div (click)="closeMenu()" [ngClass]="{'menu': isMenuOpen, 'menu-animate': isMenuOpen, 'menu-animate-close': !isMenuOpen}" class="fontSyne">
-       @for (item of menu; track item.name; let index = $index) {
-        <a href="{{ item.path }}"  class="animate">{{ item.name }}</a>
-       }
+
+    <div (click)="closeMenu()" [ngClass]="{'menu-container': isMenuOpen}">
+        <div  [ngClass]="{'menu': isMenuOpen, 'menu-animate': isMenuOpen, 'menu-animate-close': !isMenuOpen}" class="fontSyne">
+            @for (item of menu; track item.name; let index = $index) {
+             <a href="{{ item.path }}"  class="animate">{{ item.name }}</a>
+            }
+         </div>
     </div>
     
 </section>
