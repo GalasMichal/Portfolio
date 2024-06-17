@@ -14,5 +14,11 @@ export class MySkillsComponent {
   startAnimation() {
     this.isAnimate = true;
   }
+  isAnimating = false;
+
+  startAnimation2() {
+    this.isAnimating = true;
+    
+  }
 
 }

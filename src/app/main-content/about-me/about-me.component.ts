@@ -10,10 +10,5 @@ import { Component } from '@angular/core';
 export class AboutMeComponent {
 
 
-  isAnimating = false;
-
-  startAnimation() {
-    this.isAnimating = true;
-    
-  }
+ 
 }

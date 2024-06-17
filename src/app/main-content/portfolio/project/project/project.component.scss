@@ -4,7 +4,6 @@
 
 section {
   padding-top: 100rem;
-  
   display: flex;
   max-width: 1239rem;
   max-height: 460rem;
@@ -42,13 +41,10 @@ section {
       height: 100%;
       filter: grayscale(1);
     }
-    &:hover img {
+    &:hover img, :active img {
       filter: grayscale(0);
     }
   }
-
-
- 
 
   &.even {
     .view-border{
@@ -60,7 +56,7 @@ section {
       right: -27rem;
     }
 
-    &:hover .view-border {
+    &:hover .view-border, :active .view-border {
       
       opacity: 1;
       visibility: visible;

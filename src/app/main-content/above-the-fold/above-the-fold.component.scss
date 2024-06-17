@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    margin-bottom: 100rem;
 }
 
 
@@ -15,6 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     >a {
         display: flex;
         font-size: 23rem;
@@ -23,10 +24,15 @@
         width: 346rem;
         height: 27rem;
         transform: rotate(-90deg);
-        margin-top: 125rem;
         color: $black;
+        margin-top: 115rem;
+        margin-left: -50rem;
+        justify-content: center;
+        align-items: center;
+
     }
-    >div{
+
+    >div {
         margin-top: 100rem;
         margin-right: 103rem;
         width: 116rem;
@@ -36,11 +42,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        >img{
+
+        >img {
             width: 138%;
             height: 138%;
         }
-        >span{
+
+        >span {
             font-size: 23rem;
             font-weight: 300;
             text-align: center;
@@ -89,4 +97,15 @@
     height: 0;
     width: 628rem;
     border: solid 2rem;
+}
+
+@media (max-width: 1380px) {
+
+    // .upper-text,
+    // .lower-text {
+    //     font-size: 110rem;
+    //     text-align: center;
+    //     height: 157rem;
+    //     font-weight: 800;
+    // }
 }

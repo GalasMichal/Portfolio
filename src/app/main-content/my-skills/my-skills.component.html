@@ -1,6 +1,11 @@
 <section>
+    <div class="arrow-separator2">
+        <div class="arrow-container2" (mouseenter)="startAnimation2()">
+            <div class="arrow-animation2" [class.animate]="isAnimating"></div>
+        </div>
+    </div>
     <div class="skills-container">
-        <span class="fontSyne">My Skills</span>
+        <span class="fontSyne my-skills-mobile">Meine Skills</span>
         <div class="icon-container">
             @for (item of skills.mySkills; track item; let i = $index) {
             <div>

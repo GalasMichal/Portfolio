@@ -1,8 +1,8 @@
 @import './../../../styles.scss';
 
 section {
-    margin-left: 100rem;
-    margin-right: 100rem;
+    padding: 0 100rem;
+    margin-bottom: 50rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,10 +11,10 @@ section {
     background-color: $white;
 
     >img {
-        width: 480rem;
-        height: 519rem;
-        margin-bottom: -142rem;
-
+        margin-top: 292rem;
+        width: 50%;
+        max-height: 601rem;
+        
     }
 }
 
@@ -23,12 +23,13 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 619rem;
+    min-width: 619rem;
+    width: 50%;
     min-height: 326rem;
 
     >h1 {
-        font-size: 78rem;
-        line-height: 78rem;
+        font-size: 74rem;
+        line-height: 40rem;
         font-weight: 800;
         width: 100%;
 
@@ -67,51 +68,5 @@ section {
     }
 }
 
-.arrow-separator {
-    margin: 0 100rem;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 210rem;
-    margin-bottom: 138rem;
-}
-
-.arrow-container {
-    width: 200px;
-    height: 200px;
-    position: relative;
-
-    >.arrow-animation.animate {
-        animation: moveAndChangeArrow 125ms  forwards;
-    }
-
-}
-
-.arrow-animation {
-    width: 200rem;
-    height: 300rem;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-image: url('../../../assets/img/animated/d-arrow.png');
-    
-
-}
 
 
-@keyframes moveAndChangeArrow {
-    0% {
-        background-image: url('../../../assets/img/animated/d-arrow.png');
-    }
-
-    50% {
-        background-image: url('../../../assets/img/animated/d-arrow1.png');
-    }
-
-    100% {
-        transform: translate(-100rem, 100rem);
-        background-image: url('../../../assets/img/animated/d-arrow2.png');
-    }
-
-}

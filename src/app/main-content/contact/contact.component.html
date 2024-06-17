@@ -1,17 +1,17 @@
 <section>
     <h1 class="fontSyne">Say Hi!</h1>
     <div>
-        <div class="fontOverpass">Want to discuss a new project?</div>
-        <div class="fontOverpass">Say hello! let's discuss your ideas and make it happen</div>
+        <div class="fontOverpass">Möchtest du über ein neues Projekt sprechen?</div>
+        <div class="fontOverpass">Hallo! Lass uns deine Ideen besprechen und umsetzen!</div>
         <form class="contact-div" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
             <div>
                 <label for="name">Name</label>
                 <input #name="ngModel" minlength="2" [(ngModel)]="contactData.name" type="text" name="name" id="name"
-                    placeholder="Your name..." required>
+                    placeholder="Daine name.." required>
 
                 @if (!name.valid && name.touched ) {
-                <span class="feedback-container fontOverpass">Please enter a name</span>
+                <span class="feedback-container fontOverpass">Bitte gib deinen Namen ein.</span>
                 <img class="feedback-icon shake-horizontal icon-red" src="assets/img/icons/warn.png" alt="warning img">
                 }
                 @if(name.valid){
@@ -22,10 +22,10 @@
             <div>
                 <label for="email">Email</label>
                 <input #email="ngModel" type="email" [(ngModel)]="contactData.email" name="email" id="email"
-                    placeholder="Your email..." required pattern="[a-zA-Z0-9.%+\-]+@[a-zA-Z0-9.\-]+.[a-zA-Z]{2,}">
+                    placeholder="Dein email..." required pattern="[a-zA-Z0-9.%+\-]+@[a-zA-Z0-9.\-]+.[a-zA-Z]{2,}">
 
                 @if (!email.valid && email.touched) {
-                <span class="feedback-container fontOverpass">Please enter a email</span>
+                <span class="feedback-container fontOverpass">Bitte gib eine E-Mail-Adresse ein.</span>
                 <img class="feedback-icon shake-horizontal icon-red" src="assets/img/icons/warn.png" alt="warning img">
                 }
                 @if(email.valid){
@@ -36,10 +36,10 @@
             <div class="message">
                 <label for="message">Subject</label>
                 <textarea #message="ngModel" name="message" minlength="4" [(ngModel)]="contactData.message" id="message"
-                    placeholder="Your message" required></textarea>
+                    placeholder="Deine Nachricht" required></textarea>
 
                 @if (!message.valid && message.touched) {
-                <span class="feedback-container fontOverpass">Please enter a message </span>
+                <span class="feedback-container fontOverpass">Bitte gib eine Nachricht ein </span>
                 <img class="feedback-icon shake-horizontal icon-red" src="assets/img/icons/warn.png" alt="warning img">
                 }
                 @if(message.valid){

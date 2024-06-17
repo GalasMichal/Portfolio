@@ -2,27 +2,29 @@
 
 section {
     display: flex;
-    margin: 0 100rem;
+    padding: 0 100rem;
     flex-direction: column;
+    width: 100%;
 
     >.skills-container {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 1239rem;
+        max-width: 1239rem;
         border: 4px solid $black;
-        height: 592rem;
+        min-height: 592rem;
 
 
         >span {
+            text-align: center;
             position: absolute;
             top: -53rem;
             left: 0;
             right: 0;
             margin-left: auto;
             margin-right: auto;
-            width: 561rem;
+            max-width: 820rem;
             height: 98rem;
             font-size: 78rem;
             line-height: 78rem;
@@ -46,7 +48,6 @@ section {
     align-items: center;
     flex-wrap: wrap;
     max-width: 1012rem;
-    height: 271rem;
     gap: 75rem 125rem;
 
     >div {
@@ -124,6 +125,55 @@ section {
 
     100% {
         background-image: url('./../../../assets/img/animated/arrowR3.png');
+    }
+
+}
+
+.arrow-separator2 {
+
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 210rem;
+    margin-bottom: 138rem;
+}
+
+.arrow-container2 {
+    width: 200rem;
+    height: 200rem;
+    position: relative;
+
+    >.arrow-animation2.animate {
+        animation: moveAndChangeArrow 125ms forwards;
+    }
+
+}
+
+.arrow-animation2 {
+    width: 200rem;
+    height: 300rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url('../../../assets/img/animated/d-arrow.png');
+
+
+}
+
+
+@keyframes moveAndChangeArrow {
+    0% {
+        background-image: url('../../../assets/img/animated/d-arrow.png');
+    }
+
+    50% {
+        background-image: url('../../../assets/img/animated/d-arrow1.png');
+    }
+
+    100% {
+        transform: translate(-100rem, 100rem);
+        background-image: url('../../../assets/img/animated/d-arrow2.png');
     }
 
 }
