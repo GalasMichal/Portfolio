@@ -34,7 +34,7 @@ section{
     }
 }
 
-.arrow-separator {
+.arrow-separator2 {
     margin-top: -60rem;
     display: flex;
     justify-content: flex-end;
@@ -42,18 +42,18 @@ section{
     
 }
 
-.arrow-container {
-    width: 200px;
-    height: 200px;
+.arrow-container2 {
+    width: 200rem;
+    height: 200rem;
     position: relative;
     margin-right: 100rem;
-    >.arrow-animation.animate {
+    >.arrow-animation2.animate {
         animation: moveAndChangeArrow 125ms  forwards;
     }
 
 }
 
-.arrow-animation {
+.arrow-animation2 {
     width: 200rem;
     height: 300rem;
     background-size: contain;

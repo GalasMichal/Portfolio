@@ -107,7 +107,7 @@ body {
         align-items: center;
     }
 
-    .content-div > .lower-contact-box > a {
+    .content-div>.lower-contact-box>a {
         margin-top: 130rem;
         margin-left: -30rem;
     }
@@ -116,14 +116,16 @@ body {
         display: block;
         height: 100vh;
     }
+
     .about-me-section {
-        width: 100%!important;
+        width: 100% !important;
     }
 
     #about-me>section {
         flex-direction: column;
         height: fit-content;
-        >img{
+
+        >img {
             margin-top: 20rem;
             width: 100%;
             height: auto;
@@ -131,36 +133,35 @@ body {
 
         >div {
             margin: 50rem 0;
+
             >a.button {
                 display: none;
             }
         }
     }
 
-    app-project > section {
-        flex-direction: column!important;
-        max-height: fit-content!important;
-        
-        >.about{
-            width: 90%!important;
-            padding-left: 0!important;
+    app-project>section {
+        flex-direction: column !important;
+        max-height: fit-content !important;
+
+        >.about {
+            width: 90% !important;
+            padding-left: 0 !important;
             margin: auto;
         }
     }
 
-    .project-view{
-        width: 90%!important;
+    .project-view {
+        width: 90% !important;
         margin: auto;
 
     }
 
 }
 
-@media (max-width: 750px){
+@media (max-width: 750px) {
 
     .mobile-btn {
-        
-        
         width: 213rem;
         height: 68rem;
         border: 4px solid $black;
@@ -171,28 +172,120 @@ body {
         line-height: 25.6rem;
     }
 
-    .my-skills-mobile{
-        font-size: 50rem!important;
-        max-width: 500rem!important;
+    .my-skills-mobile {
+        font-size: 50rem !important;
+        max-width: 500rem !important;
     }
 
 }
 
-@media (max-width: 750px){
+@media (max-width: 750px) {
+
     .upper-text,
     .lower-text {
         font-size: 40rem !important;
-        height: auto!important;
+        height: auto !important;
     }
 
-    .border-name-box{
-        >.sep-line{
+    .border-name-box {
+        >.sep-line {
             width: 400rem;
         }
+
         >.name {
             font-size: 20rem;
         }
     }
+}
 
+@media (max-width: 320px) {
+    .content-div>.lower-contact-box>a {
+        margin-top: 130rem;
+        margin-left: -130rem;
+    }
 
+    .scroll-down-box {
+        margin-right: 6rem !important;
+    }
+
+    #about-me>section {
+        padding: 0 10rem;
+    }
+
+    .about-me-section {
+        width: 100% !important;
+        min-width: 310rem !important;
+    }
+
+    div.about-me-section>h1 {
+        font-size: 46rem;
+    }
+
+    .navbar {
+        padding: 10rem 20rem !important;
+    }
+
+    #my-skills>section {
+        padding: 0 10rem;
+    }
+
+    .arrow-separator2 {
+        padding-right: 0 !important;
+    }
+
+    .my-skills-mobile {
+        font-size: 36rem !important;
+        max-width: 368rem !important;
+    }
+
+    .icon-container {
+        gap: 50rem 25rem !important;
+    }
+
+    .skills-container {
+        height: 700rem;
+    }
+
+    .arrow-container {
+        left: 10rem !important;
+    }
+
+    #portfolio>section {
+        margin-top: -50rem;
+        padding: 0 10rem;
+
+        >.title {
+            width: 100%;
+
+            >h1 {
+                font-size: 56rem;
+            }
+
+            >p {
+                padding: 10rem;
+            }
+        }
+    }
+
+    .project-view[_ngcontent-ng-c2188869014] {
+        width: 85% !important;
+    }
+
+    .view-border>img {
+        width: 0;
+        height: 0;
+        visibility: 0;
+    }
+
+    .arrow-container2 {
+        margin-right: 10rem !important;
+    }
+
+    .arrow-separator2 {
+        width: 100%;
+    }
+
+    #contact>section{
+        padding: 0 10rem;
+    }
 }
