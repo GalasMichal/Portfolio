@@ -26,7 +26,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+
 }
 
 app-privacy-policy {
@@ -112,7 +112,7 @@ body {
         align-items: center;
     }
 
-   
+
 
     #above-the-fold {
         display: block;
@@ -200,11 +200,11 @@ body {
     }
 }
 
-@media (max-width: 330px) {
+@media (max-width: 320px) {
 
-     .upper-text,
+    .upper-text,
     .lower-text {
-        width: auto!important;
+        width: auto !important;
         font-size: 40rem !important;
         height: auto !important;
     }
@@ -213,13 +213,13 @@ body {
         left: -135rem;
     }
 
-    .name{
-        width: 100%!important;
+    .name {
+        width: 100% !important;
         margin: 0;
     }
 
-    .sep-line{
-        width: 514rem!important;
+    .sep-line {
+        width: 514rem !important;
         margin-left: 31rem;
     }
 
@@ -248,8 +248,8 @@ body {
         padding: 0 10rem;
     }
 
-    .arrow-separator{
-        width: 100%!important;
+    .arrow-separator {
+        width: 100% !important;
     }
 
     .arrow-separator2 {
@@ -308,18 +308,159 @@ body {
         width: 100%;
     }
 
-    #contact>section{
+    #contact>section {
         padding: 0 10rem;
-        >h1{
+
+        >h1 {
             font-size: 36rem;
         }
     }
 
-    .submit{
-        padding: 15rem 15rem!important;
+    .submit {
+        padding: 15rem 15rem !important;
         font-size: 16rem;
-        max-width: 214rem!important;
+        max-width: 214rem !important;
+    }
+}
+
+@media (max-width: 375px) {
+    #above-the-fold{
+        padding: 0 20rem;
+    }
+
+    html {
+        font-size: 0.8px!important;
+    }
+
+    .upper-text,
+    .lower-text {
+        width: 100% !important;
+        font-size: 42rem !important;
+        height: auto !important;
+    }
+
+    .content-div>.lower-contact-box>a {
+        left: -155rem;
+    }
+
+    .border-name-box {
+        >.sep-line {
+            width: 50%;
+            margin-left: 31rem;
+        }
+
+        >.name {
+            width: 50%;
+            font-size: 26rem;
+        }
     }
 
    
+
+    .scroll-down-box {
+        margin-right: -13rem !important;
+    }
+
+  
+
+    .about-me-section {
+        width: 100% !important;
+        min-width: 310rem !important;
+    }
+
+    div.about-me-section>h1 {
+        font-size: 46rem;
+    }
+
+    .navbar {
+        padding: 10rem 20rem !important;
+    }
+
+    section {
+        padding: 0 20rem!important;
+    }
+
+    .arrow-separator {
+        width: 100% !important;
+    }
+
+    .arrow-separator2 {
+        padding-right: 0 !important;
+    }
+
+    .my-skills-mobile {
+        font-size: 36rem !important;
+        max-width: 368rem !important;
+    }
+
+    .icon-container {
+        gap: 50rem 25rem !important;
+    }
+
+    .skills-container {
+        height: 700rem;
+    }
+
+    .arrow-container {
+        left: 10rem !important;
+    }
+
+    #portfolio>section {
+        margin-top: -50rem;
+        padding: 0 10rem;
+
+        >.title {
+            width: 100%;
+
+            >h1 {
+                font-size: 56rem;
+            }
+
+            >p {
+                padding: 10rem;
+            }
+        }
+    }
+
+    .project-view {
+        width: 100% !important;
+        margin-top: 20rem;
+    }
+
+    .description{
+        width: 100%!important;
+    }
+
+    .about {
+        width: 100%!important;
+        padding-right: 0!important;
+    }
+
+    .view-border>img {
+        width: 0;
+        height: 0;
+        visibility: 0;
+    }
+
+    .arrow-container2 {
+        margin-right: 10rem !important;
+    }
+
+    .arrow-separator2 {
+        width: 100%;
+    }
+
+    #contact>section {
+        padding: 0 10rem;
+
+        >h1 {
+            font-size: 36rem;
+        }
+    }
+
+    .submit {
+        padding: 15rem 15rem !important;
+        font-size: 16rem;
+        max-width: 214rem !important;
+    }
 }
