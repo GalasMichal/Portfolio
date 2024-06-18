@@ -10,6 +10,8 @@ section {
     padding: 0 100rem;
     width: 100%;
     max-width: 1440rem;
+    flex-direction: column;
+    padding-bottom: 20rem;
 }
 
 .copy-right {
@@ -57,7 +59,7 @@ section {
     text-align: start;
     align-items: flex-end;
     justify-content: flex-end;
-
+    width: 100%;
     &:hover {
         cursor: pointer;
     }
@@ -66,6 +68,12 @@ section {
 .slide-top:hover {
     -webkit-animation: slide-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.upper-div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 
@@ -91,4 +99,29 @@ section {
         -webkit-transform: translateY(-20px);
         transform: translateY(-20px);
     }
+}
+
+@media (max-width: 330px) { 
+    section{
+        padding: 0 10rem;
+        flex-direction: column;
+
+    }
+
+    .upper-div{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+    }
+
+    .copy-right{
+        align-items: center;
+    }
+
+    .privacy_policy{
+        align-items: center;
+        justify-content: center;
+    }
+
 }
