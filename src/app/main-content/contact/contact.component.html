@@ -1,14 +1,14 @@
 <section>
     <h1 class="fontSyne">Say Hi!</h1>
     <div>
-        <div class="fontOverpass - mobile-contact-upper">Möchtest du über ein neues Projekt sprechen?</div>
-        <div class="fontOverpass mobile-contact-upper">Hallo! Lass uns deine Ideen besprechen und umsetzen!</div>
+        <div class="fontOverpass mobile-contact-upper">Möchtest du über ein neues Projekt sprechen?</div>
+        <div class="fontOverpass mobile-contact-lower">Hallo! Lass uns deine Ideen besprechen und umsetzen!</div>
         <form class="contact-div" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
             <div>
                 <label for="name">Name</label>
                 <input #name="ngModel" minlength="2" [(ngModel)]="contactData.name" type="text" name="name" id="name"
-                    placeholder="Daine name.." required>
+                    placeholder="Dain Name.." required>
 
                 @if (!name.valid && name.touched ) {
                 <span class="feedback-container fontOverpass">Bitte gib deinen Namen ein.</span>
@@ -22,7 +22,7 @@
             <div>
                 <label for="email">Email</label>
                 <input #email="ngModel" type="email" [(ngModel)]="contactData.email" name="email" id="email"
-                    placeholder="Dein email..." required pattern="[a-zA-Z0-9.%+\-]+@[a-zA-Z0-9.\-]+.[a-zA-Z]{2,}">
+                    placeholder="Dein Email..." required pattern="[a-zA-Z0-9.%+\-]+@[a-zA-Z0-9.\-]+.[a-zA-Z]{2,}">
 
                 @if (!email.valid && email.touched) {
                 <span class="feedback-container fontOverpass">Bitte gib eine E-Mail-Adresse ein.</span>
@@ -48,19 +48,21 @@
             </div>
             <div class="checkbox fontOverpass">
                 <input [(ngModel)]="checkboxState" type="checkbox" name="agree" id="agree" required>
-                <label class="label" for="agree">I've read the  <a  href="/privacy-policy" >private policy</a> and agree to the processing of my data as
-                    outlined</label>
-                    
+                <label class="label" for="agree">Ich habe die <a href="/privacy-policy">Datenschutzrichtlinie</a>
+                    gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu</label>
+
                 @if(!checkboxState && message.valid && email.valid && name.valid){
-                <span class="fontOverpass feedback-container not-checked-msg">You must agree to the privacy policy</span>
+                <span class="fontOverpass feedback-container not-checked-msg">You must agree to the privacy
+                    policy</span>
                 }
-                
+
             </div>
 
-            <button  class="submit" type="submit" value="Submit" [disabled]="!contactForm.form.valid || !checkboxState"> Send message</button>
+            <button class="submit" type="submit" value="Submit" [disabled]="!contactForm.form.valid || !checkboxState">
+                Send message</button>
 
         </form>
     </div>
-    
+
 
 </section>

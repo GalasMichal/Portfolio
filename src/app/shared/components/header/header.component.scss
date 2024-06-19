@@ -126,6 +126,7 @@ section{
     text-align: center;
     background-image: url('./../../../../assets/img/animated/bg1.png');
     background-repeat: no-repeat;
+    background-size: contain;
     &:hover {
         animation: bgAnimation 125ms forwards;
         background-repeat: no-repeat;
@@ -154,10 +155,18 @@ section{
    
 }
 
-@media (max-width: 330px) {
+@media (max-width: 320px) {
     .logo{
         width: 86px !important;
         height: 29px !important;
+    }
+
+    .menu {
+        font-size: 45rem;
+    }
+
+    .navbar {
+        padding: 10rem 0rem !important;
     }
 }
 

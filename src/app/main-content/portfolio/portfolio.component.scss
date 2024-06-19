@@ -1,7 +1,7 @@
 @import './../../../styles.scss';
 
 
-section{
+section {
     margin-top: -100rem;
     display: flex;
     flex-direction: column;
@@ -9,19 +9,23 @@ section{
     align-items: center;
     justify-content: center;
     padding: 0 100rem;
-    >.title{
+
+    >.title {
         width: 619rem;
         height: auto;
-        >h1{
+
+        >h1 {
             text-align: center;
             font-size: 78rem;
             line-height: 78rem;
             font-weight: 800;
-            &:hover{
+
+            &:hover {
                 color: $light_green;
             }
         }
-        >p{
+
+        >p {
             font-size: 23rem;
             font-weight: 400;
             line-height: 27.7rem;
@@ -39,7 +43,7 @@ section{
     display: flex;
     justify-content: flex-end;
     padding-right: 110rem;
-    
+
 }
 
 .arrow-container2 {
@@ -47,8 +51,9 @@ section{
     height: 200rem;
     position: relative;
     margin-right: 100rem;
+
     >.arrow-animation2.animate {
-        animation: moveAndChangeArrow 125ms  forwards;
+        animation: moveAndChangeArrow 125ms forwards;
     }
 
 }
@@ -62,7 +67,7 @@ section{
     top: 0;
     right: 0;
     background-image: url('../../../assets/img/animated/d-arrow.png');
-    
+
 
 }
 
@@ -83,17 +88,14 @@ section{
 
 }
 
- @media (max-width: 450px) {
-    .arrow-container2 {
-        margin-right: 10rem !important;
-    }
+@media (max-width: 450px) {
 
     .arrow-separator2 {
         width: 100%;
         padding-right: 0 !important;
     }
 
-section {
+    section {
         margin-top: -50rem;
         padding: 0 10rem;
 
@@ -109,6 +111,24 @@ section {
             }
         }
     }
- }
+}
 
+@media (max-width: 320px) {
+    .arrow-container2 {
+        margin-right: 0 !important;
+    }
 
+    .arrow-separator2 {
+        margin-top: 15rem;
+    }
+
+    .title {
+        >h1 {
+            font-size: 50rem !important;
+        }
+
+        >p {
+            padding: 0 0 !important;
+        }
+    }
+}

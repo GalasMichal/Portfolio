@@ -299,5 +299,21 @@ textarea {
         font-size: 16rem;
         max-width: 214rem !important;
     }
+
+}
+
+@media (max-width: 320px) {
+    .mobile-contact-upper {
+        font-size: 25rem !important;
+    }
+
+    .mobile-contact-lower {
+        font-size: 22rem !important;
+    }
+
+    input[type="checkbox"] {
+        width: 40rem;
+        height: 24rem;
+    }
 }
 

@@ -197,3 +197,9 @@ button {
   }
 }
 
+@media (max-width: 320px) {
+
+  .project-view {
+    width: 95% !important;
+  }
+}

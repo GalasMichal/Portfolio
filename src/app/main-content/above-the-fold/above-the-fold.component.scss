@@ -39,8 +39,7 @@
 
     >div {
         
-        width: 116rem;
-        height: 232rem;
+       
         gap: 6rem;
         display: flex;
         flex-direction: column;
@@ -48,8 +47,8 @@
         align-items: center;
 
         >img {
-            width: 138%;
-            height: 138%;
+            width: 100%;
+            height: 100%;
         }
 
         >span {
@@ -104,13 +103,12 @@
 
  @media (max-width: 450px) {
     .scroll-down-box {
-        margin-right: -13rem !important;
+        margin-top: 75rem !important;
     }
 
     .border-name-box {
         >.sep-line {
             width: 50%;
-            margin-left: 31rem;
         }
 
         >.name {
@@ -120,19 +118,7 @@
     }
 
     .lower-contact-box>a {
-        left: -155rem;
-    }
-
-    .border-name-box {
-        >.sep-line {
-            width: 50%;
-            margin-left: 31rem;
-        }
-
-        >.name {
-            width: 50%;
-            font-size: 26rem;
-        }
+        left: -160rem;
     }
 
     .upper-text,
@@ -140,6 +126,24 @@
         width: 100% !important;
         font-size: 42rem !important;
         height: auto !important;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .upper-text,
+    .lower-text {
+        font-size: 40rem !important;
+    }
+
+    .name {
+        width: 100% !important;
+        margin: 0;
+        font-size: 19rem!important;
+    }
+
+    .sep-line {
+        width: 514rem !important;
     }
 }
 

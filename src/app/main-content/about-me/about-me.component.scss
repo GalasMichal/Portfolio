@@ -79,10 +79,13 @@ section {
     }
 }
 
-@media (max-width: 375px) {
-    
-}
-// @media (max-width:) {
+ @media (max-width: 320px) {
+    div.about-me-section>h1 {
+        font-size: 40rem!important;
+    }
+ }
 
-// }
+
+
+
 
