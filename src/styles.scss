@@ -308,69 +308,15 @@ body {
         width: 100%;
     }
 
-    #contact>section {
-        padding: 0 10rem;
-
-        >h1 {
-            font-size: 36rem;
-        }
-    }
-
-    .submit {
-        padding: 15rem 15rem !important;
-        font-size: 16rem;
-        max-width: 214rem !important;
-    }
+   
 }
 
 @media (max-width: 375px) {
-    #above-the-fold{
-        padding: 0 20rem;
-    }
-
+    
     html {
         font-size: 0.8px!important;
     }
 
-    .upper-text,
-    .lower-text {
-        width: 100% !important;
-        font-size: 42rem !important;
-        height: auto !important;
-    }
-
-    .content-div>.lower-contact-box>a {
-        left: -155rem;
-    }
-
-    .border-name-box {
-        >.sep-line {
-            width: 50%;
-            margin-left: 31rem;
-        }
-
-        >.name {
-            width: 50%;
-            font-size: 26rem;
-        }
-    }
-
-   
-
-    .scroll-down-box {
-        margin-right: -13rem !important;
-    }
-
-  
-
-    .about-me-section {
-        width: 100% !important;
-        min-width: 310rem !important;
-    }
-
-    div.about-me-section>h1 {
-        font-size: 46rem;
-    }
 
     .navbar {
         padding: 10rem 20rem !important;
@@ -450,12 +396,8 @@ body {
         width: 100%;
     }
 
-    #contact>section {
+    section {
         padding: 0 10rem;
-
-        >h1 {
-            font-size: 36rem;
-        }
     }
 
     .submit {
@@ -463,4 +405,21 @@ body {
         font-size: 16rem;
         max-width: 214rem !important;
     }
+}
+
+@media (max-width: 450px) {
+
+    html {
+        font-size: 0.8px!important;
+    }
+
+
+    .navbar {
+        padding: 10rem 20rem !important;
+    }
+
+    section {
+        padding: 0 20rem!important;
+    }
+
 }

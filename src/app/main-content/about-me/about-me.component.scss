@@ -68,5 +68,21 @@ section {
     }
 }
 
+ @media (max-width: 450px) {
+    .about-me-section>h1 {
+        font-size: 46rem!important;
+    }
 
+    .about-me-section {
+        width: 100% !important;
+        min-width: 310rem !important;
+    }
+}
+
+@media (max-width: 375px) {
+    
+}
+// @media (max-width:) {
+
+// }
 

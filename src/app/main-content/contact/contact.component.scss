@@ -75,7 +75,7 @@ section {
         position: relative;
         width: 100%;
         max-width: 617rem;
-        
+
 
         >input[type=text],
         [type=email],
@@ -93,10 +93,11 @@ section {
     }
 }
 
-.label{
+.label {
     padding-top: 5rem;
     padding-left: 7rem;
-    >span{
+
+    >span {
         color: $light_green;
         cursor: pointer;
     }
@@ -155,11 +156,11 @@ textarea:focus {
     z-index: 1;
 }
 
-.not-checked-msg{
-    text-align:start;
+.not-checked-msg {
+    text-align: start;
 }
 
-.submit{
+.submit {
     margin-top: 30rem;
     max-width: 269rem;
     width: 100%;
@@ -169,7 +170,8 @@ textarea:focus {
     color: $white;
     padding: 20rem 60rem;
     background-color: $black;
-    &:disabled{
+
+    &:disabled {
         border-color: rgba($color: #BBBBBB, $alpha: 0.3);
         color: rgba($color: #BBBBBB, $alpha: 0.3);
     }
@@ -185,8 +187,8 @@ textarea {
     top: 6rem !important;
 }
 
-.icon-green{
-    top: 22rem!important;
+.icon-green {
+    top: 22rem !important;
 }
 
 .feedback-icon {
@@ -284,3 +286,18 @@ textarea {
         transform: translateX(-8px);
     }
 }
+
+@media (max-width: 450px) {
+    section {
+        >h1 {
+            font-size: 36rem;
+        }
+    }
+
+    .submit {
+        padding: 15rem 15rem !important;
+        font-size: 16rem;
+        max-width: 214rem !important;
+    }
+}
+

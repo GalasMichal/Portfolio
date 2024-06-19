@@ -177,3 +177,30 @@ section {
     }
 
 }
+
+@media (max-width: 450px) {
+    .arrow-separator {
+        width: 100% !important;
+    }
+
+    .arrow-separator2 {
+        padding-right: 0 !important;
+    }
+
+    .my-skills-mobile {
+        font-size: 36rem !important;
+        max-width: 368rem !important;
+    }
+
+    .icon-container {
+        gap: 50rem 25rem !important;
+    }
+
+    .skills-container {
+        height: 700rem;
+    }
+
+    .arrow-container {
+        left: 10rem !important;
+    }
+}

@@ -60,6 +60,7 @@ section {
     align-items: flex-end;
     justify-content: flex-end;
     width: 100%;
+
     &:hover {
         cursor: pointer;
     }
@@ -70,7 +71,7 @@ section {
     animation: slide-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.upper-div{
+.upper-div {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -101,25 +102,76 @@ section {
     }
 }
 
-@media (max-width: 330px) { 
-    section{
+@media (max-width: 330px) {
+    section {
         padding: 0 10rem;
         flex-direction: column;
 
     }
 
-    .upper-div{
+    .upper-div {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         gap: 10rem;
     }
 
-    .copy-right{
+    .copy-right {
         align-items: center;
     }
 
-    .privacy_policy{
+    .privacy_policy {
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    section {
+        padding: 0 10rem;
+        flex-direction: column;
+
+    }
+
+    .upper-div {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+    }
+
+    .copy-right {
+        align-items: center;
+    }
+
+    .privacy_policy {
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 450px) {
+    section {
+        padding: 0 10rem;
+        flex-direction: column;
+
+    }
+
+    .upper-div {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+    }
+
+    .copy-right {
+        align-items: center;
+    }
+
+    .privacy_policy {
         align-items: center;
         justify-content: center;
     }

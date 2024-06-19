@@ -101,3 +101,46 @@
     width: 628rem;
     border: solid 2rem;
 }
+
+ @media (max-width: 450px) {
+    .scroll-down-box {
+        margin-right: -13rem !important;
+    }
+
+    .border-name-box {
+        >.sep-line {
+            width: 50%;
+            margin-left: 31rem;
+        }
+
+        >.name {
+            width: 50%;
+            font-size: 26rem;
+        }
+    }
+
+    .lower-contact-box>a {
+        left: -155rem;
+    }
+
+    .border-name-box {
+        >.sep-line {
+            width: 50%;
+            margin-left: 31rem;
+        }
+
+        >.name {
+            width: 50%;
+            font-size: 26rem;
+        }
+    }
+
+    .upper-text,
+    .lower-text {
+        width: 100% !important;
+        font-size: 42rem !important;
+        height: auto !important;
+    }
+}
+
+

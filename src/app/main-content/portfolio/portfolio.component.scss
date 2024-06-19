@@ -83,3 +83,32 @@ section{
 
 }
 
+ @media (max-width: 450px) {
+    .arrow-container2 {
+        margin-right: 10rem !important;
+    }
+
+    .arrow-separator2 {
+        width: 100%;
+        padding-right: 0 !important;
+    }
+
+section {
+        margin-top: -50rem;
+        padding: 0 10rem;
+
+        >.title {
+            width: 100%;
+
+            >h1 {
+                font-size: 56rem;
+            }
+
+            >p {
+                padding: 10rem;
+            }
+        }
+    }
+ }
+
+
