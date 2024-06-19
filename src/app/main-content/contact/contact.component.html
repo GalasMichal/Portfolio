@@ -8,7 +8,7 @@
             <div>
                 <label for="name">Name</label>
                 <input #name="ngModel" minlength="2" [(ngModel)]="contactData.name" type="text" name="name" id="name"
-                    placeholder="Dain Name.." required>
+                    placeholder="Dein Name.." required>
 
                 @if (!name.valid && name.touched ) {
                 <span class="feedback-container fontOverpass">Bitte gib deinen Namen ein.</span>
@@ -48,7 +48,7 @@
             </div>
             <div class="checkbox fontOverpass">
                 <input [(ngModel)]="checkboxState" type="checkbox" name="agree" id="agree" required>
-                <label class="label" for="agree">Ich habe die <a href="/privacy-policy">Datenschutzrichtlinie</a>
+                <label class="label" for="agree">Ich habe die <a class="privacy" href="/privacy-policy">Datenschutzrichtlinie</a>
                     gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu</label>
 
                 @if(!checkboxState && message.valid && email.valid && name.valid){

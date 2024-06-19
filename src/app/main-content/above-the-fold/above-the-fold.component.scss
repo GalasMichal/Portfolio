@@ -9,7 +9,9 @@
     margin-bottom: 100rem;
 }
 
-
+section{
+    padding: 0 100rem;
+}
 
 .lower-contact-box {
     width: 100%;
@@ -18,11 +20,10 @@
     align-items: center;
     position: relative;
     padding: 100rem 0;
-
     >a {
         position: absolute;
         display: flex;
-        left: -64rem;
+        left: -153rem;
         top: 245rem;
         font-size: 23rem;
         line-height: 23rem;
@@ -31,15 +32,11 @@
         height: 27rem;
         transform: rotate(-90deg);
         color: $black;
-
         justify-content: center;
         align-items: center;
-
     }
 
     >div {
-        
-       
         gap: 6rem;
         display: flex;
         flex-direction: column;
@@ -57,6 +54,10 @@
             text-align: center;
         }
     }
+}
+
+.scroll-down-box {
+    margin-top: 75rem !important;
 }
 
 .name {

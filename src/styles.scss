@@ -51,6 +51,8 @@ app-root {
     width: 100%;
 }
 
+
+
 html {
     scroll-behavior: smooth;
     font-size: 1px;
@@ -89,7 +91,7 @@ body {
 
 @media (max-width: 1000px) {
     html {
-        font-size: 0.7px;
+        font-size: 0.9px;
     }
 }
 
@@ -163,6 +165,10 @@ body {
 
 @media (max-width: 750px) {
 
+    section{
+        padding: 0 50rem!important;
+    }
+
     .mobile-btn {
         width: 213rem;
         height: 68rem;
@@ -179,10 +185,6 @@ body {
         max-width: 500rem !important;
     }
 
-}
-
-@media (max-width: 750px) {
-
     .upper-text,
     .lower-text {
         font-size: 40rem !important;
@@ -198,7 +200,9 @@ body {
             font-size: 20rem;
         }
     }
+
 }
+
 
 @media (max-width: 320px) {
 
@@ -215,9 +219,6 @@ body {
         font-size: 0.8px !important;
     }
 
-    .navbar {
-        padding: 10rem 20rem !important;
-    }
 
     section {
         padding: 0 20rem !important;
