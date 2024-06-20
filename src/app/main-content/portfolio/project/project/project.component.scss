@@ -175,6 +175,35 @@ button {
   }
 }
 
+@media (max-width: 1340px){
+   section{
+    padding-top: 50rem !important;
+   }
+}
+
+@media (max-width: 850px){
+  section {
+      flex-direction: column !important;
+      max-height: fit-content !important;
+
+      >.about {
+          width: 90% !important;
+          padding-left: 0 !important;
+          margin: auto;
+      }
+      
+  }
+
+  .project-view {
+      width: 90% !important;
+      margin: auto;
+
+  }
+
+}
+
+
+
 @media (max-width: 450px) {
   .project-view {
     width: 100% !important;
@@ -188,6 +217,9 @@ button {
   .about {
     width: 100% !important;
     padding-right: 0 !important;
+    >h1{
+      font-size: 36rem;
+    }
   }
 
   .view-border>img {

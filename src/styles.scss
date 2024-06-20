@@ -75,23 +75,9 @@ body {
     section{
         padding: 0 50rem!important;
     }
-
-    .upper-text,
-    .lower-text {
-        font-size: 100rem !important;
-    }
 }
 
-@media (max-width: 1110px) {
-    .skills-container {
-        height: 800rem;
-    }
 
-    div.about-me-section>h1 {
-        font-size: 60rem;
-    }
-
-}
 
 @media (max-width: 1000px) {
     html {
@@ -109,26 +95,6 @@ body {
         display: block;
         height: 100vh;
     }
-
-   
-
-
-    // section {
-    //     flex-direction: column !important;
-    //     max-height: fit-content !important;
-
-    //     >.about {
-    //         width: 90% !important;
-    //         padding-left: 0 !important;
-    //         margin: auto;
-    //     }
-    // }
-
-    // .project-view {
-    //     width: 90% !important;
-    //     margin: auto;
-
-    // }
 
 }
 

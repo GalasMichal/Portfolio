@@ -88,11 +88,41 @@ section {
 
 }
 
-@media (max-width: 450px) {
+@media (max-width: 850px) {
+    .title>h1 {
+        font-size: 60rem !important;
+    }
 
+    section{
+        margin-bottom: 50rem !important;
+    }
     .arrow-separator2 {
         width: 100%;
         padding-right: 0 !important;
+        margin-bottom: 50rem;
+    }
+
+    .arrow-container2 {
+        margin-right: 0 !important;
+    }
+}
+
+@media (max-width: 650px) {
+   
+
+    .title>h1 {
+        font-size: 50rem !important;
+    }
+
+}
+
+
+
+
+@media (max-width: 450px) {
+
+    .arrow-separator2 {
+        margin-bottom: 50rem;
     }
 
     section {
@@ -103,7 +133,7 @@ section {
             width: 100%;
 
             >h1 {
-                font-size: 56rem;
+                font-size: 46rem;
             }
 
             >p {
@@ -114,17 +144,16 @@ section {
 }
 
 @media (max-width: 320px) {
-    .arrow-container2 {
-        margin-right: 0 !important;
-    }
+
 
     .arrow-separator2 {
         margin-top: 15rem;
+
     }
 
     .title {
         >h1 {
-            font-size: 50rem !important;
+            font-size: 42rem !important;
         }
 
         >p {

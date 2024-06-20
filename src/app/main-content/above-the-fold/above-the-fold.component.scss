@@ -102,6 +102,13 @@ section{
     border: solid 2rem;
 }
 
+@media (max-width: 1340px) {
+    .upper-text,
+    .lower-text {
+        font-size: 100rem !important;
+    }
+}
+
  
 
 @media (max-width: 950px){
