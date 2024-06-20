@@ -23,12 +23,12 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 619rem;
+    min-width: 320rem;
     width: 50%;
     min-height: 326rem;
 
     >h1 {
-        font-size: 74rem;
+        font-size: 70rem;
         line-height: 40rem;
         font-weight: 800;
         width: 100%;
@@ -68,6 +68,48 @@ section {
     }
 }
 
+@media (max-width: 1300px){
+    .about-me-section>h1 {
+        font-size: 68rem!important;
+    }
+}
+
+@media (max-width: 1150px){
+    .about-me-section>h1 {
+        font-size: 55rem!important;
+    }
+}
+
+@media (max-width: 950px){
+    .about-me-section>h1 {
+        font-size: 48rem!important;
+    }
+}
+
+@media (max-width: 850px) {
+    .about-me-section {
+        width: 100% !important;
+    }
+
+    section {
+        flex-direction: column;
+        height: fit-content;
+
+        >img {
+            margin-top: 20rem;
+            width: 60%;
+            
+        }
+
+        >div {
+            margin: 50rem 0;
+
+            >a.button {
+                display: none;
+            }
+        }
+    }
+}
  @media (max-width: 450px) {
     .about-me-section>h1 {
         font-size: 46rem!important;

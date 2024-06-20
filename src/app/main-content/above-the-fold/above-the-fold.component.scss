@@ -78,13 +78,13 @@ section{
 }
 
 .upper-text {
-    width: 926rem;
+    width: 100%;
     line-height: 128rem;
     margin-top: 204rem;
 }
 
 .lower-text {
-    width: 1022rem;
+    width: 100%;
     margin-top: -37rem;
 }
 
@@ -102,19 +102,106 @@ section{
     border: solid 2rem;
 }
 
- @media (max-width: 450px) {
+ 
+
+@media (max-width: 950px){
+    .upper-text,
+    .lower-text {
+        font-size: 92rem !important;
+        height: auto !important;
+    }
+
+    .name{
+        font-size: 46rem;
+    }
+}
+
+
+@media (max-width: 852px){
+
+    
+   
+
+    .upper-text,
+    .lower-text {
+        font-size: 80rem !important;
+        height: auto !important;
+    }
+
+    .name{
+        width: 60%;
+        font-size: 40rem;
+    }
+
+    .sep-line {
+        width: 100% !important;
+    }
+
+    .mobile-btn {
+        text-decoration: none;
+        cursor: pointer;
+        color: $black;
+        margin-top: 76rem;
+        width: 213rem;
+        height: 68rem;
+        border: 4px solid $black;
+        background-color: $white;
+        transition: width 0.3s ease;
+        font-size: 23rem;
+        font-weight: 500;
+        line-height: 27.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 750px) {
+    .mobile-btn {
+        font-size: 20rem;
+        font-weight: 800;
+        line-height: 25.6rem;
+    }
+
+   
+
+    .upper-text,
+    .lower-text {
+        font-size: 60rem !important;
+        height: auto !important;
+    }
+
+    .name{
+        font-size: 34rem;
+    }
+}
+
+@media (max-width: 600px){
+    .upper-text,
+    .lower-text {
+        font-size: 50rem !important;
+        height: auto !important;
+    }
+
+    .name{
+        width: 70%;
+        font-size: 26rem;
+    }
+}
+
+@media (max-width: 450px) {
     .scroll-down-box {
         margin-top: 75rem !important;
     }
 
     .border-name-box {
         >.sep-line {
-            width: 50%;
+            width: 100%;
         }
 
         >.name {
-            width: 50%;
-            font-size: 26rem;
+            width: 100%;
+            font-size: 24rem;
         }
     }
 
@@ -144,8 +231,6 @@ section{
     }
 
     .sep-line {
-        width: 514rem !important;
+        width: 100% !important;
     }
 }
-
-

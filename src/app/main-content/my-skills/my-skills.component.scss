@@ -80,7 +80,7 @@ section {
 
 .arrow-separator {
     height: 300rem;
-    width: 1239rem;
+    width: 100%;
     display: flex;
 
     >.arrow-container {
@@ -178,6 +178,65 @@ section {
 
 }
 
+@media (max-width: 950px) {
+    .my-skills-mobile {
+        font-size: 60rem !important;
+        max-width: 658rem !important;
+    }
+
+    .arrow-separator2 {
+        padding-right: 100rem !important;
+    }
+}
+
+@media (max-width: 750px) {
+    .my-skills-mobile {
+        font-size: 50rem !important;
+        max-width: 500rem !important;
+    }
+
+    .arrow-separator2 {
+        padding-right: 50rem !important;
+    }
+
+    .icon-container {
+        >div>img {
+            width: 75rem;
+            height: 75rem;
+        }
+    }
+
+    .skills-container {
+        height: 100%;
+        min-height: 720rem !important;
+    }
+
+    .icon-container {
+        gap: 50rem 100rem !important;
+        min-height: 320rem
+    }
+}
+
+@media (max-width: 560px) {
+    .icon-container {
+        
+        >div>img {
+            width: 60rem;
+            height: 60rem;
+        }
+    }
+
+    .icon-container {
+        gap: 50rem 50rem !important;
+        min-height: 320rem
+    }
+
+    .my-skills-mobile {
+        font-size: 40rem !important;
+        max-width: 417rem !important;
+    }
+}
+
 @media (max-width: 450px) {
     .arrow-separator {
         width: 100% !important;
@@ -193,11 +252,12 @@ section {
     }
 
     .icon-container {
-        gap: 50rem 25rem !important;
+        gap: 10rem 15rem !important;
     }
 
     .skills-container {
-        height: 700rem;
+        height: 500rem;
+        min-height: 320rem !important;
     }
 
     .arrow-container {
@@ -205,11 +265,28 @@ section {
     }
 }
 
+@media (max-width: 420px) {
+    .skills-container {
+        height: 650rem;
+        min-height: 320rem !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .my-skills-mobile {
+        font-size: 24rem !important;
+        max-width: 260rem !important;
+    }
+    .icon-container {
+        gap: 10rem 10rem !important;
+    }
+}
+
  @media (max-width: 320px) {
     
     .my-skills-mobile {
-        font-size: 27rem !important;
-        max-width: 272rem !important;
+        font-size: 24rem !important;
+        max-width: 260rem !important;
     }
 
     .icon-container {
@@ -220,8 +297,7 @@ section {
     }
 
     .skills-container {
-        height: 100%;
-        min-height: 550rem;
+        min-height: 320rem !important;
     }
 
     .icon-container {
