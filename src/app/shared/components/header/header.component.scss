@@ -1,5 +1,6 @@
 @import '../../../../styles.scss';
-section{
+
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,7 +8,7 @@ section{
     padding: 0 100rem;
 }
 
-.menu-container{
+.menu-container {
     width: 100%;
     height: 100vh;
     z-index: 5;
@@ -17,7 +18,7 @@ section{
     background-color: $white;
 }
 
-.navbar{
+.navbar {
     width: 100%;
     height: 100%;
     display: flex;
@@ -25,57 +26,64 @@ section{
     align-items: center;
     padding: 30rem 0;
     box-sizing: border-box;
-    >img{
+
+    >img {
         width: 40rem;
         height: 32rem;
     }
 }
 
-.burger-menu{
+.burger-menu {
     width: 45rem;
     height: 40rem;
     background-image: url('./../../../../assets/img/animated/burger1.png');
     background-size: cover;
 }
 
-.burger-icon-animate{
+.burger-icon-animate {
     animation: icon-animate 1s forwards;
     z-index: 2;
-    
+
     background-size: cover;
 }
 
 @keyframes icon-animate {
-    0%{
+    0% {
         background-image: url('./../../../../assets/img/animated/burger2.png');
     }
-    15%{
+
+    15% {
         background-image: url('./../../../../assets/img/animated/burger3.png');
     }
-    35%{
+
+    35% {
         background-image: url('./../../../../assets/img/animated/burger4.png');
     }
-    50%{
+
+    50% {
         background-image: url('./../../../../assets/img/animated/burger5.png');
     }
-    65%{
+
+    65% {
         background-image: url('./../../../../assets/img/animated/burger6.png');
     }
-    80%{
+
+    80% {
         background-image: url('./../../../../assets/img/animated/burger7.png');
     }
-    100%{
+
+    100% {
         background-image: url('./../../../../assets/img/animated/burger8.png');
     }
 
 }
 
-.logo{
-    width: 110px!important;
-    height: 40px!important;
+.logo {
+    width: 110px !important;
+    height: 40px !important;
 }
 
-.menu-animate-close{
+.menu-animate-close {
     animation: min-height 50ms forwards;
 }
 
@@ -83,20 +91,22 @@ section{
     0% {
         height: 100%;
     }
-    100%{
+
+    100% {
         height: 0;
     }
 }
 
-.menu-animate{
-    animation: max-height 125ms forwards; 
+.menu-animate {
+    animation: max-height 125ms forwards;
 }
 
 @keyframes max-height {
     0% {
         height: 0;
     }
-    100%{
+
+    100% {
         height: 100%;
     }
 }
@@ -105,7 +115,7 @@ section{
 .menu {
     max-width: 580rem;
     width: 100%;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -115,7 +125,7 @@ section{
     line-height: 96rem;
     gap: 39rem;
 
-   
+
 }
 
 .animate {
@@ -127,6 +137,7 @@ section{
     background-image: url('./../../../../assets/img/animated/bg1.png');
     background-repeat: no-repeat;
     background-size: contain;
+
     &:hover {
         animation: bgAnimation 125ms forwards;
         background-repeat: no-repeat;
@@ -135,8 +146,8 @@ section{
     }
 }
 
-.clickbg{
-    background-image: url('./../../../../assets/img/animated/bg4.png')!important;
+.clickbg {
+    background-image: url('./../../../../assets/img/animated/bg4.png') !important;
 }
 
 @keyframes bgAnimation {
@@ -152,12 +163,25 @@ section{
         background-image: url('./../../../../assets/img/animated/bg3.png');
     }
 
-   
+
 }
 
-@media (max-width: 450px){
+@media (max-width: 850px) {
+
     .menu {
         font-size: 75rem;
+    }
+   
+
+    .navbar {
+        padding: 10rem 0rem !important;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .menu {
+        font-size: 55rem;
     }
 
     .navbar {
@@ -166,7 +190,7 @@ section{
 }
 
 @media (max-width: 320px) {
-    .logo{
+    .logo {
         width: 86px !important;
         height: 29px !important;
     }
@@ -179,6 +203,3 @@ section{
         padding: 10rem 0rem !important;
     }
 }
-
-
-
