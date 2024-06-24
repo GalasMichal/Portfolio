@@ -1,3 +1,4 @@
+@import './../../styles.scss';
 :root{
     display: flex;
     height: 100%;
@@ -6,11 +7,54 @@
 section{
     display: flex;
     flex-direction: column;
-    flex: 1;
+    gap: 10rem;
     >h1{
-        font-size: 64rem;
+        font-size: 54rem;
     }
     >h2{
-        font-size: 44rem;
+        font-size: 28rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    >h3{
+        font-size: 24rem;
+        display: flex;
+        flex-direction: column;
+    }
+    span{
+        font-size: 20rem;
+    }
+
+
+}
+
+@media (max-width: 650px) {
+    h1{
+        font-size: 44rem !important;
+    }
+    h2{
+        font-size: 24rem !important;
+    }
+    h3{
+        font-size: 20rem !important;
+    }
+    span{
+        font-size: 16rem !important;
+    }
+}
+
+@media (max-width: 450px) {
+    h1{
+        font-size: 36rem !important;
+    }
+    h2{
+        font-size: 18rem !important;
+    }
+    h3{
+        font-size: 14rem !important;
+    }
+    span{
+        font-size: 12rem !important;
     }
 }

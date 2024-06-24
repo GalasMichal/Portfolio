@@ -19,7 +19,7 @@ $light_green: #00BC8F;
 body {
     margin: 0;
     background-color: $white;
-    // height: 100vh;
+    height: auto;
     margin: auto;
     display: flex;
     // overflow-x: hidden;
@@ -30,22 +30,20 @@ body {
 }
 
 app-privacy-policy {
+    width: 100%;
     flex: 1;
-    padding: 0 100rem;
-
 }
 
 app-imprint {
+    width: 100%;
     flex: 1;
-    padding: 0 100rem;
-
 }
 
 app-root {
-    // justify-content: center;
-    // align-items: center;
-    // display: flex;
-    // flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     height: 100%;
     max-width: 1440rem;
     width: 100%;
@@ -102,6 +100,10 @@ body {
     section{
         padding: 0 20rem!important;
     }
+    app-imprint{
+        padding: 0 20rem!important;
+    }
+  
 }
 
 

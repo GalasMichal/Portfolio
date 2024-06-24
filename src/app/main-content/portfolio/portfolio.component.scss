@@ -93,9 +93,10 @@ section {
         font-size: 60rem !important;
     }
 
-    section{
+    section {
         margin-bottom: 50rem !important;
     }
+
     .arrow-separator2 {
         width: 100%;
         padding-right: 0 !important;
@@ -108,10 +109,25 @@ section {
 }
 
 @media (max-width: 650px) {
+    .title {
+        width: 100% !important;
+        >h1 {
+            font-size: 50rem !important;
+        }
+    }
    
+}
+
+
+
+
+
+
+@media (max-width: 580px) {
+
 
     .title>h1 {
-        font-size: 50rem !important;
+        font-size: 46rem !important;
     }
 
 }
@@ -130,10 +146,10 @@ section {
         padding: 0 10rem;
 
         >.title {
-            width: 100%;
+
 
             >h1 {
-                font-size: 46rem;
+                font-size: 44rem;
             }
 
             >p {

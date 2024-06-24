@@ -155,6 +155,16 @@ section{
    
 }
 
+@media (max-width: 450px){
+    .menu {
+        font-size: 75rem;
+    }
+
+    .navbar {
+        padding: 10rem 0rem !important;
+    }
+}
+
 @media (max-width: 320px) {
     .logo{
         width: 86px !important;
@@ -170,13 +180,5 @@ section{
     }
 }
 
-@media (max-width: 450px){
-    .menu {
-        font-size: 75rem;
-    }
 
-    .navbar {
-        padding: 10rem 0rem !important;
-    }
-}
 
