@@ -18,7 +18,7 @@ export class PortfolioComponent {
       about:
         'Task Manager nach dem Kanban-Prinzip. Aufgaben per Drag-and-Drop erstellen und organisieren, Benutzer und Kategorien zuweisen.',
       path: 'https://join.michal-galas.de/index.html',
-      github: 'https://github.com/GalasMichal/Join',
+      github: 'https://github.com/GalasMichal/Join-',
       number: '01',
     },
     {
