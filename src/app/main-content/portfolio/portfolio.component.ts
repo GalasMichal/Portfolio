@@ -17,7 +17,7 @@ export class PortfolioComponent {
       stack: 'JavaScript | HTML | CSS | Firebase',
       about:
         'Task Manager nach dem Kanban-Prinzip. Aufgaben per Drag-and-Drop erstellen und organisieren, Benutzer und Kategorien zuweisen.',
-      path: 'https://michal-galas.developerakademie.net/Join/index.html',
+      path: 'https://join.michal-galas.de/index.html',
       github: 'https://github.com/GalasMichal/Join',
       number: '01',
     },
@@ -27,7 +27,7 @@ export class PortfolioComponent {
       stack: 'JavaScript | HTML | CSS',
       about:
         'Ein einfaches Jump-and-Run-Spiel, das auf objektorientierter Programmierung basiert. Hilf Sharkie, Münzen und Giftflaschen zu finden, um gegen den Killerwal zu kämpfen.',
-      path: 'https://michal-galas.developerakademie.net/Sharkie/index.html',
+      path: 'https://sharkie.michal-galas.de/index.html',
       github: 'https://github.com/GalasMichal/Sharkie',
       number: '02',
     },
