@@ -1,9 +1,11 @@
 @import './../../../../styles.scss';
 
+
+
 section {
     background-color: $black;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     color: $white;
     height: 100%;
@@ -11,7 +13,7 @@ section {
     width: 100%;
     max-width: 1440rem;
     flex-direction: column;
-    padding-bottom: 20rem;
+    padding-bottom: 10rem;
 }
 
 .copy-right {

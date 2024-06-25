@@ -53,9 +53,9 @@
 
                 @if(!checkboxState && message.valid && email.valid && name.valid){
                 <span class="fontOverpass feedback-container not-checked-msg">You must agree to the privacy
-                    policy</span>
+                    policy  {{checkboxState | json}}</span>
                 }
-
+                
             </div>
 
             <button class="submit" type="submit" value="Submit" [disabled]="!contactForm.form.valid || !checkboxState">
