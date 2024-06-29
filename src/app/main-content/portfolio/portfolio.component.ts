@@ -16,7 +16,7 @@ export class PortfolioComponent {
       img: 'join.png',
       stack: 'JavaScript | HTML | CSS | Firebase',
       about:
-        'Task Manager nach dem Kanban-Prinzip. Aufgaben per Drag-and-Drop erstellen und organisieren, Benutzer und Kategorien zuweisen.',
+        'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       path: 'https://join.michal-galas.de/index.html',
       github: 'https://github.com/GalasMichal/Join-',
       number: '01',
@@ -26,17 +26,17 @@ export class PortfolioComponent {
       img: 'sharkie.png',
       stack: 'JavaScript | HTML | CSS',
       about:
-        'Ein einfaches Jump-and-Run-Spiel, das auf objektorientierter Programmierung basiert. Hilf Sharkie, Münzen und Giftflaschen zu finden, um gegen den Killerwal zu kämpfen.',
+        'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.',
       path: 'https://sharkie.michal-galas.de/index.html',
       github: 'https://github.com/GalasMichal/Sharkie',
       number: '02',
     },
   ];
-  
+
   isAnimating = false;
 
   startAnimation() {
     this.isAnimating = true;
-    
+
   }
 }

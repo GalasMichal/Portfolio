@@ -1,17 +1,17 @@
 <section>
     <h1 class="fontSyne">Say Hi!</h1>
     <div>
-        <div class="fontOverpass mobile-contact-upper">Möchtest du über ein neues Projekt sprechen?</div>
-        <div class="fontOverpass mobile-contact-lower">Hallo! Lass uns deine Ideen besprechen und umsetzen!</div>
+        <div class="fontOverpass mobile-contact-upper">Want to discuss a new project?</div>
+        <div class="fontOverpass mobile-contact-lower">Say hello! let's discuss your ideas and make it happen</div>
         <form class="contact-div" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
             <div>
                 <label for="name">Name</label>
                 <input #name="ngModel" minlength="2" [(ngModel)]="contactData.name" type="text" name="name" id="name"
-                    placeholder="Dein Name.." required>
+                    placeholder="Your name..." required>
 
                 @if (!name.valid && name.touched ) {
-                <span class="feedback-container fontOverpass">Bitte gib deinen Namen ein.</span>
+                <span class="feedback-container fontOverpass">Your name is required</span>
                 <img class="feedback-icon shake-horizontal icon-red" src="assets/img/icons/warn.png" alt="warning img">
                 }
                 @if(name.valid){
@@ -22,10 +22,10 @@
             <div>
                 <label for="email">Email</label>
                 <input #email="ngModel" type="email" [(ngModel)]="contactData.email" name="email" id="email"
-                    placeholder="Dein Email..." required pattern="[a-zA-Z0-9.%+\-]+@[a-zA-Z0-9.\-]+.[a-zA-Z]{2,}">
+                    placeholder="Your email..." required pattern="[a-zA-Z0-9.%+\-]+@[a-zA-Z0-9.\-]+.[a-zA-Z]{2,}">
 
                 @if (!email.valid && email.touched) {
-                <span class="feedback-container fontOverpass">Bitte gib eine E-Mail-Adresse ein.</span>
+                <span class="feedback-container fontOverpass">Your email is required</span>
                 <img class="feedback-icon shake-horizontal icon-red" src="assets/img/icons/warn.png" alt="warning img">
                 }
                 @if(email.valid){
@@ -36,7 +36,7 @@
             <div class="message">
                 <label for="message">Subject</label>
                 <textarea #message="ngModel" name="message" minlength="4" [(ngModel)]="contactData.message" id="message"
-                    placeholder="Deine Nachricht" required></textarea>
+                    placeholder="Your message is empty" required></textarea>
 
                 @if (!message.valid && message.touched) {
                 <span class="feedback-container fontOverpass">Bitte gib eine Nachricht ein </span>
@@ -48,14 +48,14 @@
             </div>
             <div class="checkbox fontOverpass">
                 <input [(ngModel)]="checkboxState" type="checkbox" name="agree" id="agree" required>
-                <label class="label" for="agree">Ich habe die <a class="privacy" href="/privacy-policy">Datenschutzrichtlinie</a>
-                    gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu</label>
+                <label class="label" for="agree">I've read the <a class="privacy" href="/privacy-policy">privacy policy</a>
+                    gelesen and agree to the processing of my data as outlined.</label>
 
                 @if(!checkboxState && message.valid && email.valid && name.valid){
                 <span class="fontOverpass feedback-container not-checked-msg">You must agree to the privacy
                     policy  {{checkboxState | json}}</span>
                 }
-                
+
             </div>
 
             <button class="submit" type="submit" value="Submit" [disabled]="!contactForm.form.valid || !checkboxState">
