@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { ProjectComponent } from './project/project/project.component';
 import { CommonModule } from '@angular/common';
+import { TranlateModule } from '../../tranlate/tranlate.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [ProjectComponent, CommonModule],
+  imports: [ProjectComponent, CommonModule, TranlateModule, HttpClientModule],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss',
 })

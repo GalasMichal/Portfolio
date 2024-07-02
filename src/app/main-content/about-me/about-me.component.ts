@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { TranlateModule } from '../../translate/translate.module';
+import { HttpClientModule } from '@angular/common/http';
+import { TranlateModule } from '../../tranlate/tranlate.module';
 
 @Component({
   selector: 'app-about-me',
   standalone: true,
-  imports: [TranlateModule],
+  imports: [HttpClientModule, TranlateModule],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss'
 })
@@ -15,6 +16,6 @@ export class AboutMeComponent {
     this.translate.setDefaultLang('en'); // Standardmäßig eingestellte Sprache
 
     // Optional: Sprache ändern (Beispiel: auf Deutsch)
-    this.translate.use('de');
+    // this.translate.use('de');
   }
 }

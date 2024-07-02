@@ -1,7 +1,7 @@
 <section>
     <div class="title">
-        <h1 class="fontSyne">Portfolio</h1>
-        <p class="fontOverpass">Explore a selection of my work here - Interact with projects to see my skills in action.
+        <h1 class="fontSyne">{{ 'HEADER_PORTFOLIO' | translate }}</h1>
+        <p class="fontOverpass"> {{ 'PORTFOLIO_DESCRYPTION' | translate }}
         </p>
     </div>
     @for (singleProject of projects; track singleProject.title; let i = $index) {
