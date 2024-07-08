@@ -11,6 +11,9 @@
 
   "HEADER_PORTFOLIO": "Portfolio",
   "PORTFOLIO_DESCRYPTION": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+  "GREET": "Say Hi!",
+  "CONTACT_UPPER_TEXT": "Want to discuss a new project?",
+  "CONTACT_LOWER_TEXT": "Say hello! let's discuss your ideas and make it happen",
   "about0": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
   "about1": "A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale."
 }
