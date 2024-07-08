@@ -1,8 +1,8 @@
 <section>
-    <h1 class="fontSyne">Say Hi!</h1>
+    <h1 class="fontSyne">{{ 'GREET' | translate }}h1>
     <div>
-        <div class="fontOverpass mobile-contact-upper">Want to discuss a new project?</div>
-        <div class="fontOverpass mobile-contact-lower">Say hello! let's discuss your ideas and make it happen</div>
+        <div class="fontOverpass mobile-contact-upper"> {{ 'CONTACT_UPPER_TEXT' | translate }} </div>
+        <div class="fontOverpass mobile-contact-lower"> {{ 'CONTACT_LOWER_TEXT'| translate}} </div>
         <form class="contact-div" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
             <div>
