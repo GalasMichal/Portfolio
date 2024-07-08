@@ -6,9 +6,9 @@
     </div>
     @for (singleProject of projects; track singleProject.title; let i = $index) {
     @if(i % 2 !== 0){
-    <app-project [projects]="singleProject" [flexDirection]="'row-reverse'"></app-project>
+    <app-project [projects]="singleProject" [projectDescryption]="'about' + i" [flexDirection]="'row-reverse'"></app-project>
     }@else {
-    <app-project [projects]="singleProject"></app-project>
+    <app-project [projects]="singleProject" [projectDescryption]="'about' + i"></app-project>
     }
     }
 

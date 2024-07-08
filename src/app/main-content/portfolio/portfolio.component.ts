@@ -17,8 +17,6 @@ export class PortfolioComponent {
       title: 'Join',
       img: 'join.png',
       stack: 'JavaScript | HTML | CSS | Firebase',
-      about:
-        'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       path: 'https://join.michal-galas.de/index.html',
       github: 'https://github.com/GalasMichal/Join-',
       number: '01',
@@ -27,8 +25,6 @@ export class PortfolioComponent {
       title: 'Sharkie',
       img: 'sharkie.png',
       stack: 'JavaScript | HTML | CSS',
-      about:
-        'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.',
       path: 'https://sharkie.michal-galas.de/index.html',
       github: 'https://github.com/GalasMichal/Sharkie',
       number: '02',
