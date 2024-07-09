@@ -12,10 +12,5 @@ import { TranlateModule } from '../../tranlate/tranlate.module';
 })
 export class AboutMeComponent {
 
-  constructor(private translate: TranslateService) {
-    this.translate.setDefaultLang('en'); // Standardmäßig eingestellte Sprache
-
-    // Optional: Sprache ändern (Beispiel: auf Deutsch)
-    // this.translate.use('de');
-  }
+ 
 }

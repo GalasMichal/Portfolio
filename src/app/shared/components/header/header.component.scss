@@ -33,6 +33,19 @@ section {
     }
 }
 
+.right-content{
+  display: flex;
+  gap: 20rem;
+  align-items: center;
+  >img{
+    width: 35rem;
+    height: 25rem;
+    &:hover{
+      scale: 1.2;
+    }
+  }
+}
+
 .burger-menu {
     width: 45rem;
     height: 40rem;
@@ -171,7 +184,7 @@ section {
     .menu {
         font-size: 75rem;
     }
-   
+
 
     .navbar {
         padding: 10rem 0rem !important;

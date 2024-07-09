@@ -1,18 +1,21 @@
 <section>
 
-    <nav class="navbar container">
-        <img class="logo" src="assets/img/logo.png" alt="logo">
-        <div (click)="isMenuOpen = !isMenuOpen" [ngClass]="{'burger-icon-animate': isMenuOpen}" class="burger-menu"></div>
-
-    </nav>
-
-    <div (click)="closeMenu()" [ngClass]="{'menu-container': isMenuOpen}">
-        <div  [ngClass]="{'menu': isMenuOpen, 'menu-animate': isMenuOpen, 'menu-animate-close': !isMenuOpen}" class="fontSyne">
-            @for (item of menu; track item.name; let index = $index) {
-             <a href="{{ item.path }}"  class="animate">{{ item.name }}</a>
-            }
-         </div>
+  <nav class="navbar container">
+    <img class="logo" src="assets/img/logo.png" alt="logo">
+    <div class="right-content">
+      <img src="assets/img/icons/de.png" alt="Deutsch" (click)="changeLanguage('de')">
+      <img src="assets/img/icons/gb.png" alt="English" (click)="changeLanguage('en')">
+      <div (click)="isMenuOpen = !isMenuOpen" [ngClass]="{'burger-icon-animate': isMenuOpen}" class="burger-menu"></div>
     </div>
+  </nav>
+
+  <div (click)="closeMenu()" [ngClass]="{'menu-container': isMenuOpen}">
+    <div [ngClass]="{'menu': isMenuOpen, 'menu-animate': isMenuOpen, 'menu-animate-close': !isMenuOpen}"
+      class="fontSyne">
+      @for (item of menu; track item.name; let index = $index) {
+      <a href="{{ item.path }}" class="animate">{{ item.name }}</a>
+      }
+    </div>
+  </div>
 
 </section>
-
