@@ -1,68 +1,67 @@
 <section>
-    <h1 class="fontSyne">{{ 'GREET' | translate }}h1>
-    <div>
-        <div class="fontOverpass mobile-contact-upper"> {{ 'CONTACT_UPPER_TEXT' | translate }} </div>
-        <div class="fontOverpass mobile-contact-lower"> {{ 'CONTACT_LOWER_TEXT'| translate}} </div>
-        <form class="contact-div" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+  <h1 class="fontSyne">{{ 'GREET' | translate }}</h1>
+  <div>
+    <div class="fontOverpass mobile-contact-upper"> {{ 'CONTACT_UPPER_TEXT' | translate }} </div>
+    <div class="fontOverpass mobile-contact-lower"> {{ 'CONTACT_LOWER_TEXT'| translate}} </div>
+    <form class="contact-div" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
-            <div>
-                <label for="name">Name</label>
-                <input #name="ngModel" minlength="2" [(ngModel)]="contactData.name" type="text" name="name" id="name"
-                    placeholder="Your name..." required>
+      <div>
+        <label for="name">Name</label>
+        <input #name="ngModel" minlength="2" [(ngModel)]="contactData.name" type="text" name="name" id="name"
+          placeholder=" {{ 'PLACEHOLDER_NAME'| translate }}" required>
 
-                @if (!name.valid && name.touched ) {
-                <span class="feedback-container fontOverpass">Your name is required</span>
-                <img class="feedback-icon shake-horizontal icon-red" src="assets/img/icons/warn.png" alt="warning img">
-                }
-                @if(name.valid){
-                <img class="feedback-icon" src="assets/img/icons/correct.png" alt="correctImg">
-                }
-            </div>
+        @if (!name.valid && name.touched ) {
+        <span class="feedback-container fontOverpass"> {{ 'PLACEHOLDER_NAME_WARN' | translate }}</span>
+        <img class="feedback-icon shake-horizontal icon-red" src="assets/img/icons/warn.png" alt="warning img">
+        }
+        @if(name.valid){
+        <img class="feedback-icon" src="assets/img/icons/correct.png" alt="correctImg">
+        }
+      </div>
 
-            <div>
-                <label for="email">Email</label>
-                <input #email="ngModel" type="email" [(ngModel)]="contactData.email" name="email" id="email"
-                    placeholder="Your email..." required pattern="[a-zA-Z0-9.%+\-]+@[a-zA-Z0-9.\-]+.[a-zA-Z]{2,}">
+      <div>
+        <label for="email">Email</label>
+        <input #email="ngModel" type="email" [(ngModel)]="contactData.email" name="email" id="email"
+          placeholder="{{ 'PLACEHOLDER_EMAIL' | translate}}" required pattern="[a-zA-Z0-9.%+\-]+@[a-zA-Z0-9.\-]+.[a-zA-Z]{2,}">
 
-                @if (!email.valid && email.touched) {
-                <span class="feedback-container fontOverpass">Your email is required</span>
-                <img class="feedback-icon shake-horizontal icon-red" src="assets/img/icons/warn.png" alt="warning img">
-                }
-                @if(email.valid){
-                <img class="feedback-icon" src="assets/img/icons/correct.png" alt="correctImg">
-                }
-            </div>
+        @if (!email.valid && email.touched) {
+        <span class="feedback-container fontOverpass">{{ 'PLACEHOLDER_EMAIL_WARN' | translate }}</span>
+        <img class="feedback-icon shake-horizontal icon-red" src="assets/img/icons/warn.png" alt="warning img">
+        }
+        @if(email.valid){
+        <img class="feedback-icon" src="assets/img/icons/correct.png" alt="correctImg">
+        }
+      </div>
 
-            <div class="message">
-                <label for="message">Subject</label>
-                <textarea #message="ngModel" name="message" minlength="4" [(ngModel)]="contactData.message" id="message"
-                    placeholder="Your message is empty" required></textarea>
+      <div class="message">
+        <label for="message">Subject</label>
+        <textarea #message="ngModel" name="message" minlength="4" [(ngModel)]="contactData.message" id="message"
+          placeholder="{{'PLACEHOLDER_MSG' | translate }}" required></textarea>
 
-                @if (!message.valid && message.touched) {
-                <span class="feedback-container fontOverpass">Bitte gib eine Nachricht ein </span>
-                <img class="feedback-icon shake-horizontal icon-red" src="assets/img/icons/warn.png" alt="warning img">
-                }
-                @if(message.valid){
-                <img class="feedback-icon icon-green" src="assets/img/icons/correct.png" alt="correctImg">
-                }
-            </div>
-            <div class="checkbox fontOverpass">
-                <input [(ngModel)]="checkboxState" type="checkbox" name="agree" id="agree" required>
-                <label class="label" for="agree">I've read the <a class="privacy" href="/privacy-policy">privacy policy</a>
-                    gelesen and agree to the processing of my data as outlined.</label>
+        @if (!message.valid && message.touched) {
+        <span class="feedback-container fontOverpass">{{ 'PLACEHOLDER_MSG_WARN' | translate }} </span>
+        <img class="feedback-icon shake-horizontal icon-red" src="assets/img/icons/warn.png" alt="warning img">
+        }
+        @if(message.valid){
+        <img class="feedback-icon icon-green" src="assets/img/icons/correct.png" alt="correctImg">
+        }
+      </div>
+      <div class="checkbox fontOverpass">
+        <input [(ngModel)]="checkboxState" type="checkbox" name="agree" id="agree" required>
+        <label class="label" for="agree">{{ 'CHECKBOX_TEXT_1' | translate }} <a class='privacy' href='/privacy-policy'> {{ 'PRIVACY_POLICY' | translate }}</a> {{ 'CHECKBOX_TEXT_2' | translate }}</label>
 
-                @if(!checkboxState && message.valid && email.valid && name.valid){
-                <span class="fontOverpass feedback-container not-checked-msg">You must agree to the privacy
-                    policy  {{checkboxState | json}}</span>
-                }
+        @if(!checkboxState && message.valid && email.valid && name.valid){
+        <span class="fontOverpass feedback-container not-checked-msg">You must agree to the privacy
+          policy {{checkboxState | json}}</span>
+        }
 
-            </div>
+      </div>
 
-            <button class="submit" type="submit" value="Submit" [disabled]="!contactForm.form.valid || !checkboxState">
-                Send message</button>
+      <button class="submit" type="submit" value="Submit" [disabled]="!contactForm.form.valid || !checkboxState">
+        {{ 'SEND_MSG' | translate }}</button>
 
-        </form>
-    </div>
+    </form>
+  </div>
 
 
 </section>

@@ -1,19 +1,21 @@
 <section>
-    <div class="upper-div ">
-        <div class="copy-right">
-            <img src="assets/img/logo.png" alt="">
-            <div>&copy; Michal Galas 2024 </div>
-        </div>
-        <div class="contact-links">
-            <div>
-                <a target="_blank" href="https://github.com/GalasMichal"><img class="slide-top" src="assets/img/icons/gitHub.png" alt="gitHubLogo"></a>
-                <a href="#contact"><img class="slide-top" src="assets/img/icons/mail.png" alt="mailLogo"></a>
-                <a target="_blank" href="https://www.linkedin.com/in/michal-galas-4239b1296/"><img class="slide-top" src="assets/img/icons/linkedIn.png" alt="linkedInLogo"></a>
-            </div>
-            
-            
-        </div>
+  <div class="upper-div ">
+    <div class="copy-right">
+      <img src="assets/img/logo.png" alt="">
+      <div>&copy; Michal Galas 2024 </div>
     </div>
-    <div [routerLink]="['/imprint']" class="privacy_policy">Legal notice</div>
+    <div class="contact-links">
+      <div>
+        <a target="_blank" href="https://github.com/GalasMichal"><img class="slide-top"
+            src="assets/img/icons/gitHub.png" alt="gitHubLogo"></a>
+        <a href="#contact"><img class="slide-top" src="assets/img/icons/mail.png" alt="mailLogo"></a>
+        <a target="_blank" href="https://www.linkedin.com/in/michal-galas-4239b1296/"><img class="slide-top"
+            src="assets/img/icons/linkedIn.png" alt="linkedInLogo"></a>
+      </div>
+
+
+    </div>
+  </div>
+  <div [routerLink]="['/imprint']" class="privacy_policy"> {{ 'BTN_IMPRINT' | translate }}</div>
 
 </section>

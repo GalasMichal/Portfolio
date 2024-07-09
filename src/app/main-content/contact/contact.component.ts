@@ -38,6 +38,8 @@ export class ContactComponent {
     },
   };
 
+  
+
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))

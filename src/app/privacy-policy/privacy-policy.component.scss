@@ -2,78 +2,79 @@
 
 
 section {
-    background-color: $white;
-    width: 100%;
-    padding: 0 100rem;
-    color: $black;
-    margin-bottom: 50rem;
+  background-color: $white;
+  width: 100%;
+  padding: 0 100rem;
+  color: $black;
+  margin-bottom: 50rem;
 }
 
 
-.privacy-policy h1 {
-    font-size: 48rem;
-    margin-bottom: 50rem;
+::ng-deep h1 {
+  font-size: 48rem;
+  margin-bottom: 50rem;
 
 }
 
-.privacy-policy h2 {
-    font-size: 36rem;
-    margin-bottom: 8rem;
+::ng-deep h2 {
+  font-size: 36rem;
+  margin-bottom: 8rem;
 
 }
 
-.privacy-policy h3 {
-    font-size: 30rem;
-    margin-bottom: 6rem;
+::ng-deep h3 {
+  font-size: 30rem;
+  margin-bottom: 6rem;
 
 }
 
-.privacy-policy p {
-    font-size: 26rem;
-    margin-bottom: 10rem;
+::ng-deep p {
+  font-size: 26rem;
+  margin-bottom: 10rem;
 }
 
-.privacy-policy ul {
-    font-size: 18rem;
-    margin-bottom: 10rem;
-    padding-left: 20rem;
+::ng-deep ul {
+  font-size: 18rem;
+  margin-bottom: 10rem;
+  padding-left: 20rem;
 }
 
-.privacy-policy li {
-    margin-bottom: 20rem;
+::ng-deep li {
+  margin-bottom: 20rem;
 }
 
 @media (max-width: 650px) {
-    .privacy-policy h1 {
-        font-size: 36rem;
-        margin-bottom: 50rem;
-    
-    }
-    
-    .privacy-policy h2 {
-        font-size: 26rem;
-        margin-bottom: 4rem;
-    
-    }
-    
-    .privacy-policy h3 {
-        font-size: 20rem;
-        margin-bottom: 3rem;
-    
-    }
-    
-    .privacy-policy p {
-        font-size: 16rem;
-        margin-bottom: 5rem;
-    }
-    
-    .privacy-policy ul {
-        font-size: 12rem;
-        margin-bottom: 5rem;
-        padding-left: 10rem;
-    }
-    
-    .privacy-policy li {
-        margin-bottom: 10rem;
-    }
+
+  ::ng-deep h1 {
+    font-size: 36rem;
+    margin-bottom: 50rem;
+
+  }
+
+  ::ng-deep h2 {
+    font-size: 26rem;
+    margin-bottom: 4rem;
+
+  }
+
+  ::ng-deep h3 {
+    font-size: 20rem;
+    margin-bottom: 3rem;
+
+  }
+
+  ::ng-deep p {
+    font-size: 16rem;
+    margin-bottom: 5rem;
+  }
+
+  ::ng-deep ul {
+    font-size: 12rem;
+    margin-bottom: 5rem;
+    padding-left: 10rem;
+  }
+
+  ::ng-deep li {
+    margin-bottom: 10rem;
+  }
 }

@@ -14,6 +14,19 @@
   "GREET": "Say Hi!",
   "CONTACT_UPPER_TEXT": "Want to discuss a new project?",
   "CONTACT_LOWER_TEXT": "Say hello! let's discuss your ideas and make it happen",
+  "PLACEHOLDER_NAME": "Your name...",
+  "PLACEHOLDER_NAME_WARN": "Your name is required",
+  "PLACEHOLDER_EMAIL": "Your email...",
+  "PLACEHOLDER_EMAIL_WARN": "Your email is required",
+  "PLACEHOLDER_MSG": "Your message...",
+  "PLACEHOLDER_MSG_WARN": "Your message is empty",
+  "CHECKBOX_TEXT_1": "I've read the",
+  "CHECKBOX_TEXT_2": "and agree to the processing of my data as outlined.",
   "about0": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-  "about1": "A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale."
+  "about1": "A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.",
+  "PRIVACY_POLICY": "privacy policy",
+  "SEND_MSG": "Send message",
+  "BTN_IMPRINT": "Legal notice",
+  "IMPRINT_TEXT": "<h1>Imprint</h1><h2>Information according to § 5 TMG</h2><h3>Michal Galas</h3><h2>Mailing Address:<span>09648 Mittweida</span><span>Topfseifersdorfer Straße 31</span></h2><h3><span>Phone: 015224610296</span><span>Email: contact&#64;michal-galas.de</span></h3>",
+  "PRIVACY_POLICY_HTML": "<h1>Privacy Policy</h1> <h2>Welcome to My Website</h2> <p>Protecting your personal data is important to me. This privacy policy describes how I collect, use, and protect your data.</p> <h2>Contact Form</h2> <p>When you use the contact form on my website, the data you provide (name, email address, and message) is used solely for the purpose of contacting you. This data will not be shared with third parties.</p> <h2>Use of Data</h2> <p>The collected data is used exclusively for the following purposes:</p> <ul> <li>Contacting and responding to your inquiries.</li> <li>Registration and use of the project pages.</li> </ul> <h2>Project Pages</h2> <h3>Join Projekt</h3> <p>This is a task manager modeled after a Kanban board. There is an option for registration, login, and guest access. These data are only for demo purposes to view the project.</p> <h3>Sharkie</h3> <p>A game developed in JavaScript. No registration is required here.</p> <h2>Sharing of Data</h2> <p>Your personal data will not be shared with third parties unless required by law.</p> <h2>Reference to German Law</h2> <p>This privacy policy refers to the legal provisions of the German Data Protection Act (GDPR).</p> <p>If you have any questions or concerns about data protection, you can contact me via email at <a href='mailto:contact@michal-galas.de'>contact@michal-galas.de</a>.</p>"
 }
