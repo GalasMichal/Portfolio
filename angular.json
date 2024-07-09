@@ -31,12 +31,15 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/fonts.scss"
+              "src/fonts.scss",
+              "node_modules/aos/dist/aos.css"
             ],
-            "scripts": [],
-            
+            "scripts": [
+              "node_modules/aos/dist/aos.js"
+            ],
+
             "prerender": false
-            
+
           },
           "configurations": {
             "production": {
