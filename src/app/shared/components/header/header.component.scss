@@ -6,6 +6,7 @@ section {
     align-items: center;
     justify-content: center;
     padding: 0 100rem;
+    background-color: $white;
 }
 
 .menu-container {
@@ -128,7 +129,6 @@ section {
 .menu {
     max-width: 580rem;
     width: 100%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -204,13 +204,15 @@ section {
     .navbar {
         padding: 10rem 0rem !important;
     }
+
+    .logo {
+      width: 86px !important;
+      height: 29px !important;
+  }
 }
 
 @media (max-width: 320px) {
-    .logo {
-        width: 86px !important;
-        height: 29px !important;
-    }
+
 
     .menu {
         font-size: 45rem;

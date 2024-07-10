@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { ProjectComponent } from './project/project/project.component';
 import { CommonModule } from '@angular/common';
-import { TranlateModule } from '../../tranlate/tranlate.module';
-import { HttpClientModule } from '@angular/common/http';
+import { TranslateModule } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [ProjectComponent, CommonModule, TranlateModule, HttpClientModule],
+  imports: [ProjectComponent, CommonModule, TranslateModule],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss',
 })

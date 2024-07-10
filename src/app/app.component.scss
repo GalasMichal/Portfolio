@@ -1,4 +1,6 @@
 
+
+
 html, body {
     height: 100%;
     margin: 0;
@@ -14,10 +16,13 @@ html, body {
   #header {
     height: 92rem;
     width: 100%;
+    max-width: 1440px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
   }
 
   #footer {
-
     width: 100%;
   }
 

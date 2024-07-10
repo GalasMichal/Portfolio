@@ -1,12 +1,12 @@
 import { Component, inject } from '@angular/core';
 import { SkillsService } from '../../shared/services/skills/skills.service';
-import { TranlateModule } from '../../tranlate/tranlate.module';
-import { HttpClientModule } from '@angular/common/http';
+import { TranslateModule } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-my-skills',
   standalone: true,
-  imports: [TranlateModule, HttpClientModule],
+  imports: [TranslateModule],
   templateUrl: './my-skills.component.html',
   styleUrl: './my-skills.component.scss',
 })

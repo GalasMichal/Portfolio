@@ -1,7 +1,7 @@
 @import './../../../styles.scss';
 
 .content-div {
-    
+
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -58,6 +58,7 @@ section{
 
 .scroll-down-box {
     margin-top: 75rem !important;
+    
 }
 
 .name {
@@ -109,7 +110,7 @@ section{
     }
 }
 
- 
+
 
 @media (max-width: 950px){
     .upper-text,
@@ -126,8 +127,8 @@ section{
 
 @media (max-width: 852px){
 
-    
-   
+
+
 
     .upper-text,
     .lower-text {
@@ -170,7 +171,7 @@ section{
         line-height: 25.6rem;
     }
 
-   
+
 
     .upper-text,
     .lower-text {

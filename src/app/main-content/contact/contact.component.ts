@@ -1,16 +1,17 @@
 import { CommonModule } from '@angular/common';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm, } from '@angular/forms';
 import { RouterModule, RouterOutlet } from '@angular/router';
-import { TranlateModule } from '../../tranlate/tranlate.module';
+import { TranslateModule } from '@ngx-translate/core';
+
 
 
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, CommonModule, RouterModule, RouterOutlet, TranlateModule, HttpClientModule],
+  imports: [FormsModule, CommonModule, RouterModule, RouterOutlet, TranslateModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -38,7 +39,7 @@ export class ContactComponent {
     },
   };
 
-  
+
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid) {

@@ -22,7 +22,7 @@
       <div>
         <label for="email">Email</label>
         <input #email="ngModel" type="email" [(ngModel)]="contactData.email" name="email" id="email"
-          placeholder="{{ 'PLACEHOLDER_EMAIL' | translate}}" required pattern="[a-zA-Z0-9.%+\-]+@[a-zA-Z0-9.\-]+.[a-zA-Z]{2,}">
+          placeholder="{{ 'PLACEHOLDER_EMAIL' | translate}}" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
 
         @if (!email.valid && email.touched) {
         <span class="feedback-container fontOverpass">{{ 'PLACEHOLDER_EMAIL_WARN' | translate }}</span>

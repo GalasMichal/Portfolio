@@ -1,19 +1,11 @@
-import { HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { TranlateModule } from '../../tranlate/tranlate.module';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-above-the-fold',
   standalone: true,
-  imports: [HttpClientModule, TranlateModule],
+  imports: [TranslateModule],
   templateUrl: './above-the-fold.component.html',
-  styleUrl: './above-the-fold.component.scss'
+  styleUrl: './above-the-fold.component.scss',
 })
-export class AboveTheFoldComponent {
-
-
-
-
-
-
-}
+export class AboveTheFoldComponent {}
