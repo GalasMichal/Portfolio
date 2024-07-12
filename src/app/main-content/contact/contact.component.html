@@ -54,7 +54,7 @@
 
         @if(!checkboxState && message.valid && email.valid && name.valid){
         <span class="fontOverpass feedback-container not-checked-msg">You must agree to the privacy
-          policy {{checkboxState | json}}</span>
+          policy</span>
         }
 
       </div>
@@ -64,7 +64,7 @@
 
     </form>
 
-    <div [ngStyle]="{'display': showMessage ? 'block' : 'none'}" class="success-message">
+    <div [ngStyle]="{'display': showMessage ? 'block' : 'none'}" class="success-message roll-out-blurred-left">
       {{ 'EMAIL_SUCCESS_MSG' | translate }}
     </div>
   </div>
