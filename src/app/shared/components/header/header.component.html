@@ -9,7 +9,7 @@
     </div>
   </nav>
 
-  <div (click)="closeMenu()" [ngClass]="{'menu-container': isMenuOpen}">
+  <div (click)="closeMenu()" [ngClass]="{'menu-container': isMenuOpen}" [ngStyle]="{'display': isMenuOpen ? 'flex' : 'none'}">
     <div [ngClass]="{'menu': isMenuOpen, 'menu-animate': isMenuOpen, 'menu-animate-close': !isMenuOpen}"
       class="fontSyne">
       @for (item of menu; track item.name; let index = $index) {

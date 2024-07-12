@@ -1,6 +1,6 @@
 <section>
   <h1 class="fontSyne">{{ 'GREET' | translate }}</h1>
-  <div>
+  <div class="main-content">
     <div class="fontOverpass mobile-contact-upper"> {{ 'CONTACT_UPPER_TEXT' | translate }} </div>
     <div class="fontOverpass mobile-contact-lower"> {{ 'CONTACT_LOWER_TEXT'| translate}} </div>
     <form class="contact-div" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
@@ -22,7 +22,8 @@
       <div>
         <label for="email">Email</label>
         <input #email="ngModel" type="email" [(ngModel)]="contactData.email" name="email" id="email"
-          placeholder="{{ 'PLACEHOLDER_EMAIL' | translate}}" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+          placeholder="{{ 'PLACEHOLDER_EMAIL' | translate}}" required
+          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
 
         @if (!email.valid && email.touched) {
         <span class="feedback-container fontOverpass">{{ 'PLACEHOLDER_EMAIL_WARN' | translate }}</span>
@@ -48,7 +49,8 @@
       </div>
       <div class="checkbox fontOverpass">
         <input [(ngModel)]="checkboxState" type="checkbox" name="agree" id="agree" required>
-        <label class="label" for="agree">{{ 'CHECKBOX_TEXT_1' | translate }} <a class='privacy' href='/privacy-policy'> {{ 'PRIVACY_POLICY' | translate }}</a> {{ 'CHECKBOX_TEXT_2' | translate }}</label>
+        <label class="label" for="agree">{{ 'CHECKBOX_TEXT_1' | translate }} <a class='privacy' href='/privacy-policy'>
+            {{ 'PRIVACY_POLICY' | translate }}</a> {{ 'CHECKBOX_TEXT_2' | translate }}</label>
 
         @if(!checkboxState && message.valid && email.valid && name.valid){
         <span class="fontOverpass feedback-container not-checked-msg">You must agree to the privacy
@@ -61,7 +63,10 @@
         {{ 'SEND_MSG' | translate }}</button>
 
     </form>
-  </div>
 
+    <div [ngStyle]="{'display': showMessage ? 'block' : 'none'}" class="success-message">
+      {{ 'EMAIL_SUCCESS_MSG' | translate }}
+    </div>
+  </div>
 
 </section>

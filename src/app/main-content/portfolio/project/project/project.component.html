@@ -1,14 +1,15 @@
 <section [style.flex-direction]="flexDirection" [ngClass]="{'odd': isOdd, 'even': !isOdd}">
-    <div class="project-view">
-        <img src="assets/img/projects/{{ projects.img }}" alt="img">
-        <a target="_blank" href="{{ projects.path }}" class="view-border"><img src="assets/img/icons/blackArrow.svg" alt="" srcset=""></a>
-    </div>
-    <div class="about">
+  <div class="project-view">
+    <img src="assets/img/projects/{{ projects.img }}" alt="img">
+    <a target="_blank" href="{{ projects.path }}" class="view-border"><img src="assets/img/icons/blackArrow.svg" alt=""
+        srcset=""></a>
+  </div>
+  <div class="about" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
 
-        <h1 class="fontSyne"> {{ projects.title }} </h1>
-        <p class="stack fontOverpass">{{ projects.stack }}</p>
-        <p class="description fontOverpass"> {{ projectDescryption | translate }} </p>
-        <a [href]="projects.github" target="_blank"><button class="fontOverpass">Github</button></a>
+    <h1 class="fontSyne"> {{ projects.title }} </h1>
+    <p class="stack fontOverpass">{{ projects.stack }}</p>
+    <p class="description fontOverpass"> {{ projectDescryption | translate }} </p>
+    <a [href]="projects.github" target="_blank"><button class="fontOverpass">Github</button></a>
 
-    </div>
+  </div>
 </section>

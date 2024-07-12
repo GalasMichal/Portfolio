@@ -11,34 +11,59 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 })
 export class HeaderComponent {
   isMenuOpen = false;
+  menu: { name: string; path: string }[] = [];
+
+  constructor(private translate: TranslateService) {
+    this.translate.setDefaultLang('en');
+  }
 
   closeMenu() {
     this.isMenuOpen = false;
   }
 
-  menu = [
+  ngOnInit() {
+    this.setMenuItems1();
+    this.translate.onLangChange.subscribe(() => {
+      this.setMenuItems();
+    });
+  }
+
+  setMenuItems1(){
+    this.menu = [
+      {
+        name: 'About me',
+        path: '#about-me',
+      },
+      {
+        name: 'My skills',
+        path: '#my-skills',
+      },
+      {
+        name: 'Portfolio',
+        path: '#portfolio',
+      },
+    ];
+  }
+
+  setMenuItems() {
+  this.menu = [
     {
-      name: 'About me',
+      name: this.translate.instant('ABOUTME'),
       path: '#about-me',
     },
-
     {
-      name: 'My skills',
+      name: this.translate.instant('MY_SKILLS'),
       path: '#my-skills',
     },
-
     {
       name: 'Portfolio',
       path: '#portfolio',
     },
   ];
-
-  constructor(private translate: TranslateService) {
-    this.translate.setDefaultLang('de');
-    this.translate.get('ABOUTME').subscribe((res: string) => {
-      console.log('Translation for ABOUTME:', res);
-    });
   }
+
+
+
 
   changeLanguage(language: string) {
     console.log('Changing language to:', language);

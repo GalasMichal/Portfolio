@@ -11,7 +11,7 @@
 
   "HEADER_PORTFOLIO": "Portfolio",
   "PORTFOLIO_DESCRYPTION": "Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
-  "GREET": "Sag Hallo!",
+  "GREET": "Say Hi!",
   "CONTACT_UPPER_TEXT": "Möchten Sie ein neues Projekt besprechen?",
   "CONTACT_LOWER_TEXT": "Sagen Sie Hallo! Lassen Sie uns Ihre Ideen besprechen und sie umsetzen",
   "PLACEHOLDER_NAME": "Ihr Name...",
@@ -28,5 +28,6 @@
   "SEND_MSG": "Nachricht senden",
   "BTN_IMPRINT": "Impressum",
   "IMPRINT_TEXT": "<h1>Impressum</h1><h2>Angaben gemäß § 5 TMG</h2><h3>Michal Galas</h3><h2>Postanschrift:<span>09648 Mittweida</span><span>Topfseifersdorfer Straße 31</span></h2><h3><span>Telefon: 015224610296</span><span>E-Mail: contact&#64;michal-galas.de</span></h3>",
+  "EMAIL_SUCCESS_MSG": "Ihre Nachricht wurde erfolgreich gesendet!",
   "PRIVACY_POLICY_HTML": "<h1>Datenschutzerklärung</h1> <h2>Willkommen auf meiner Website</h2> <p>Der Schutz Ihrer persönlichen Daten ist mir wichtig. Diese Datenschutzerklärung beschreibt, wie ich Ihre Daten sammle, verwende und schütze.</p> <h2>Kontaktformular</h2> <p>Wenn Sie das Kontaktformular auf meiner Website nutzen, werden die von Ihnen bereitgestellten Daten (Name, E-Mail-Adresse und Nachricht) ausschließlich zum Zwecke der Kontaktaufnahme verwendet. Diese Daten werden nicht an Dritte weitergegeben.</p> <h2>Verwendung der Daten</h2> <p>Die gesammelten Daten werden ausschließlich für folgende Zwecke verwendet:</p> <ul> <li>Kontaktaufnahme und Beantwortung Ihrer Anfragen.</li> <li>Registrierung und Nutzung der Projektseiten.</li> </ul> <h2>Projektseiten</h2> <h3>Join Projekt</h3> <p>Dies ist ein Task-Manager, der nach einem Kanban-Board modelliert ist. Es gibt eine Option zur Registrierung, Anmeldung und zum Gastzugang. Diese Daten dienen nur zu Demozwecken, um das Projekt zu sehen.</p> <h3>Sharkie</h3> <p>Ein Spiel, das in JavaScript entwickelt wurde. Hier ist keine Registrierung erforderlich.</p> <h2>Weitergabe der Daten</h2> <p>Ihre persönlichen Daten werden nicht an Dritte weitergegeben, es sei denn, dies ist gesetzlich vorgeschrieben.</p> <h2>Hinweis auf deutsches Recht</h2> <p>Diese Datenschutzerklärung bezieht sich auf die gesetzlichen Bestimmungen des deutschen Datenschutzgesetzes (DSGVO).</p> <p>Wenn Sie Fragen oder Bedenken zum Datenschutz haben, können Sie mich per E-Mail unter <a href='mailto:contact@michal-galas.de'>contact@michal-galas.de</a> kontaktieren.</p>"
 }

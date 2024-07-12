@@ -1,224 +1,240 @@
 @import '../../../../styles.scss';
 
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 100rem;
-    background-color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 100rem;
+  background-color: $white;
 }
 
 .menu-container {
-    width: 100%;
-    height: 100vh;
-    z-index: 5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $white;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
 }
 
 .navbar {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30rem 0;
-    box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rem 0;
+  box-sizing: border-box;
 
-    >img {
-        width: 40rem;
-        height: 32rem;
-    }
+  >img {
+    width: 40rem;
+    height: 32rem;
+  }
 }
 
-.right-content{
+.right-content {
   display: flex;
   gap: 20rem;
   align-items: center;
-  >img{
+
+  >img {
     width: 35rem;
     height: 25rem;
-    &:hover{
+
+    &:hover {
       scale: 1.2;
     }
   }
 }
 
 .burger-menu {
-    width: 45rem;
-    height: 40rem;
-    background-image: url('./../../../../assets/img/animated/burger1.png');
-    background-size: cover;
+  width: 45rem;
+  height: 40rem;
+  background-image: url('./../../../../assets/img/animated/burger1.png');
+  background-size: cover;
 }
 
 .burger-icon-animate {
-    animation: icon-animate 1s forwards;
-    z-index: 2;
+  animation: icon-animate 1s forwards;
+  z-index: 2;
 
-    background-size: cover;
+  background-size: cover;
 }
 
 @keyframes icon-animate {
-    0% {
-        background-image: url('./../../../../assets/img/animated/burger2.png');
-    }
+  0% {
+    background-image: url('./../../../../assets/img/animated/burger2.png');
+  }
 
-    15% {
-        background-image: url('./../../../../assets/img/animated/burger3.png');
-    }
+  15% {
+    background-image: url('./../../../../assets/img/animated/burger3.png');
+  }
 
-    35% {
-        background-image: url('./../../../../assets/img/animated/burger4.png');
-    }
+  35% {
+    background-image: url('./../../../../assets/img/animated/burger4.png');
+  }
 
-    50% {
-        background-image: url('./../../../../assets/img/animated/burger5.png');
-    }
+  50% {
+    background-image: url('./../../../../assets/img/animated/burger5.png');
+  }
 
-    65% {
-        background-image: url('./../../../../assets/img/animated/burger6.png');
-    }
+  65% {
+    background-image: url('./../../../../assets/img/animated/burger6.png');
+  }
 
-    80% {
-        background-image: url('./../../../../assets/img/animated/burger7.png');
-    }
+  80% {
+    background-image: url('./../../../../assets/img/animated/burger7.png');
+  }
 
-    100% {
-        background-image: url('./../../../../assets/img/animated/burger8.png');
-    }
+  100% {
+    background-image: url('./../../../../assets/img/animated/burger8.png');
+  }
 
 }
 
 .logo {
-    width: 110px !important;
-    height: 40px !important;
+  width: 110px !important;
+  height: 40px !important;
 }
 
 .menu-animate-close {
-    animation: min-height 50ms forwards;
+  animation: min-height 50ms forwards;
 }
 
 @keyframes min-height {
-    0% {
-        height: 100%;
-    }
+  0% {
+    height: 100%;
+  }
 
-    100% {
-        height: 0;
-    }
+  100% {
+    height: 0;
+  }
 }
 
 .menu-animate {
-    animation: max-height 125ms forwards;
+  animation: max-height 125ms forwards;
 }
 
 @keyframes max-height {
-    0% {
-        height: 0;
-    }
+  0% {
+    height: 0;
+  }
 
-    100% {
-        height: 100%;
-    }
+  100% {
+    height: 100%;
+  }
 }
 
 
-.menu {
-    max-width: 580rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 96rem;
-    font-weight: 700;
-    line-height: 96rem;
-    gap: 39rem;
+::ng-deep .menu {
+  max-width: 640rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 86rem;
+  font-weight: 700;
+  line-height: 96rem;
+  gap: 39rem;
 
 
 }
 
 .animate {
-    color: $black;
-    text-decoration: none;
-    width: 100%;
-    height: 167rem;
-    text-align: center;
-    background-image: url('./../../../../assets/img/animated/bg1.png');
+  color: $black;
+  text-decoration: none;
+  width: 100%;
+  height: 167rem;
+  text-align: center;
+  background-image: url('./../../../../assets/img/animated/bg1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    animation: bgAnimation 125ms forwards;
     background-repeat: no-repeat;
     background-size: contain;
-
-    &:hover {
-        animation: bgAnimation 125ms forwards;
-        background-repeat: no-repeat;
-        background-size: contain;
-        cursor: pointer;
-    }
+    cursor: pointer;
+  }
 }
 
 .clickbg {
-    background-image: url('./../../../../assets/img/animated/bg4.png') !important;
+  background-image: url('./../../../../assets/img/animated/bg4.png') !important;
 }
 
 @keyframes bgAnimation {
-    0% {
-        background-image: url('./../../../../assets/img/animated/bg1.png');
-    }
+  0% {
+    background-image: url('./../../../../assets/img/animated/bg1.png');
+  }
 
-    50% {
-        background-image: url('./../../../../assets/img/animated/bg2.png');
-    }
+  50% {
+    background-image: url('./../../../../assets/img/animated/bg2.png');
+  }
 
-    100% {
-        background-image: url('./../../../../assets/img/animated/bg3.png');
-    }
+  100% {
+    background-image: url('./../../../../assets/img/animated/bg3.png');
+  }
 
 
 }
 
 @media (max-width: 850px) {
 
-  section{
-    padding: 0 20rem!important;
+  section {
+    padding: 0 20rem !important;
+  }
+
+  .menu {
+    font-size: 65rem;
+    max-width: 490rem;
+  }
+
+
+  .navbar {
+    padding: 10rem 0rem !important;
+  }
 }
 
-    .menu {
-        font-size: 75rem;
-    }
-
-
-    .navbar {
-        padding: 10rem 0rem !important;
-    }
+@media (max-width: 550px) {
+  .menu {
+    font-size: 55rem;
+    max-width: 395rem;
+  }
+  .animate{
+    height: 110rem;
+  }
 }
 
 
 @media (max-width: 450px) {
-    .menu {
-        font-size: 55rem;
-    }
+  .menu {
+    font-size: 45rem;
+  }
 
-    .navbar {
-        padding: 10rem 0rem !important;
-    }
+  .navbar {
+    padding: 10rem 0rem !important;
+  }
 
-    .logo {
-      width: 86px !important;
-      height: 29px !important;
+  .logo {
+    width: 86px !important;
+    height: 29px !important;
   }
 }
 
 @media (max-width: 320px) {
 
 
-    .menu {
-        font-size: 45rem;
-    }
+  .menu {
+    font-size: 45rem;
+  }
 
-    .navbar {
-        padding: 10rem 0rem !important;
-    }
+  .navbar {
+    padding: 10rem 0rem !important;
+  }
 }

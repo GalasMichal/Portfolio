@@ -10,99 +10,105 @@ $light_green: #00BC8F;
 
 
 * {
-    border: unset;
-    box-sizing: border-box;
-    text-decoration: none;
+  border: unset;
+  box-sizing: border-box;
+  text-decoration: none;
 
 }
 
 body {
-    margin: 0;
-    background-color: $white;
-    height: auto;
-    margin: auto;
-    display: flex;
-    // overflow-x: hidden;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  margin: 0;
+  background-color: $white;
+  height: auto;
+  margin: auto;
+  display: flex;
+  // overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
 }
 
 app-privacy-policy {
-    width: 100%;
-    flex: 1;
+  width: 100%;
+  flex: 1;
 }
 
 app-imprint {
-    width: 100%;
-    flex: 1;
+  width: 100%;
+  flex: 1;
 }
 
 app-root {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    max-width: 1440rem;
-    width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 1440rem;
+  width: 100%;
 }
 
 
 
 html {
-    scroll-behavior: smooth;
-    font-size: 1px;
+  scroll-behavior: smooth;
+  font-size: 1px;
 }
 
 html,
 body {
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 
 @media (max-width: 1480px) {
-    html {
-        font-size: 0.9px;
-    }
+  html {
+    font-size: 0.9px;
+  }
 }
 
 @media (max-width: 1340px) {
 
-    section{
-        padding: 0 50rem!important;
-    }
+  section {
+    padding: 0 50rem !important;
+  }
 }
 
 
 
 @media (max-width: 1000px) {
-    html {
-        font-size: 0.9px;
-    }
+  html {
+    font-size: 0.9px;
+  }
 
-    section{
-        padding: 0 40rem!important;
-    }
+  section {
+    padding: 0 40rem !important;
+  }
 }
 
 @media (max-width: 850px) {
 
-    #above-the-fold {
-        display: block;
-        height: 100vh;
-    }
+  #above-the-fold {
+    display: block;
+    
+  }
 
 }
 
 @media (max-width: 750px) {
-    section{
-        padding: 0 20rem!important;
-    }
-    app-imprint{
-        padding: 0 20rem!important;
-    }
+  section {
+    padding: 0 20rem !important;
+  }
+
+  app-imprint {
+    margin-top: 100rem;
+    padding: 0 20rem !important;
+  }
+
+  app-privacy-policy {
+    margin-top: 100rem;
+  }
 
 }
 
@@ -111,22 +117,22 @@ body {
 
 @media (max-width: 450px) {
 
-    html {
-        font-size: 0.8px !important;
-    }
+  html {
+    font-size: 0.8px !important;
+  }
 
 
-    section {
-        padding: 0 20rem !important;
-    }
+  section {
+    padding: 0 20rem !important;
+  }
 
 }
 
 
 @media (max-width: 320px) {
 
-    section {
-        padding: 0 10rem;
-    }
+  section {
+    padding: 0 10rem;
+  }
 
 }

@@ -157,6 +157,10 @@ section {
     line-height: 19.2rem;
   }
 }
+a{
+  text-decoration: none;
+  color: black;
+}
 
 button {
   width: 189rem;
@@ -191,7 +195,7 @@ button {
           padding-left: 0 !important;
           margin: auto;
       }
-      
+
   }
 
   .project-view {
@@ -208,6 +212,9 @@ button {
   .project-view {
     width: 100% !important;
     margin-top: 20rem;
+    >img{
+      filter: grayscale(0) !important;
+    }
   }
 
   .description {

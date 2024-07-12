@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, inject, Input, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { AOSService } from '../../../../shared/services/AOS/aos.service';
 
 @Component({
   selector: 'app-project',
@@ -10,9 +11,13 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './project.component.scss',
 })
 export class ProjectComponent implements OnInit {
+
   isOdd!: boolean;
+  private aosService = inject(AOSService);
+
   @Input() flexDirection!: string;
   @Input() projectDescryption: string = '';
+
   @Input() projects = {
     title: 'Join',
     img: 'join.png',
@@ -25,5 +30,6 @@ export class ProjectComponent implements OnInit {
 
   ngOnInit(): void {
     this.isOdd = this.flexDirection === 'row-reverse';
+    this.aosService.initAos();
   }
 }
