@@ -2,12 +2,13 @@
 
 
 section {
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0 100rem;
+
 
     >.title {
         width: 619rem;
@@ -18,7 +19,7 @@ section {
             font-size: 78rem;
             line-height: 78rem;
             font-weight: 800;
-
+            margin-top: 130rem;
             &:hover {
                 color: $light_green;
             }
