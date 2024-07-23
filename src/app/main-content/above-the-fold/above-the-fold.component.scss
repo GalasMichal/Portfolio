@@ -178,7 +178,9 @@ section {
     line-height: 25.6rem;
   }
 
-
+  .upper-text{
+    margin-top: 110rem;
+  }
 
   .upper-text,
   .lower-text {
@@ -207,7 +209,7 @@ section {
 
 @media (max-width: 450px) {
   .scroll-down-box {
-    margin-top: 75rem !important;
+    margin-top: 11rem !important;
   }
 
   .border-name-box {
