@@ -1,4 +1,5 @@
 <section>
+  
   <h1 class="fontSyne">{{ 'GREET' | translate }}</h1>
   <div class="main-content">
     <div class="fontOverpass mobile-contact-upper"> {{ 'CONTACT_UPPER_TEXT' | translate }} </div>
@@ -7,7 +8,7 @@
 
       <div>
         <label for="name">Name</label>
-        <input #name="ngModel" minlength="2" [(ngModel)]="contactData.name" type="text" name="name" id="name"
+        <input class="fontOverpass" #name="ngModel" minlength="2" [(ngModel)]="contactData.name" type="text" name="name" id="name"
           placeholder=" {{ 'PLACEHOLDER_NAME'| translate }}" required>
 
         @if (!name.valid && name.touched ) {
@@ -21,9 +22,10 @@
 
       <div>
         <label for="email">Email</label>
-        <input #email="ngModel" type="email" [(ngModel)]="contactData.email" name="email" id="email"
+        <input class="fontOverpass" #email="ngModel" type="email" [(ngModel)]="contactData.email" name="email" id="email"
           placeholder="{{ 'PLACEHOLDER_EMAIL' | translate}}" required
-          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+          pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+
 
         @if (!email.valid && email.touched) {
         <span class="feedback-container fontOverpass">{{ 'PLACEHOLDER_EMAIL_WARN' | translate }}</span>
@@ -36,7 +38,7 @@
 
       <div class="message">
         <label for="message">Subject</label>
-        <textarea #message="ngModel" name="message" minlength="4" [(ngModel)]="contactData.message" id="message"
+        <textarea class="fontOverpass" #message="ngModel" name="message" minlength="4" [(ngModel)]="contactData.message" id="message"
           placeholder="{{'PLACEHOLDER_MSG' | translate }}" required></textarea>
 
         @if (!message.valid && message.touched) {

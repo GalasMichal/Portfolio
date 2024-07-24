@@ -45,8 +45,13 @@ section {
 
     &:hover {
       scale: 1.2;
+      cursor: pointer;
     }
   }
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .burger-menu {
@@ -54,6 +59,7 @@ section {
   height: 40rem;
   background-image: url('./../../../../assets/img/animated/burger1.png');
   background-size: cover;
+  cursor: pointer;
 }
 
 .burger-icon-animate {
@@ -139,7 +145,6 @@ section {
   font-weight: 700;
   line-height: 96rem;
   gap: 39rem;
-
 
 }
 

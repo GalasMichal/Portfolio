@@ -5,7 +5,7 @@
     <div class="right-content">
       <img src="assets/img/icons/de.png" alt="Deutsch" (click)="changeLanguage('de')">
       <img src="assets/img/icons/gb.png" alt="English" (click)="changeLanguage('en')">
-      <div (click)="isMenuOpen = !isMenuOpen" [ngClass]="{'burger-icon-animate': isMenuOpen}" class="burger-menu"></div>
+      <div (click)="toggleMenu()" [ngClass]="{'burger-icon-animate': isMenuOpen}" class="burger-menu"></div>
     </div>
   </nav>
 

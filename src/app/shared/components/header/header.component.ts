@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Renderer2, RendererFactory2 } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
@@ -13,14 +13,21 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 export class HeaderComponent {
   isMenuOpen = false;
   menu: { name: string; path: string }[] = [];
-routeParameterValue: any;
+  renderer: Renderer2;
 
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService, rendererFactory: RendererFactory2) {
     this.translate.setDefaultLang('en');
+    this.renderer = rendererFactory.createRenderer(null, null);
   }
 
   closeMenu() {
     this.isMenuOpen = false;
+    this.updateBodyOverflow();
+  }
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+    this.updateBodyOverflow();
   }
 
   ngOnInit() {
@@ -30,7 +37,7 @@ routeParameterValue: any;
     });
   }
 
-  setMenuItems1(){
+  setMenuItems1() {
     this.menu = [
       {
         name: 'About me',
@@ -48,27 +55,33 @@ routeParameterValue: any;
   }
 
   setMenuItems() {
-  this.menu = [
-    {
-      name: this.translate.instant('ABOUTME'),
-      path: '#about-me',
-    },
-    {
-      name: this.translate.instant('MY_SKILLS'),
-      path: '#my-skills',
-    },
-    {
-      name: 'Portfolio',
-      path: '#portfolio',
-    },
-  ];
+    this.menu = [
+      {
+        name: this.translate.instant('ABOUTME'),
+        path: '#about-me',
+      },
+      {
+        name: this.translate.instant('MY_SKILLS'),
+        path: '#my-skills',
+      },
+      {
+        name: 'Portfolio',
+        path: '#portfolio',
+      },
+    ];
   }
-
-
-
 
   changeLanguage(language: string) {
     console.log('Changing language to:', language);
     this.translate.use(language);
   }
+
+  private updateBodyOverflow() {
+    if (this.isMenuOpen) {
+      this.renderer.setStyle(document.body, 'overflow-y', 'hidden');
+    } else {
+      this.renderer.removeStyle(document.body, 'overflow-y');
+    }
+  }
+
 }

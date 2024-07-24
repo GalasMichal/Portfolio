@@ -22,7 +22,7 @@ body {
   height: auto;
   margin: auto;
   display: flex;
-  // overflow-x: hidden;
+
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -47,6 +47,11 @@ app-root {
   height: 100%;
   max-width: 1440rem;
   width: 100%;
+
+}
+
+input, textarea:focus {
+  outline: none;
 }
 
 
@@ -54,6 +59,7 @@ app-root {
 html {
   scroll-behavior: smooth;
   font-size: 1px;
+  overflow-x: hidden;
 }
 
 html,
@@ -91,7 +97,7 @@ body {
 
   #above-the-fold {
     display: block;
-    
+
   }
 
 }
