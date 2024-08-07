@@ -11,9 +11,9 @@ input:-webkit-autofill:active {
 section {
   flex: 1;
   margin-top: -50rem;
-  position: relative;
-  // background-repeat: no-repeat;
-  // background-size: cover;
+  background-image: url('./../../../assets/img/Rectangle.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1440rem;
   width: 100%;
   display: flex;
@@ -45,21 +45,6 @@ section {
     }
   }
 
-  // .background-wrapper {
-  //   position: absolute;
-  //   bottom: 0;
-
-  //   width: 100vw;
-  //   /* Volle Breite des Viewports */
-  //   height: 100%;
-  //   /* Volle Höhe des Divs */
-  //   background-image: url('./../../../assets/img/Rectangle.png');
-  //   background-size:cover;
-  //   background-position: center;
-  //   transform: translateX(-20%);
-  //   z-index: -1;
-  //   /* Stelle sicher, dass es hinter dem Inhalt liegt */
-  // }
 
 
   >h1 {

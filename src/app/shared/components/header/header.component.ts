@@ -72,7 +72,6 @@ export class HeaderComponent {
   }
 
   changeLanguage(language: string) {
-    console.log('Changing language to:', language);
     this.translate.use(language);
   }
 
