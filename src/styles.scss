@@ -16,6 +16,10 @@ $light_green: #00BC8F;
 
 }
 
+button {
+  cursor: pointer;
+}
+
 body {
   margin: 0;
   background-color: $white;
@@ -50,7 +54,8 @@ app-root {
 
 }
 
-input, textarea:focus {
+input,
+textarea:focus {
   outline: none;
 }
 
@@ -59,7 +64,7 @@ input, textarea:focus {
 html {
   scroll-behavior: smooth;
   font-size: 1px;
-  
+
 }
 
 html,
