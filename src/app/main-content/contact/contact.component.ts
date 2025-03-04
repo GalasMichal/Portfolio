@@ -49,9 +49,11 @@ export class ContactComponent {
         .subscribe({
           next: (response) => {
             this.showMessage = true;
+            console.log('response ist', response);
             ngForm.resetForm();
             setTimeout((): void => {
               this.showMessage = false;
+              console.log('response ist', response);
             }, 3000); // Die Nachricht wird nach 3 Sekunden ausgeblendet
           },
           error: (error) => {
