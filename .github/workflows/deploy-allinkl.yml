@@ -1,0 +1,96 @@
+name: Deploy to All-Inkl
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-allinkl-portfolio-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    env:
+      BASE_HREF: ${{ vars.BASE_HREF || '/' }}
+      SITE_URL: ${{ vars.SITE_URL || 'https://michal-galas.de' }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate FTP secrets
+        run: |
+          missing=0
+          for name in FTP_SERVER FTP_USERNAME FTP_PASSWORD FTP_REMOTE_DIR; do
+            if [ -z "${!name}" ]; then
+              echo "::error::Missing secret $name"
+              missing=1
+            fi
+          done
+          if [ "$missing" -ne 0 ]; then
+            exit 1
+          fi
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_REMOTE_DIR: ${{ secrets.FTP_REMOTE_DIR }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build production
+        run: npm run build -- --configuration=production --base-href="$BASE_HREF"
+
+      - name: Normalize FTP remote dir
+        run: |
+          DIR="${{ secrets.FTP_REMOTE_DIR }}"
+          case "$DIR" in
+            */) ;;
+            *) DIR="${DIR}/" ;;
+          esac
+          echo "FTP_REMOTE_DIR_NORM=$DIR" >> "$GITHUB_ENV"
+
+      - name: Deploy via FTPS (All-Inkl)
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./dist/portfolio/browser/
+          server-dir: ${{ env.FTP_REMOTE_DIR_NORM }}
+          timeout: 600000
+          log-level: verbose
+          state-name: .ftp-deploy-sync-state-portfolio.json
+
+      - name: Verify production deploy
+        run: |
+          MAIN=$(basename dist/portfolio/browser/main-*.js)
+          echo "Expecting $MAIN on $SITE_URL/imprint"
+          for i in $(seq 1 12); do
+            HTML=$(curl -fsSL "$SITE_URL/imprint" || true)
+            if echo "$HTML" | grep -q 'Bahnhofstraße 60'; then
+              echo "Deploy verified: updated imprint address is live"
+              exit 0
+            fi
+            echo "Attempt $i/12: new address not yet live, waiting 15s..."
+            sleep 15
+          done
+          echo "::warning::Imprint may still show old address – check FTP_REMOTE_DIR (e.g. /michal-galas.de/)"
+          exit 1
