@@ -99,17 +99,17 @@ jobs:
 
       - name: Verify production deploy
         run: |
-          echo "Expecting prerendered content on $SITE_URL/projekte"
+          echo "Expecting prerendered content on $SITE_URL/"
           for i in $(seq 1 12); do
-            HTML=$(curl -fsSL "$SITE_URL/projekte" || true)
-            if echo "$HTML" | grep -q 'Projekte & Erfahrungen'; then
-              echo "Deploy verified: /projekte prerendered"
-              curl -fsSL "$SITE_URL/" | grep -q 'Was heute kompliziert' && echo "Homepage hero verified" || echo "::warning::Hero headline not yet live"
+            HTML=$(curl -fsSL "$SITE_URL/" || true)
+            if echo "$HTML" | grep -q 'Was heute kompliziert'; then
+              echo "Deploy verified: homepage hero live"
               curl -fsSL "$SITE_URL/llms.txt" | grep -q 'Michal Galas' && echo "llms.txt verified" || echo "::warning::llms.txt not reachable"
+              curl -fsSL "$SITE_URL/projekte" | grep -q 'Ausgewählte Projekte' && echo "/projekte verified" || echo "::warning::/projekte may not be prerendered yet"
               exit 0
             fi
-            echo "Attempt $i/12: prerendered content not yet live, waiting 15s..."
+            echo "Attempt $i/12: homepage content not yet live, waiting 15s..."
             sleep 15
           done
-          echo "::warning::Prerendered /projekte may not be live yet – check FTP_REMOTE_DIR"
+          echo "::warning::Homepage may not be live yet – check FTP_REMOTE_DIR and secrets"
           exit 1
