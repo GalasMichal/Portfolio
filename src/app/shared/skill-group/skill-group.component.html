@@ -1,0 +1,10 @@
+<section class="micro-border bg-surface-container p-6">
+  <h3 class="font-headline text-lg font-semibold text-on-surface mb-4">{{ key('title') | translate }}</h3>
+  <div class="flex flex-wrap gap-2">
+    @for (skill of key('skills') | translateArray; track skill) {
+      <span class="px-3 py-1.5 bg-surface-container-high rounded-full text-sm micro-border text-on-surface-variant font-label">
+        {{ skill }}
+      </span>
+    }
+  </div>
+</section>

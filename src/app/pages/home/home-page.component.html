@@ -1,0 +1,332 @@
+<!-- Hero -->
+<section
+  class="relative min-h-[85vh] flex items-center overflow-hidden px-4 md:px-12 pt-24 hero-gradient"
+>
+  <div class="max-w-[1280px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+    <div class="lg:col-span-8 space-y-6">
+      <div
+        class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high rounded-full micro-border"
+      >
+        <span class="w-2 h-2 bg-primary rounded-full"></span>
+        <span class="text-xs font-label text-on-surface-variant uppercase tracking-wider">{{
+          'common.available' | translate
+        }}</span>
+      </div>
+      <p class="text-xs font-label text-primary uppercase tracking-wider mb-2">{{
+        'hero.identity' | translate
+      }}</p>
+      <h1
+        class="font-headline text-3xl md:text-5xl font-bold text-on-surface max-w-3xl leading-tight"
+      >
+        {{ 'hero.headline' | translate }}
+      </h1>
+      <p class="text-lg text-on-surface-variant max-w-2xl leading-relaxed">
+        {{ 'hero.subheadline' | translate }}
+      </p>
+      <p class="text-on-surface-variant max-w-2xl leading-relaxed">
+        {{ 'hero.intro' | translate }}
+      </p>
+      <div class="flex flex-wrap gap-2">
+        @for (badge of 'hero.badges' | translateArray; track badge) {
+          <span
+            class="px-3 py-1 bg-surface-container-high rounded-full text-xs micro-border text-on-surface-variant font-label"
+            >{{ badge }}</span
+          >
+        }
+      </div>
+      <div class="flex flex-wrap gap-4 pt-2">
+        <a
+          routerLink="/kontakt"
+          class="bg-primary text-on-primary px-6 py-3 rounded-lg font-label text-sm hover:opacity-90 transition-all"
+          >{{ 'common.projectRequest' | translate }}</a
+        >
+        <a
+          routerLink="/projekte"
+          class="micro-border text-on-surface px-6 py-3 rounded-lg font-label text-sm hover:border-primary/50 transition-all"
+          >{{ 'common.viewProjects' | translate }}</a
+        >
+      </div>
+      <p class="text-xs font-label text-on-surface-variant/80 pt-4 border-t border-outline-variant/20">
+        {{ 'hero.techLine' | translate }}
+      </p>
+    </div>
+    <div class="hidden lg:block lg:col-span-4">
+      <div class="hero-visual micro-border">
+        <img
+          src="assets/img/hero-portrait.webp"
+          [alt]="'hero.imageAlt' | translate"
+          width="900"
+          height="1200"
+          fetchpriority="high"
+          class="hero-img-dark"
+        />
+        <img
+          src="assets/img/hero-portrait-light.webp"
+          [alt]="'hero.imageAlt' | translate"
+          width="900"
+          height="1200"
+          loading="lazy"
+          class="hero-img-light"
+        />
+        <div class="globe-scene" aria-hidden="true">
+          <svg class="globe" viewBox="0 0 200 200">
+            <defs>
+              <clipPath id="globe-clip">
+                <circle cx="100" cy="100" r="88" />
+              </clipPath>
+              <radialGradient id="globe-glow" cx="50%" cy="45%" r="60%">
+                <stop offset="0%" stop-color="#c0c1ff" stop-opacity="0.12" />
+                <stop offset="100%" stop-color="#c0c1ff" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+            <circle cx="100" cy="100" r="88" fill="url(#globe-glow)" />
+            <g clip-path="url(#globe-clip)">
+              <g class="globe-land">
+                <g class="globe-land-tile">
+                  <path
+                    d="M28 62 Q40 48 56 54 Q66 58 62 70 Q58 80 48 86 Q42 96 46 108 Q50 122 42 132 Q34 140 30 128 Q24 112 26 94 Q22 76 28 62 Z"
+                  />
+                  <path d="M84 44 Q96 38 106 44 Q112 50 104 56 Q94 60 86 56 Q78 50 84 44 Z" />
+                  <path
+                    d="M88 66 Q102 60 112 70 Q118 80 112 92 Q106 106 96 116 Q88 124 84 112 Q78 96 82 82 Q82 72 88 66 Z"
+                  />
+                  <path
+                    d="M124 54 Q144 46 162 56 Q172 64 166 76 Q158 88 146 88 Q136 92 132 82 Q122 68 124 54 Z"
+                  />
+                  <path
+                    d="M144 108 Q156 102 164 110 Q168 118 158 124 Q148 128 142 120 Q138 112 144 108 Z"
+                  />
+                </g>
+                <g class="globe-land-tile" transform="translate(180 0)">
+                  <path
+                    d="M28 62 Q40 48 56 54 Q66 58 62 70 Q58 80 48 86 Q42 96 46 108 Q50 122 42 132 Q34 140 30 128 Q24 112 26 94 Q22 76 28 62 Z"
+                  />
+                  <path d="M84 44 Q96 38 106 44 Q112 50 104 56 Q94 60 86 56 Q78 50 84 44 Z" />
+                  <path
+                    d="M88 66 Q102 60 112 70 Q118 80 112 92 Q106 106 96 116 Q88 124 84 112 Q78 96 82 82 Q82 72 88 66 Z"
+                  />
+                  <path
+                    d="M124 54 Q144 46 162 56 Q172 64 166 76 Q158 88 146 88 Q136 92 132 82 Q122 68 124 54 Z"
+                  />
+                  <path
+                    d="M144 108 Q156 102 164 110 Q168 118 158 124 Q148 128 142 120 Q138 112 144 108 Z"
+                  />
+                </g>
+              </g>
+              <g class="globe-grid">
+                <ellipse cx="100" cy="100" rx="88" ry="32" />
+                <ellipse cx="100" cy="100" rx="88" ry="62" />
+                <line x1="12" y1="100" x2="188" y2="100" />
+                <ellipse cx="100" cy="100" rx="32" ry="88" />
+                <ellipse cx="100" cy="100" rx="62" ry="88" />
+              </g>
+            </g>
+            <circle class="globe-outline" cx="100" cy="100" r="88" />
+            <defs>
+              <path id="orbit-path" d="M 100,100 m 0,-97 a 97,97 0 1,1 -0.01,0 z" fill="none" />
+            </defs>
+            <g class="orbit-ring" #orbitRing>
+              <text class="orbit-ring-text font-label">
+                <textPath href="#orbit-path" startOffset="0%">{{ orbitLabel() }}</textPath>
+                <textPath href="#orbit-path" startOffset="50%">{{ orbitLabel() }}</textPath>
+              </text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Typical Problems -->
+<section class="py-20 px-4 md:px-12">
+  <div class="max-w-[1280px] mx-auto" appReveal>
+    <div class="mb-12">
+      <h2 class="font-headline text-2xl md:text-3xl font-semibold text-on-surface">
+        {{ 'problems.headline' | translate }}
+      </h2>
+      <div class="h-1 w-20 bg-primary mt-2"></div>
+      <p class="text-on-surface-variant mt-4 max-w-3xl">{{ 'problems.text' | translate }}</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      @for (item of problemItems; track item.id) {
+        <article class="micro-border bg-surface-container p-6 hover:border-primary/50 transition-all h-full">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3 block">{{ item.icon }}</span>
+          <h3 class="font-headline text-lg font-semibold text-on-surface mb-2">
+            {{ problemKey(item.id, 'title') | translate }}
+          </h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed">
+            {{ problemKey(item.id, 'description') | translate }}
+          </p>
+        </article>
+      }
+    </div>
+    <p class="text-sm text-on-surface-variant border border-outline-variant/30 rounded-lg px-4 py-3 bg-surface-container-low mt-8 max-w-3xl">
+      {{ 'problems.ideaNote' | translate }}
+    </p>
+  </div>
+</section>
+
+<!-- Services Preview -->
+<section class="py-20 px-4 md:px-12 bg-surface-container-lowest">
+  <div class="max-w-[1280px] mx-auto" appReveal>
+    <div class="mb-12">
+      <h2 class="font-headline text-2xl md:text-3xl font-semibold text-on-surface">
+        {{ 'services.headline' | translate }}
+      </h2>
+      <div class="h-1 w-20 bg-primary mt-2"></div>
+      <p class="text-on-surface-variant mt-4 max-w-3xl">{{ 'services.text' | translate }}</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      @for (service of previewServices; track service.id) {
+        <app-service-card
+          [serviceId]="service.id"
+          [icon]="service.icon"
+          [wide]="service.span === 'wide'"
+        />
+      }
+    </div>
+    <div class="mt-8 text-center">
+      <a routerLink="/leistungen" class="text-primary font-label text-sm hover:underline">{{
+        'services.viewAll' | translate
+      }}</a>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Preview -->
+<section class="py-20 px-4 md:px-12">
+  <div class="max-w-[1280px] mx-auto" appReveal>
+    <div class="mb-12">
+      <h2 class="font-headline text-2xl md:text-3xl font-semibold text-on-surface">
+        {{ 'projects.headline' | translate }}
+      </h2>
+      <p class="text-on-surface-variant mt-2 max-w-3xl">{{ 'projects.text' | translate }}</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      @for (project of featuredProjects; track project.id) {
+        <app-project-card
+          [project]="project"
+          [expanded]="expandedProjectId === project.id"
+          (toggle)="toggleProject(project.id)"
+        />
+      }
+    </div>
+    <div class="mt-8 text-center">
+      <a routerLink="/projekte" class="text-primary font-label text-sm hover:underline">{{
+        'projects.viewAll' | translate
+      }}</a>
+    </div>
+  </div>
+</section>
+
+<!-- Collaboration Process -->
+<section class="py-20 px-4 md:px-12 bg-surface-container-lowest">
+  <div class="max-w-[1280px] mx-auto" appReveal>
+    <div class="mb-12 text-center max-w-3xl mx-auto">
+      <h2 class="font-headline text-2xl md:text-3xl font-semibold text-on-surface">
+        {{ 'process.headline' | translate }}
+      </h2>
+      <div class="h-1 w-20 bg-primary mt-2 mx-auto"></div>
+      <p class="text-on-surface-variant mt-4">{{ 'process.text' | translate }}</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      @for (step of processSteps; track step.id; let i = $index) {
+        <article class="micro-border bg-surface-container p-6 text-center h-full">
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary font-headline font-bold mb-3">
+            {{ i + 1 }}
+          </span>
+          <span class="material-symbols-outlined text-primary text-3xl mb-3 block">{{ step.icon }}</span>
+          <h3 class="font-headline text-lg font-semibold text-on-surface mb-2">
+            {{ processKey(step.id, 'title') | translate }}
+          </h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed">
+            {{ processKey(step.id, 'description') | translate }}
+          </p>
+        </article>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- Why Work With Me -->
+<section class="py-20 px-4 md:px-12">
+  <div class="max-w-[1280px] mx-auto" appReveal>
+    <div class="mb-12">
+      <h2 class="font-headline text-2xl md:text-3xl font-semibold text-on-surface">
+        {{ 'whyWork.headline' | translate }}
+      </h2>
+      <div class="h-1 w-20 bg-primary mt-2"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      @for (item of whyWorkItems; track item.id) {
+        <article class="micro-border bg-surface-container p-6 h-full">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3 block">{{ item.icon }}</span>
+          <h3 class="font-headline text-lg font-semibold text-on-surface mb-2">
+            {{ whyWorkKey(item.id, 'title') | translate }}
+          </h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed">
+            {{ whyWorkKey(item.id, 'description') | translate }}
+          </p>
+        </article>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- Skills Preview -->
+<section class="py-20 px-4 md:px-12 bg-surface-container-lowest">
+  <div class="max-w-[1280px] mx-auto text-center" appReveal>
+    <h2 class="font-headline text-2xl md:text-3xl font-semibold text-on-surface">
+      {{ 'skills.headline' | translate }}
+    </h2>
+    <p class="text-on-surface-variant mt-2 max-w-2xl mx-auto">{{ 'skills.text' | translate }}</p>
+    <div
+      class="grid grid-cols-2 md:grid-cols-5 gap-px bg-outline-variant/20 border border-outline-variant/20 mt-10 max-w-4xl mx-auto"
+    >
+      @for (skill of featuredSkills; track skill) {
+        <div
+          class="bg-surface p-6 flex items-center justify-center hover:bg-surface-container-low transition-colors group"
+        >
+          <span class="font-label text-sm text-on-surface-variant group-hover:text-primary">{{
+            skill
+          }}</span>
+        </div>
+      }
+    </div>
+    <a
+      routerLink="/skills"
+      class="inline-block mt-8 text-primary font-label text-sm hover:underline"
+      >{{ 'skills.viewAll' | translate }}</a
+    >
+  </div>
+</section>
+
+<!-- About Short -->
+<section class="py-20 px-4 md:px-12">
+  <div class="max-w-[1280px] mx-auto max-w-3xl" appReveal>
+    <h2 class="font-headline text-2xl md:text-3xl font-semibold text-on-surface mb-4">
+      {{ 'nav.about' | translate }}
+    </h2>
+    <p class="text-on-surface-variant leading-relaxed mb-6">{{ 'about.shortText' | translate }}</p>
+    <a routerLink="/about" class="text-primary font-label text-sm hover:underline">{{
+      'common.moreAbout' | translate
+    }}</a>
+  </div>
+</section>
+
+<!-- Contact CTA -->
+<section class="py-20 px-4 md:px-12 bg-surface-container-lowest">
+  <div class="max-w-[1280px] mx-auto text-center space-y-4" appReveal>
+    <h2 class="font-headline text-2xl md:text-4xl font-bold text-on-surface">
+      {{ 'contact.headline' | translate }}
+    </h2>
+    <p class="text-on-surface-variant max-w-2xl mx-auto">{{ 'contact.text' | translate }}</p>
+    <p class="text-on-surface-variant max-w-2xl mx-auto">{{ 'contact.hint' | translate }}</p>
+    <a
+      routerLink="/kontakt"
+      class="inline-block bg-primary text-on-primary px-8 py-3 rounded-lg font-label hover:opacity-90 transition-all"
+      >{{ 'contact.cta' | translate }}</a
+    >
+  </div>
+</section>

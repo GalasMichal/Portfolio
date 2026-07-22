@@ -1,0 +1,587 @@
+{
+  "nav": {
+    "start": "Start",
+    "leistungen": "Rozwiązania",
+    "projekte": "Projekty",
+    "skills": "Kompetencje",
+    "about": "O mnie",
+    "kontakt": "Kontakt"
+  },
+  "common": {
+    "available": "Dostępny na projekty",
+    "projectRequest": "Omów swoje plany",
+    "viewProjects": "Zobacz projekty",
+    "viewAllServices": "Zobacz wszystkie rozwiązania →",
+    "viewAllProjects": "Zobacz wszystkie projekty →",
+    "viewAllSkills": "Zobacz wszystkie kompetencje →",
+    "moreAbout": "Więcej o mnie →",
+    "themeToggle": "Zmień motyw",
+    "menuOpen": "Otwórz menu",
+    "showDetails": "Pokaż szczegóły",
+    "showLess": "Pokaż mniej",
+    "imprint": "Impressum",
+    "privacy": "Polityka prywatności",
+    "profileView": "Zobacz profil",
+    "location": "Lokalizacja",
+    "country": "Niemcy",
+    "webMapsAi": "Proces → Rozwiązanie",
+    "themeLight": "Jasny motyw",
+    "themeDark": "Ciemny motyw"
+  },
+  "hero": {
+    "identity": "Aplikacje webowe, rozwiązania mapowe i automatyzacja",
+    "imageAlt": "Michal Galas – Web Developer",
+    "headline": "To, co dziś jest skomplikowane, może stać się cyfrowo prostsze.",
+    "subheadline": "Tworzę indywidualne aplikacje webowe, rozwiązania mapowe i automatyzacje dla procesów, które zabierają za dużo czasu, są nieczytelne albo nie da się ich sensownie odwzorować w istniejącym oprogramowaniu.",
+    "intro": "Opisujesz wyzwanie. Ja tworzę z tego dopasowane cyfrowe rozwiązanie.",
+    "techLine": "Tworzenie stron · GIS i mapy · Automatyzacja · Integracja AI",
+    "badges": [
+      "Więcej zapytań",
+      "Jasny wizerunek",
+      "Mniej chaosu",
+      "Lokalizacje widoczne",
+      "Czas z powrotem",
+      "Rozwiązanie, nie show narzędzi"
+    ]
+  },
+  "problems": {
+    "headline": "Czy któraś z tych sytuacji brzmi znajomo?",
+    "text": "Projekt cyfrowy często nie zaczyna się od gotowego pomysłu, lecz od procesu, który zabiera za dużo czasu, aplikacji, która już nie pasuje, albo informacji trudnych do wykorzystania.",
+    "ideaNote": "Masz już konkretny pomysł? Wspólnie zamienimy go w realistyczną koncepcję i działającą pierwszą wersję.",
+    "items": {
+      "scattered-data": {
+        "title": "Ważne informacje są rozproszone w wielu miejscach",
+        "description": "Dane leżą w arkuszach, e-mailach, folderach lub różnych narzędziach – stąd trudno uzyskać przegląd i szybko podejmować decyzje."
+      },
+      "manual-work": {
+        "title": "Ręczne zadania zabierają za dużo czasu",
+        "description": "Informacje są przepisywane wielokrotnie, dokumenty przetwarzane ręcznie albo powtarzalne zadania wykonywane ciągle od nowa."
+      },
+      "legacy-software": {
+        "title": "Istniejąca aplikacja jest trudna do rozbudowy",
+        "description": "Nowe funkcje wymagają coraz więcej wysiłku, a nawet małe zmiany mogą zagrozić istniejącym obszarom systemu."
+      },
+      "geo-data": {
+        "title": "Lokalizacje, obszary lub trasy są trudne do ogarnięcia",
+        "description": "Dane geograficzne są dostępne, ale nie da się ich łatwo wyświetlić, edytować ani sensownie wykorzystać na co dzień."
+      },
+      "ai-trend": {
+        "title": "AI ma pomagać – ale tylko przy sensownym zastosowaniu",
+        "description": "Szukasz konkretnego miejsca w procesie pracy, gdzie sztuczna inteligencja naprawdę oszczędza czas albo czyni pracę bardziej niezawodną."
+      },
+      "standard-software": {
+        "title": "Standardowe oprogramowanie nie pasuje do rzeczywistego procesu",
+        "description": "Dostępne rozwiązania są zbyt skomplikowane, zbyt sztywne albo pokrywają tylko część rzeczywistego procesu pracy."
+      }
+    }
+  },
+  "process": {
+    "headline": "Od wyzwania do działającego rozwiązania",
+    "text": "Nie potrzebujesz gotowej koncepcji ani specyfikacji technicznej. Najpierw wyjaśniamy, co dziś jest trudne i co ma działać lepiej w przyszłości.",
+    "steps": {
+      "understand": {
+        "title": "Zrozumieć sytuację wyjściową",
+        "description": "Wyjaśniamy, jak wygląda obecny proces, gdzie pojawiają się trudności i jakiej poprawy oczekujesz."
+      },
+      "plan": {
+        "title": "Określić cel i sensowne rozwiązanie",
+        "description": "Tłumaczę wymagania na zrozumiałe funkcje i proponuję realistyczną drogę techniczną."
+      },
+      "build": {
+        "title": "Stworzyć pierwszą użyteczną wersję",
+        "description": "Zamiast długo pracować w ukryciu, jak najszybciej powstaje wersja, którą można obejrzeć i przetestować."
+      },
+      "improve": {
+        "title": "Sprawdzić i ulepszać w realnym użyciu",
+        "description": "Rozwiązanie jest sprawdzane w realnym użyciu, dostosowywane i w razie potrzeby rozszerzane o kolejne funkcje."
+      }
+    }
+  },
+  "whyWork": {
+    "headline": "Technologia zrozumiale i zorientowana na rozwiązanie",
+    "items": {
+      "problem-first": {
+        "title": "Nie musisz najpierw wybierać technologii",
+        "description": "Najpierw wyjaśniamy, co ma lepiej działać na co dzień. Dopasowana technologia wynika z tego – nie odwrotnie."
+      },
+      "communication": {
+        "title": "Nie musisz sam tłumaczyć decyzji technicznych",
+        "description": "Wyjaśniam możliwości, ograniczenia i decyzje tak, abyś mógł/mogła zrozumieć, co jest wdrażane i dlaczego – nawet bez głębokiej wiedzy programistycznej."
+      },
+      "incremental": {
+        "title": "Dostajesz coś użytecznego wcześnie, zamiast miesięcy planowania",
+        "description": "Pierwsza wersja do sprawdzenia jest często cenniejsza niż rozdmuchana koncepcja, której długo nie można używać."
+      },
+      "existing-systems": {
+        "title": "Działające elementy pozostają na miejscu",
+        "description": "Nie wszystko trzeba budować od nowa. Często wystarczy ukierunkowana modernizacja, aby znów dało się rozbudowywać i utrzymywać system."
+      },
+      "breadth": {
+        "title": "Różne elementy z jednego źródła",
+        "description": "Interfejsy webowe, mapy, dane i automatyzacja mogą zostać połączone w spójne rozwiązanie – bez przerw między narzędziami."
+      },
+      "practical": {
+        "title": "Rozwiązanie musi działać na co dzień",
+        "description": "Czysty kod jest ważny – ale liczy się to, czy użytkownicy rozumieją rozwiązanie i naprawdę z niego korzystają w pracy."
+      }
+    }
+  },
+  "services": {
+    "headline": "Cyfrowe rozwiązania dopasowane do Twojego zadania",
+    "text": "Technologia wynika z zadania – nie odwrotnie. Najpierw wspólnie wyjaśniamy, jakiej poprawy oczekujesz. Potem powstaje rozwiązanie dopasowane do Twoich procesów.",
+    "viewAll": "Zobacz wszystkie rozwiązania →",
+    "items": {
+      "webapps": {
+        "title": "Połączenie procesów w dopasowanej aplikacji",
+        "category": "Indywidualne aplikacje webowe",
+        "description": "Tworzę aplikacje dopasowane do Twojego procesu pracy. Od pierwszej użytecznej wersji do stopniowej rozbudowy powstaje rozwiązanie zrozumiałe w obsłudze i łatwe w utrzymaniu na dłuższą metę.",
+        "tags": ["Twój proces", "Mniej tarcia", "Gotowe do użycia", "Wszystko w jednym miejscu"],
+        "outcomes": [
+          "wewnętrzne aplikacje administracyjne",
+          "portale klienckie",
+          "dashboardy",
+          "cyfrowe formularze",
+          "narzędzia branżowe",
+          "indywidualne platformy"
+        ],
+        "techHint": "Możliwe technologie: Angular, TypeScript, .NET i PostgreSQL"
+      },
+      "automation": {
+        "title": "Sensowna automatyzacja powtarzalnych zadań",
+        "category": "Digitalizacja procesów i automatyzacja",
+        "description": "Analizuję istniejące procesy i tworzę rozwiązania, które redukują niepotrzebne kroki. Dane mogą być przetwarzane automatycznie, informacje łączone, a powtarzalne zadania wykonywane niezawodnie.",
+        "tags": ["Mniej wpisywania", "Mniej błędów", "Więcej luzu", "Lżejszy dzień"],
+        "outcomes": [
+          "mniej ręcznego wprowadzania danych",
+          "automatyczne przetwarzanie dokumentów",
+          "ustrukturyzowany transfer danych",
+          "automatyczne analizy",
+          "połączenie istniejących systemów"
+        ]
+      },
+      "gis": {
+        "title": "Przejrzyste przedstawienie lokalizacji i danych geograficznych",
+        "category": "Rozwiązania mapowe i GIS",
+        "description": "Tworzę interaktywne rozwiązania mapowe, dzięki którym lokalizacje, trasy, obszary i inne informacje przestrzenne można łatwo wyświetlać, edytować i analizować.",
+        "tags": ["Od razu orientacja", "Oznaczanie i wybór", "Druk i eksport", "Mniej pytań wtórnych"],
+        "outcomes": [
+          "interaktywne mapy",
+          "rozwiązania tras i lokalizacji",
+          "narzędzia rysowania i pomiaru",
+          "wizualizacja danych branżowych",
+          "przetwarzanie danych geograficznych",
+          "integracja z istniejącymi aplikacjami"
+        ],
+        "techHint": "Możliwe technologie: OpenLayers, Leaflet, GeoServer, GeoJSON i SLD"
+      },
+      "modernization": {
+        "title": "Stopniowa modernizacja istniejącego oprogramowania",
+        "category": "Modernizacja oprogramowania",
+        "description": "Nie każdą aplikację trzeba budować od nowa. Stopniowo modernizuję istniejące rozwiązania, wymieniam problematyczne obszary i dbam o to, aby ważne funkcje działały podczas migracji.",
+        "tags": ["Stopniowo", "Mniejsze ryzyko", "Wykorzystanie istniejącego", "Łatwe utrzymanie"],
+        "outcomes": [
+          "lepsza utrzymywalność",
+          "nowocześniejsze interfejsy",
+          "mniej zależności technicznych",
+          "stopniowa migracja",
+          "łatwiejsza rozbudowa",
+          "mniejszy dług techniczny"
+        ]
+      },
+      "ki": {
+        "title": "AI dla konkretnego procesu pracy",
+        "category": "Sensowna integracja AI",
+        "description": "Pomagam wybrać i wdrożyć sensowne zastosowania AI. W centrum nie stoi hasło sztuczna inteligencja, ale pytanie, czy dzięki niej zadanie można wykonać szybciej, prościej albo niezawodniej.",
+        "tags": ["Konkretny pożytek", "Bez buzzwordów", "Do zastosowania od razu", "Uczciwa ocena"],
+        "outcomes": [
+          "wsparcie przy researchu i analizie",
+          "przetwarzanie i strukturyzacja tekstów",
+          "wewnętrzni asystenci wiedzy",
+          "inteligentne automatyzacje",
+          "wsparcie przy powtarzalnych decyzjach",
+          "podłączenie modeli językowych do istniejących procesów"
+        ]
+      },
+      "consulting": {
+        "title": "Od wyzwania do realnego planu działania",
+        "category": "Koncepcja techniczna",
+        "description": "Nie potrzebujesz jeszcze gotowej specyfikacji. Wspólnie tłumaczymy Twoją sytuację wyjściową na konkretne funkcje, sensowne kroki i realistyczne rozwiązanie techniczne.",
+        "tags": ["Jasny następny krok", "Pierwsza wersja", "Bez latania na ślepo", "Skupienie na wartości"]
+      }
+    }
+  },
+  "projects": {
+    "headline": "Wybrane projekty i rozwiązania",
+    "text": "Moje projekty pokazują przede wszystkim, jakie wyzwanie zostało rozwiązane i jaki efekt osiągnięto – nie tylko, jakich technologii użyto.",
+    "confidentialityNotice": "Uwaga: Projekty zawodowe i własne prace nie są dostępne na GitHub ani dla osób trzecich ze względu na poufność i ochronę danych. Na osobiste zapytanie chętnie udzielę informacji, jeśli ktoś chce je zweryfikować.",
+    "viewAll": "Zobacz wszystkie projekty →",
+    "viewProject": "Zobacz projekt",
+    "closeProject": "Zamknij szczegóły",
+    "viewDemo": "Zobacz interaktywne demo",
+    "viewFullscreenDemo": "Demo na pełnym ekranie",
+    "liveDemo": "Live Demo",
+    "viewGithub": "GitHub",
+    "labels": {
+      "problem": "Wyzwanie",
+      "solution": "Rozwiązanie",
+      "benefit": "Konkretna korzyść",
+      "contribution": "Mój wkład"
+    },
+    "filters": {
+      "alle": "Wszystkie",
+      "beruflich": "Zawodowe",
+      "privat": "Prywatne",
+      "in-entwicklung": "W trakcie rozwoju",
+      "experimentell": "Eksperymentalne"
+    },
+    "statusLabels": {
+      "berufliche-erfahrung": "Doświadczenie zawodowe",
+      "in-entwicklung": "W trakcie rozwoju",
+      "konzept": "Koncepcja i prototypowanie",
+      "experimentell": "Eksperymentalne"
+    },
+    "items": {
+      "openlayers-kartenmodul": {
+        "title": "Nowoczesna aplikacja mapowa dla złożonych danych branżowych",
+        "categoryLabel": "Zawodowe · Mapy · Web",
+        "shortDescription": "Stopniowa modernizacja rozbudowanej aplikacji mapowej – z przejrzystszymi narzędziami do wyświetlania, wyboru i edycji danych geograficznych.",
+        "problem": "Istniejące rozwiązanie mapowe było technicznie mocno rozbudowane i trudne do dalszej rozbudowy. Trzeba było zintegrować nowe narzędzia mapowe i nowoczesne koncepcje obsługi bez przerywania istniejących procesów biznesowych.",
+        "solution": "Stopniowo przeniosłem kluczowe funkcje do nowoczesnej, modułowej architektury mapowej. Powstały narzędzia do rysowania, pomiaru, wyboru, edycji i wizualizacji złożonych informacji geograficznych.",
+        "benefit": "Aplikację łatwiej rozbudować i utrzymać. Użytkownicy dostają przejrzystsze narzędzia, a istniejące procesy nadal działają.",
+        "contribution": "Koncepcja i implementacja narzędzi mapowych, przetwarzanie danych GeoJSON, wdrożenie złożonych reguł wizualizacji oraz integracja z istniejącą aplikacją .NET."
+      },
+      "mapfish-templates": {
+        "title": "Automatyczny eksport map do raportów",
+        "categoryLabel": "Zawodowe · Raporty · Mapy",
+        "shortDescription": "Czyste i standaryzowane przenoszenie treści map do raportów i dokumentów drukowanych bez ręcznej obróbki.",
+        "problem": "Treści mapowe trzeba było dotąd ręcznie przenosić do raportów i formatować, co było czasochłonne i podatne na błędy. Jakość druku była niespójna.",
+        "solution": "Powstały szablony i procesy, które automatycznie przenoszą treści map do formatów gotowych do druku. Wygląd jest dopasowany do standardów raportów.",
+        "benefit": "Oszczędność czasu przy tworzeniu raportów oraz spójna, profesjonalna prezentacja map w dokumentach.",
+        "contribution": "Tworzenie i dostosowanie szablonów Mapfish Print, definiowanie układów druku i integracja z istniejącym workflow."
+      },
+      "kendo-ui": {
+        "title": "Przejrzyste interfejsy dla aplikacji branżowych",
+        "categoryLabel": "Zawodowe · Interfejsy",
+        "shortDescription": "Ulepszenie istniejących interfejsów webowych, aby łatwiej wyświetlać i edytować złożone dane z bezpośrednim powiązaniem z widokiem mapy.",
+        "problem": "Istniejące wewnętrzne aplikacje były trudne w obsłudze i dawały mały przegląd dużych ilości danych. Powiązanie list z widokiem mapy było niewygodne.",
+        "solution": "Wdrożyłem nowoczesne komponenty UI do przejrzystego wyświetlania danych w tabelach z filtrowaniem i sortowaniem. Okna dialogowe ułatwiają edycję, a bezpośrednie powiązanie z mapą umożliwia szybką nawigację.",
+        "benefit": "Użytkownicy szybciej znajdują potrzebne informacje, edycja danych staje się bardziej intuicyjna, a integracja z mapą usprawnia pracę.",
+        "contribution": "Implementacja komponentów Kendo UI, projektowanie interaktywnych tabel i dialogów oraz powiązanie list danych z komponentami map OpenLayers."
+      },
+      "3d-scan": {
+        "title": "Prowadzone fotografowanie do kompletnych skanów 3D",
+        "categoryLabel": "Prywatne · 3D · Eksperyment",
+        "shortDescription": "Aplikacja, która krok po kroku prowadzi użytkownika przez fotografowanie obiektu i pokazuje, które perspektywy jeszcze brakują.",
+        "problem": "Przy fotografowaniu obiektów do skanów 3D często brakowało ważnych perspektyw, co prowadziło do niekompletnych modeli. Wymagało to powtarzania zdjęć i zwiększało nakład pracy.",
+        "solution": "Stworzyłem aplikację z prowadzoną obsługą kamery. W czasie rzeczywistym pokazuje użytkownikowi, które obszary obiektu zostały już uchwycone, a które perspektywy jeszcze brakują.",
+        "benefit": "Wizualne prowadzenie zmniejsza liczbę niekompletnych ujęć i poprawia podstawę do późniejszej rekonstrukcji 3D.",
+        "contribution": "Tworzenie interfejsu i logiki integracji kamery, wizualizacja postępu fotografowania w czasie rzeczywistym oraz implementacja podglądu modelu 3D."
+      },
+      "route-navi": {
+        "title": "Przejrzyste planowanie tras dla wielu celów",
+        "categoryLabel": "Prywatne · Mapy · Planowanie",
+        "shortDescription": "Przejrzysta aplikacja, która uporządkowanie pokazuje wiele celów i ułatwia codzienne planowanie tras.",
+        "problem": "Przy wielu przystankach zwykłe aplikacje nawigacyjne szybko stają się nieczytelne albo wymagają płatnych subskrypcji. Adresy z istniejących list trzeba było też najpierw ręcznie przygotować.",
+        "solution": "Stworzyłem aplikację, w której adresy można importować, weryfikować, wyświetlać na mapie i układać w sensownej kolejności.",
+        "benefit": "Użytkownik dostaje przejrzysty widok mapy, posortowaną listę przystanków i lepszą podstawę do codziennego planowania tras.",
+        "contribution": "Koncepcja interfejsu do importu i planowania tras, implementacja integracji map z OpenLayers, logika optymalizacji tras i zarządzania danymi."
+      },
+      "dabubble": {
+        "title": "Własna platforma komunikacji dla zespołów",
+        "categoryLabel": "Prywatne · Chat · Firebase",
+        "shortDescription": "Własna aplikacja czatu do komunikacji zespołowej z kanałami, wiadomościami bezpośrednimi i centralnym zarządzaniem użytkownikami.",
+        "problem": "Zespoły potrzebowały elastycznego rozwiązania komunikacyjnego dopasowanego do konkretnych potrzeb, z pełną kontrolą nad danymi i funkcjami, bez polegania na zewnętrznych usługach.",
+        "solution": "Stworzyłem kompletną aplikację czatu z rejestracją, logowaniem, kanałami prywatnymi i publicznymi, wiadomościami bezpośrednimi i zarządzaniem awatarami.",
+        "benefit": "Zespoły mogą komunikować się w konfigurowalnym środowisku, produktywność rośnie dzięki ukierunkowanym przepływom informacji, a zależność od standardowych rozwiązań maleje.",
+        "contribution": "Tworzenie całego frontendu w Angular i TypeScript, implementacja komunikacji w czasie rzeczywistym z Firebase oraz integracja uwierzytelniania i profili użytkowników."
+      },
+      "join": {
+        "title": "Intuicyjny menedżer zadań z tablicą Kanban",
+        "categoryLabel": "Prywatne · Kanban · Firebase",
+        "shortDescription": "Wizualna tablica Kanban do zadań – z jasnym przypisaniem, statusem i odpowiedzialnościami w zespole.",
+        "problem": "Zarządzanie zadaniami w zespole było nieczytelne. Zadania były zapominane, priorytety niejasne, a przypisanie do członków zespołu nie było transparentne.",
+        "solution": "Stworzyłem menedżer zadań, który pokazuje zadania na wizualnej tablicy Kanban. Drag-and-drop do zmiany statusu, przypisywanie osób i kategoryzacja czynią planowanie intuicyjnym i przejrzystym.",
+        "benefit": "Lepszy przegląd postępu projektu, jasne odpowiedzialności i sprawniejsza koordynacja zadań.",
+        "contribution": "Koncepcja i implementacja całej aplikacji, rozwój tablicy Kanban z drag-and-drop w JavaScript oraz połączenie z Firebase do przechowywania danych i zarządzania użytkownikami."
+      },
+      "sharkie": {
+        "title": "Interaktywna gra platformowa edukacyjna",
+        "categoryLabel": "Prywatne · Gry · JavaScript",
+        "shortDescription": "Prosta gra 2D jump-and-run, która w przystępny sposób pokazuje podstawy programowania obiektowego.",
+        "problem": "Początkujący programiści często potrzebują interaktywnych przykładów, aby zrozumieć abstrakcyjne koncepcje jak programowanie obiektowe. Klasyczne tutoriale bywają suche i mało motywujące.",
+        "solution": "Stworzyłem grę jump-and-run, w której elementy gry są modelowane jako obiekty i ze sobą współdziałają. Kod jest modularny i łatwy do śledzenia.",
+        "benefit": "Grywalny dostęp do koncepcji programistycznych, lepsze zrozumienie przez bezpośrednią interakcję i motywujące środowisko nauki.",
+        "contribution": "Koncepcja i rozwój mechaniki gry, implementacja struktury obiektowej w JavaScript oraz graficzna realizacja elementów gry."
+      },
+      "roblox": {
+        "title": "Logika gry Roblox dla utrzymania graczy",
+        "categoryLabel": "Prywatne · Gry · Roblox",
+        "shortDescription": "Rozwój mechanik i systemów w Roblox, które zwiększają zaangażowanie graczy i automatyzują powtarzalne zadania.",
+        "problem": "Przy tworzeniu gier w Roblox trudno jest długoterminowo motywować graczy i wdrożyć wydajne systemy ekonomii w grze albo postępu.",
+        "solution": "Stworzyłem modularne systemy zbierania monet, awansu poziomów, sklepu i ulepszeń w Roblox. Bazują na skryptach Lua i są zaprojektowane tak, aby łatwo je rozszerzać.",
+        "benefit": "Większa motywacja dzięki jasnym wskaźnikom postępu i systemom nagród. Uproszczone zarządzanie treścią gry i szybsze iteracje podczas rozwoju.",
+        "contribution": "Koncepcja i implementacja systemów w grze w Lua w Roblox Studio oraz rozwój modularnych skryptów."
+      },
+      "ki-workflows": {
+        "title": "Workflowy wspierane przez AI do tworzenia i codzienności",
+        "categoryLabel": "AI · Automatyzacja · Eksperyment",
+        "shortDescription": "Które narzędzia AI naprawdę odciążają w codziennej pracy i przy tworzeniu oprogramowania – systematycznie przetestowane i uczciwie ocenione.",
+        "problem": "Potencjał narzędzi AI jest duży, ale trudno ocenić, które zastosowania naprawdę dają wartość i jak efektywnie włączyć je do istniejących workflow.",
+        "solution": "Testuję różne narzędzia AI – od asystentów programistycznych przez modele językowe po lokalne LLM – aby znaleźć konkretne przypadki użycia, które ułatwiają pracę.",
+        "benefit": "Identyfikacja rozwiązań AI, które realnie oszczędzają czas, mniej ręcznego researchu i szybsze tworzenie kodu przy realistycznej ocenie możliwości.",
+        "contribution": "Systematyczne testowanie i integracja narzędzi AI w workflow tworzenia, implementacja interfejsów do lokalnych LLM oraz rozwój strategii promptów."
+      }
+    }
+  },
+  "skills": {
+    "headline": "Technologie, którymi wdrażam rozwiązania",
+    "text": "Konkretny wybór zależy od projektu. Liczy się nie samo narzędzie, ale to, czy niezawodnie pasuje do zadania, istniejącego systemu i dalszego rozwoju.",
+    "workStyleTitle": "Twój zysk we współpracy",
+    "learningTitle": "Co poczujesz",
+    "workStyle": [
+      "Proste rozwiązanie zamiast zbędnej złożoności",
+      "Skupienie na Twoim konkretnym wyniku",
+      "Szybka pierwsza wersja do sprawdzenia",
+      "AI tylko tam, gdzie naprawdę Cię odciąża"
+    ],
+    "learningAreas": [
+      "Więcej przeglądu zamiast szukania i zgadywania",
+      "Mniej ręcznej pracy przy powtarzalnych krokach",
+      "Przedsięwzięcia, które stają się widoczne i testowalne",
+      "Spokój: ktoś bierze odpowiedzialność za wdrożenie"
+    ],
+    "viewAll": "Zobacz wszystkie kompetencje →",
+    "groups": {
+      "frontend": {
+        "title": "Strony i interfejsy",
+        "skills": [
+          "Angular",
+          "TypeScript",
+          "JavaScript",
+          "HTML",
+          "CSS / SCSS",
+          "Responsive Design",
+          "Komponenty UI",
+          "Kendo UI",
+          "jQuery",
+          "Angular Material",
+          "Bootstrap",
+          "Szybkie ładowanie"
+        ]
+      },
+      "gis": {
+        "title": "Mapy i lokalizacje",
+        "skills": [
+          "OpenLayers",
+          "Leaflet",
+          "WebGL",
+          "GeoServer",
+          "Stylizacja map",
+          "Filtry i wyszukiwanie",
+          "Projekcje mapowe",
+          "Wybór na mapie",
+          "Zarządzanie warstwami",
+          "Markery",
+          "Mapfish",
+          "GIS"
+        ]
+      },
+      "backend": {
+        "title": "Dane i backend",
+        "skills": [
+          "C# / .NET",
+          "SQL",
+          "PostgreSQL",
+          "Supabase",
+          "Rozumienie interfejsów API",
+          "REST-API",
+          "Przygotowanie danych",
+          "Firebase"
+        ]
+      },
+      "tools": {
+        "title": "Narzędzia",
+        "skills": [
+          "Visual Studio",
+          "VS Code",
+          "Cursor AI",
+          "GitHub Copilot",
+          "Git / GitHub",
+          "Docker",
+          "npm",
+          "Gulp",
+          "Linux / Windows",
+          "Roblox Studio",
+          "Rojo",
+          "Scrum"
+        ]
+      },
+      "ki": {
+        "title": "AI i automatyzacja",
+        "skills": [
+          "Dobre instrukcje dla AI",
+          "AI przy programowaniu",
+          "ChatGPT na co dzień",
+          "Cursor AI",
+          "GitHub Copilot",
+          "Lokalne modele AI",
+          "Automatyzacja procesów",
+          "Jasna ocena korzyści"
+        ]
+      },
+      "soft": {
+        "title": "Sposób pracy",
+        "skills": [
+          "Dokładne myślenie",
+          "Dobra użyteczność (UX)",
+          "Nastawienie na rozwiązania",
+          "Rozwiązywanie problemów krok po kroku",
+          "Szkice i prototypy",
+          "Strukturalne wdrożenie"
+        ]
+      }
+    }
+  },
+  "about": {
+    "headline": "Tworzę rozwiązania na styku oprogramowania, map i automatyzacji",
+    "shortText": "Nie musisz formułować swojej sprawy technicznie. Opisz po prostu, co dziś jest trudne i co ma działać lepiej w przyszłości.",
+    "text": [
+      "Jestem programistą ze szczególnym naciskiem na aplikacje webowe i interaktywne rozwiązania mapowe. W pracy zawodowej modernizuję i rozbudowuję złożone aplikacje, tworzę nowe narzędzia mapowe i integruję funkcje z istniejącymi systemami.",
+      "Także we własnych projektach wdrażam kompletne rozwiązania cyfrowe – od pierwszej koncepcji przez interfejs i przetwarzanie danych aż po utrzymanie aplikacji.",
+      "Szczególnie ważne jest dla mnie, aby możliwości techniczne nie były używane tylko dlatego, że są nowoczesne. Rozwiązanie musi rozwiązywać realny problem, pozostawać zrozumiałe w obsłudze i dać się sensownie rozbudować.",
+      "Szybko wdrażam się w nowe tematy, ale decyduję nie według trendów, tylko według tego, co ma sens w konkretnym zadaniu."
+    ],
+    "valuesTitle": "Na czym możesz polegać",
+    "values": [
+      "Najpierw Twój zysk – nie show techniczny",
+      "Jasna komunikacja – zawsze wiesz, gdzie jesteśmy",
+      "Szybkie pierwsze wersje do sprawdzenia",
+      "Tylko narzędzia, które służą wynikowi",
+      "Interfejsy, które od razu się rozumie",
+      "AI tylko tam, gdzie naprawdę Cię odciąża",
+      "Pragmatycznie zamiast overengineeringu"
+    ],
+    "expectationsTitle": "Co dostajesz",
+    "expectations": [
+      "Uczciwą ocenę, czego potrzebuje Twoje przedsięwzięcie",
+      "Regularne aktualizacje – bez czarnej skrzynki",
+      "Realizację, która rozwiązuje Twój problem",
+      "Pierwszą wersję do testów, zanim wszystko zostanie ustalone",
+      "Poczucie: wreszcie działa"
+    ]
+  },
+  "contact": {
+    "headline": "Co ma w przyszłości działać prościej?",
+    "text": "Opisz krótko, który proces dziś zabiera za dużo czasu, która aplikacja sprawia trudności albo jaki efekt chcesz osiągnąć. Nie potrzebujesz do tego jeszcze koncepcji technicznej.",
+    "hint": "Nawet ogólny opis wystarczy na pierwszą rozmowę.",
+    "cta": "Omów swoje plany",
+    "email": "E-mail",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "locationLabel": "Lokalizacja"
+  },
+  "footer": {
+    "text": "To, co dziś jest skomplikowane, może stać się cyfrowo prostsze.",
+    "copyright": "© Michal Galas"
+  },
+  "form": {
+    "name": "Imię i nazwisko",
+    "email": "E-mail",
+    "company": "Firma (opcjonalnie)",
+    "topic": "O czym chodzi?",
+    "message": "Wiadomość",
+    "namePlaceholder": "Twoje imię i nazwisko",
+    "emailPlaceholder": "twoj@email.pl",
+    "companyPlaceholder": "Firma lub organizacja",
+    "topicPlaceholder": "Wybierz temat",
+    "messagePlaceholder": "Co dziś nie działa tak, jak powinno, i co chciałbyś/chciałabyś poprawić?",
+    "topics": {
+      "webapp": "Aplikacja webowa",
+      "modernization": "Modernizacja istniejącego oprogramowania",
+      "gis": "Rozwiązanie mapowe lub GIS",
+      "automation": "Automatyzacja procesu",
+      "ai": "Sensowne wykorzystanie AI",
+      "consulting": "Doradztwo techniczne",
+      "other": "Coś innego"
+    },
+    "checkbox1": "Przeczytałem/am",
+    "checkbox2": "i wyrażam zgodę na przetwarzanie moich danych zgodnie z opisem.",
+    "privacyLink": "politykę prywatności",
+    "submit": "Wyślij wiadomość",
+    "sending": "Wysyłanie…",
+    "success": "Twoja wiadomość została wysłana pomyślnie!",
+    "errorMessage": "Wysyłanie nie powiodło się. Spróbuj ponownie później albo napisz bezpośrednio na contact@michal-galas.de.",
+    "errors": {
+      "name": "Podaj swoje imię i nazwisko (co najmniej 2 znaki).",
+      "email": "Podaj prawidłowy adres e-mail.",
+      "message": "Opisz krótko swoje przedsięwzięcie (co najmniej 4 znaki).",
+      "agree": "Wyraź zgodę na politykę prywatności."
+    }
+  },
+  "gisDemo": {
+    "title": "Migracja GIS: Leaflet → OpenLayers",
+    "subtitle": "Ilustracyjne demo typowej migracji map: legacy stack z Leaflet i panelem jQuery UI przechodzi na OpenLayers z renderowaniem punktów WebGL – wokół Mittweida z danymi syntetycznymi.",
+    "disclaimer": "Uwaga: To demo używa darmowych kafelków OSM i wymyślonych danych przykładowych. Nie pokazuje prawdziwych danych klientów i nie zastępuje produkcyjnej aplikacji mapowej.",
+    "phaseLeaflet": "Leaflet",
+    "phaseTransition": "Migracja",
+    "phaseOpenLayers": "OpenLayers",
+    "play": "Odtwórz",
+    "pause": "Pauza",
+    "restart": "Uruchom ponownie",
+    "backToProjects": "Wróć do projektów"
+  },
+  "seo": {
+    "home": {
+      "title": "Indywidualne aplikacje webowe, rozwiązania mapowe i automatyzacja | Michal Galas",
+      "description": "Tworzę cyfrowe rozwiązania dla niewygodnych procesów, trudnych do wykorzystania danych i istniejącego oprogramowania – z aplikacjami webowymi, interaktywnymi mapami i sensowną automatyzacją."
+    },
+    "leistungen": {
+      "title": "Cyfrowe rozwiązania – Web, mapy i automatyzacja | Michal Galas",
+      "description": "Indywidualne aplikacje webowe, rozwiązania mapowe, automatyzacja procesów, modernizacja oprogramowania i sensowna integracja AI. Przegląd usług Michal Galas."
+    },
+    "projekte": {
+      "title": "Projekty i wyniki | Michal Galas",
+      "description": "Wybrane projekty: rozwiązane problemy, konkretne efekty i mój wkład – od aplikacji mapowych po aplikacje webowe."
+    },
+    "skills": {
+      "title": "Technologie i kompetencje | Michal Galas",
+      "description": "Angular, TypeScript, OpenLayers, GIS, .NET, workflowy AI i inne technologie – pogrupowane według obszaru zastosowania."
+    },
+    "about": {
+      "title": "O mnie – Michal Galas",
+      "description": "Programista aplikacji webowych, interaktywnych rozwiązań mapowych i automatyzacji – zorientowany na rozwiązania i zrozumiałą komunikację."
+    },
+    "kontakt": {
+      "title": "Kontakt – omów swoje plany | Michal Galas",
+      "description": "Opisz, który proces dziś zabiera za dużo czasu albo która aplikacja sprawia trudności – sprawdzę, jakie rozwiązanie ma sens."
+    },
+    "imprint": {
+      "title": "Impressum | Michal Galas",
+      "description": "Impressum i dane usługodawcy strony michal-galas.de."
+    },
+    "privacy": {
+      "title": "Polityka prywatności | Michal Galas",
+      "description": "Polityka prywatności strony michal-galas.de."
+    },
+    "gisDemo": {
+      "title": "Demo migracji GIS – Leaflet do OpenLayers | Michal Galas",
+      "description": "Interaktywne demo typowej migracji map z Leaflet na OpenLayers z renderowaniem punktów WebGL."
+    }
+  },
+  "schema": {
+    "jobTitle": "Web Developer",
+    "serviceName": "Michal Galas – tworzenie stron",
+    "serviceTypes": [
+      "Tworzenie stron internetowych",
+      "Aplikacje webowe",
+      "GIS i mapy",
+      "Workflowy AI",
+      "Automatyzacja"
+    ],
+    "knowsAbout": ["Angular", "TypeScript", "OpenLayers", "GIS", "Workflowy AI"]
+  },
+  "legal": {
+    "imprint": "<h1>Impressum</h1><h2>Informacje zgodnie z § 5 DDG</h2><h3>Michal Galas</h3><h2>Adres pocztowy:<span>Bahnhofstraße 60</span><span>09648 Mittweida</span></h2><h3><span>Telefon: 015224610296</span><span>E-Mail: contact@michal-galas.de</span></h3>",
+    "privacy": "<h1>Polityka prywatności</h1><h2>Administrator danych</h2><p>Michal Galas, Bahnhofstraße 60, 09648 Mittweida, Deutschland. E-Mail: <a href='mailto:contact@michal-galas.de'>contact@michal-galas.de</a>, Telefon: 015224610296</p><h2>Informacje ogólne</h2><p>Ochrona Twoich danych osobowych jest dla mnie ważna. Niniejsza polityka prywatności informuje, jakie dane są przetwarzane podczas odwiedzania tej strony. Podstawą prawną jest Ogólne Rozporządzenie o Ochronie Danych (RODO) oraz niemiecka ustawa o ochronie danych (BDSG) i ustawa o ochronie danych w telekomunikacji i usługach cyfrowych (TDDDG).</p><h2>Hosting i logi serwera</h2><p>Ta strona jest hostowana u ALL-INKL.COM – Neue Medien Münnich (Hauptstraße 68, 02742 Friedersdorf, Deutschland). Przy każdym wejściu na stronę hosting automatycznie rejestruje logi serwera (np. adres IP, data i godzina dostępu, odwiedzona strona, typ przeglądarki). Dane te służą zapewnieniu bezawaryjnego działania i bezpieczeństwa strony (art. 6 ust. 1 lit. f RODO) i są automatycznie usuwane po krótkim czasie.</p><h2>Formularz kontaktowy</h2><p>Jeśli korzystasz z formularza kontaktowego, podane przez Ciebie dane (imię i nazwisko, adres e-mail i wiadomość) są przetwarzane wyłącznie w celu obsługi Twojego zapytania (art. 6 ust. 1 lit. b RODO). Dane są usuwane, gdy nie są już potrzebne do obsługi zapytania i nie obowiązują przepisy o ich przechowywaniu. Nie są przekazywane osobom trzecim.</p><h2>Lokalne przechowywanie (Local Storage)</h2><p>Ta strona zapisuje w Local Storage Twojej przeglądarki ustawienia języka i motywu (jasny/ciemny). To przechowywanie jest technicznie konieczne, aby zapewnić wybrane przez Ciebie ustawienia (§ 25 ust. 2 nr 2 TDDDG). Nie stosuje się śledzenia ani cookies reklamowych.</p><h2>Czcionki</h2><p>Ta strona korzysta z czcionek hostowanych lokalnie na własnym serwerze. Przy wejściu na stronę nie nawiązywane jest połączenie z serwerami Google ani innych podmiotów trzecich.</p><h2>Twoje prawa</h2><p>Masz prawo do dostępu (art. 15 RODO), sprostowania (art. 16 RODO), usunięcia (art. 17 RODO), ograniczenia przetwarzania (art. 18 RODO), przenoszenia danych (art. 20 RODO) oraz sprzeciwu wobec przetwarzania (art. 21 RODO). Masz też prawo złożyć skargę do organu nadzorczego ds. ochrony danych, np. Sächsischen Datenschutz- und Transparenzbeauftragten.</p><p>W sprawach prywatności możesz się ze mną skontaktować e-mailem pod adresem <a href='mailto:contact@michal-galas.de'>contact@michal-galas.de</a>.</p>"
+  }
+}

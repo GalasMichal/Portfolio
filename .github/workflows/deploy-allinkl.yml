@@ -78,19 +78,38 @@ jobs:
           timeout: 600000
           log-level: verbose
           state-name: .ftp-deploy-sync-state-portfolio.json
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+
+      - name: Deploy sendMail.php to server root
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./public/
+          server-dir: ${{ env.FTP_REMOTE_DIR_NORM }}
+          timeout: 600000
+          log-level: minimal
+          dangerous-clean-slate: false
 
       - name: Verify production deploy
         run: |
-          MAIN=$(basename dist/portfolio/browser/main-*.js)
-          echo "Expecting $MAIN on $SITE_URL/imprint"
+          echo "Expecting prerendered content on $SITE_URL/projekte"
           for i in $(seq 1 12); do
-            HTML=$(curl -fsSL "$SITE_URL/imprint" || true)
-            if echo "$HTML" | grep -q 'Bahnhofstraße 60'; then
-              echo "Deploy verified: updated imprint address is live"
+            HTML=$(curl -fsSL "$SITE_URL/projekte" || true)
+            if echo "$HTML" | grep -q 'Projekte & Erfahrungen'; then
+              echo "Deploy verified: /projekte prerendered"
+              curl -fsSL "$SITE_URL/" | grep -q 'Was heute kompliziert' && echo "Homepage hero verified" || echo "::warning::Hero headline not yet live"
+              curl -fsSL "$SITE_URL/llms.txt" | grep -q 'Michal Galas' && echo "llms.txt verified" || echo "::warning::llms.txt not reachable"
               exit 0
             fi
-            echo "Attempt $i/12: new address not yet live, waiting 15s..."
+            echo "Attempt $i/12: prerendered content not yet live, waiting 15s..."
             sleep 15
           done
-          echo "::warning::Imprint may still show old address – check FTP_REMOTE_DIR (e.g. /michal-galas.de/)"
+          echo "::warning::Prerendered /projekte may not be live yet – check FTP_REMOTE_DIR"
           exit 1

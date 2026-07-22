@@ -1,36 +1,21 @@
-import { ApplicationConfig, importProvidersFrom } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
+import { provideRouter, withInMemoryScrolling, withViewTransitions } from '@angular/router';
+import { provideHttpClient } from '@angular/common/http';
+
 import { routes } from './app.routes';
-import { HttpClient, HttpClientModule, provideHttpClient } from '@angular/common/http';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-
-
-
-// AoT requires an exported function for factories
-export function HttpLoaderFactory(httpClient: HttpClient) {
-  return  new  TranslateHttpLoader(httpClient, './assets/i18n/', '.json');
-}
-
-
-export const provideTranslation = () => ({
-  defaultLanguage: 'en',
-  loader: {
-    provide: TranslateLoader,
-    useFactory: HttpLoaderFactory,
-    deps: [HttpClient],
-  },
-});
+import { provideTranslation } from './core/i18n/translation.providers';
+import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideRouter(routes),
+    provideBrowserGlobalErrorListeners(),
+    provideRouter(
+      routes,
+      withInMemoryScrolling({ anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled' }),
+      withViewTransitions(),
+    ),
     provideHttpClient(),
-    provideAnimationsAsync(),
-    importProvidersFrom([
-      HttpClientModule,
-      TranslateModule.forRoot(provideTranslation())
-    ]),
+    ...provideTranslation(),
+    provideClientHydration(withEventReplay()),
   ],
 };

@@ -1,0 +1,587 @@
+{
+  "nav": {
+    "start": "Start",
+    "leistungen": "Lösungen",
+    "projekte": "Projekte",
+    "skills": "Kompetenzen",
+    "about": "Über mich",
+    "kontakt": "Kontakt"
+  },
+  "common": {
+    "available": "Verfügbar für Projekte",
+    "projectRequest": "Vorhaben besprechen",
+    "viewProjects": "Projekte ansehen",
+    "viewAllServices": "Alle Lösungen ansehen →",
+    "viewAllProjects": "Alle Projekte ansehen →",
+    "viewAllSkills": "Alle Kompetenzen ansehen →",
+    "moreAbout": "Mehr über mich →",
+    "themeToggle": "Theme wechseln",
+    "menuOpen": "Menü öffnen",
+    "showDetails": "Details anzeigen",
+    "showLess": "Weniger anzeigen",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "profileView": "Profil ansehen",
+    "location": "Standort",
+    "country": "Deutschland",
+    "webMapsAi": "Ablauf → Lösung",
+    "themeLight": "Helles Design",
+    "themeDark": "Dunkles Design"
+  },
+  "hero": {
+    "identity": "Webanwendungen, Kartenlösungen und Automatisierung",
+    "imageAlt": "Michal Galas – Webentwickler",
+    "headline": "Was heute kompliziert ist, kann digital einfacher werden.",
+    "subheadline": "Ich entwickle individuelle Webanwendungen, Kartenlösungen und Automatisierungen für Abläufe, die zu viel Zeit kosten, unübersichtlich sind oder sich mit vorhandener Software nicht sinnvoll abbilden lassen.",
+    "intro": "Du erklärst mir die Herausforderung. Ich entwickle daraus eine passende digitale Lösung.",
+    "techLine": "Webentwicklung · GIS & Mapping · Automatisierung · KI-Integration",
+    "badges": [
+      "Mehr Anfragen",
+      "Klarer Auftritt",
+      "Weniger Chaos",
+      "Standort sichtbar",
+      "Zeit zurück",
+      "Lösung statt Tool-Show"
+    ]
+  },
+  "problems": {
+    "headline": "Kommt dir eine dieser Situationen bekannt vor?",
+    "text": "Oft beginnt ein digitales Projekt nicht mit einer fertigen Idee, sondern mit einem Ablauf, der zu viel Zeit kostet, einer Anwendung, die nicht mehr richtig passt, oder Informationen, die schwer nutzbar sind.",
+    "ideaNote": "Du hast bereits eine konkrete Idee? Gemeinsam machen wir daraus ein realistisches Konzept und eine funktionierende erste Version.",
+    "items": {
+      "scattered-data": {
+        "title": "Wichtige Informationen sind auf mehrere Stellen verteilt",
+        "description": "Daten liegen in Tabellen, E-Mails, Ordnern oder verschiedenen Tools – ein Gesamtüberblick und schnelle Entscheidungen sind deshalb schwierig."
+      },
+      "manual-work": {
+        "title": "Manuelle Aufgaben kosten zu viel Zeit",
+        "description": "Informationen werden mehrfach übertragen, Dokumente von Hand bearbeitet oder wiederkehrende Schritte immer wieder neu erledigt."
+      },
+      "legacy-software": {
+        "title": "Die bestehende Anwendung lässt sich kaum erweitern",
+        "description": "Neue Funktionen verursachen immer mehr Aufwand und selbst kleine Änderungen können bestehende Bereiche gefährden."
+      },
+      "geo-data": {
+        "title": "Standorte, Flächen oder Routen sind schwer zu überblicken",
+        "description": "Geografische Informationen sind vorhanden, lassen sich aber nicht einfach darstellen, bearbeiten oder im Alltag sinnvoll nutzen."
+      },
+      "ai-trend": {
+        "title": "KI soll helfen – aber nur mit einem sinnvollen Anwendungsfall",
+        "description": "Du suchst eine konkrete Stelle im Arbeitsablauf, an der künstliche Intelligenz wirklich Zeit spart oder Arbeit zuverlässiger macht."
+      },
+      "standard-software": {
+        "title": "Standardsoftware passt nicht zum tatsächlichen Ablauf",
+        "description": "Vorhandene Lösungen sind zu kompliziert, zu unflexibel oder decken den eigentlichen Arbeitsprozess nur teilweise ab."
+      }
+    }
+  },
+  "process": {
+    "headline": "Von der Herausforderung zur funktionierenden Lösung",
+    "text": "Du benötigst weder ein fertiges Konzept noch eine technische Spezifikation. Zuerst klären wir, was heute schwierig ist und was zukünftig besser funktionieren soll.",
+    "steps": {
+      "understand": {
+        "title": "Ausgangssituation verstehen",
+        "description": "Wir klären, wie der aktuelle Ablauf aussieht, wo Schwierigkeiten entstehen und welche Verbesserung du dir wünschst."
+      },
+      "plan": {
+        "title": "Ziel und sinnvolle Lösung festlegen",
+        "description": "Ich übersetze die Anforderungen in verständliche Funktionen und schlage einen realistischen technischen Weg vor."
+      },
+      "build": {
+        "title": "Erste nutzbare Version entwickeln",
+        "description": "Statt lange im Verborgenen zu entwickeln, entsteht möglichst früh eine Version, die angesehen und getestet werden kann."
+      },
+      "improve": {
+        "title": "Im echten Einsatz prüfen und verbessern",
+        "description": "Die Lösung wird anhand echter Nutzung geprüft, angepasst und bei Bedarf um weitere Funktionen erweitert."
+      }
+    }
+  },
+  "whyWork": {
+    "headline": "Technik verständlich und lösungsorientiert umgesetzt",
+    "items": {
+      "problem-first": {
+        "title": "Du musst die Technologie nicht zuerst wählen",
+        "description": "Zuerst klären wir, was im Alltag besser laufen soll. Die passende Technologie folgt daraus – nicht umgekehrt."
+      },
+      "communication": {
+        "title": "Du musst technische Entscheidungen nicht selbst übersetzen",
+        "description": "Ich erkläre Möglichkeiten, Grenzen und Entscheidungen so, dass du auch ohne tiefes Entwicklerwissen nachvollziehen kannst, was umgesetzt wird und warum."
+      },
+      "incremental": {
+        "title": "Du bekommst früh etwas Nutzbares statt monatelanger Planung",
+        "description": "Eine erste Version zum Ausprobieren ist oft wertvoller als ein ausuferndes Konzept, das lange nicht eingesetzt wird."
+      },
+      "existing-systems": {
+        "title": "Funktionierende Teile bleiben erhalten",
+        "description": "Nicht alles muss neu gebaut werden. Häufig reicht eine gezielte Modernisierung, um wieder erweiterbar und wartbar zu werden."
+      },
+      "breadth": {
+        "title": "Verschiedene Bausteine aus einer Hand",
+        "description": "Web-Oberflächen, Karten, Daten und Automatisierung können in einer durchgängigen Lösung zusammengeführt werden – ohne Medienbrüche."
+      },
+      "practical": {
+        "title": "Die Lösung muss im Alltag tragen",
+        "description": "Sauberer Code ist wichtig – entscheidend ist aber, dass Anwender die Lösung verstehen und sie im Arbeitsalltag wirklich nutzen."
+      }
+    }
+  },
+  "services": {
+    "headline": "Digitale Lösungen passend zu deiner Aufgabe",
+    "text": "Die Technologie richtet sich nach der Aufgabe – nicht umgekehrt. Gemeinsam klären wir zuerst, welche Verbesserung du dir wünschst. Danach entsteht eine Lösung, die zu deinen Abläufen passt.",
+    "viewAll": "Alle Lösungen ansehen →",
+    "items": {
+      "webapps": {
+        "title": "Arbeitsabläufe in einer passenden Anwendung zusammenführen",
+        "category": "Individuelle Webanwendungen",
+        "description": "Ich entwickle Anwendungen, die genau zu deinem Arbeitsablauf passen. Von einer ersten nutzbaren Version bis zur schrittweisen Erweiterung entsteht eine Lösung, die verständlich bedienbar und langfristig wartbar ist.",
+        "tags": ["Dein Prozess", "Weniger Reibung", "Sofort nutzbar", "Alles an einem Ort"],
+        "outcomes": [
+          "interne Verwaltungsanwendungen",
+          "Kundenportale",
+          "Dashboards",
+          "digitale Formulare",
+          "branchenspezifische Werkzeuge",
+          "individuelle Plattformen"
+        ],
+        "techHint": "Mögliche Technologien: Angular, TypeScript, .NET und PostgreSQL"
+      },
+      "automation": {
+        "title": "Wiederkehrende Aufgaben sinnvoll automatisieren",
+        "category": "Prozessdigitalisierung und Automatisierung",
+        "description": "Ich analysiere bestehende Abläufe und entwickle Lösungen, die unnötige Arbeitsschritte reduzieren. Daten werden automatisch verarbeitet, Informationen zusammengeführt und wiederkehrende Aufgaben zuverlässig ausgeführt.",
+        "tags": ["Weniger Tipparbeit", "Weniger Fehler", "Mehr Freiraum", "Alltag leichter"],
+        "outcomes": [
+          "weniger manuelle Dateneingabe",
+          "automatische Verarbeitung von Dokumenten",
+          "strukturierte Datenübertragung",
+          "automatisierte Auswertungen",
+          "Verknüpfung bestehender Systeme"
+        ]
+      },
+      "gis": {
+        "title": "Standorte und geografische Daten verständlich darstellen",
+        "category": "Karten- und GIS-Lösungen",
+        "description": "Ich entwickle interaktive Kartenlösungen, mit denen Standorte, Strecken, Flächen und andere räumliche Informationen einfach dargestellt, bearbeitet und ausgewertet werden können.",
+        "tags": ["Sofort Orientierung", "Markieren & wählen", "Druck & Export", "Weniger Nachfragen"],
+        "outcomes": [
+          "interaktive Karten",
+          "Routen- und Standortlösungen",
+          "Zeichen- und Messwerkzeuge",
+          "Visualisierung von Fachdaten",
+          "Verarbeitung geografischer Daten",
+          "Integration in bestehende Anwendungen"
+        ],
+        "techHint": "Mögliche Technologien: OpenLayers, Leaflet, GeoServer, GeoJSON und SLD"
+      },
+      "modernization": {
+        "title": "Bestehende Software schrittweise modernisieren",
+        "category": "Software-Modernisierung",
+        "description": "Nicht jede Anwendung muss komplett neu gebaut werden. Ich modernisiere bestehende Lösungen schrittweise, ersetze problematische Bereiche und achte darauf, dass wichtige Funktionen während der Umstellung erhalten bleiben.",
+        "tags": ["Schrittweise", "Weniger Risiko", "Bestehendes nutzen", "Langfristig wartbar"],
+        "outcomes": [
+          "bessere Wartbarkeit",
+          "modernere Benutzeroberflächen",
+          "weniger technische Abhängigkeiten",
+          "schrittweise Migration",
+          "einfachere Erweiterung",
+          "reduzierte technische Schulden"
+        ]
+      },
+      "ki": {
+        "title": "KI für einen konkreten Arbeitsablauf einsetzen",
+        "category": "Sinnvolle KI-Integration",
+        "description": "Ich unterstütze bei der Auswahl und Umsetzung sinnvoller KI-Anwendungen. Dabei steht nicht der Begriff künstliche Intelligenz im Mittelpunkt, sondern die Frage, ob eine Aufgabe dadurch schneller, einfacher oder zuverlässiger erledigt werden kann.",
+        "tags": ["Konkreter Nutzen", "Ohne Buzzword-Nebel", "Sofort umsetzbar", "Ehrlich eingeschätzt"],
+        "outcomes": [
+          "Unterstützung bei Recherche und Auswertung",
+          "Verarbeitung und Strukturierung von Texten",
+          "interne Wissensassistenten",
+          "intelligente Automatisierungen",
+          "Unterstützung bei wiederkehrenden Entscheidungen",
+          "Anbindung von Sprachmodellen an bestehende Prozesse"
+        ]
+      },
+      "consulting": {
+        "title": "Aus einer Herausforderung einen umsetzbaren Plan entwickeln",
+        "category": "Technische Konzeption",
+        "description": "Du benötigst noch kein fertiges Lastenheft. Gemeinsam übersetzen wir deine Ausgangssituation in konkrete Funktionen, sinnvolle Schritte und eine realistische technische Lösung.",
+        "tags": ["Klarer nächster Schritt", "Erste Version", "Kein Blindflug", "Fokus auf Nutzen"]
+      }
+    }
+  },
+  "projects": {
+    "headline": "Ausgewählte Projekte und Lösungen",
+    "text": "Meine Projekte zeigen vor allem, welche Herausforderung gemeistert und welches Ergebnis erreicht wurde – nicht nur, welche Technologien zum Einsatz kamen.",
+    "confidentialityNotice": "Hinweis: Berufliche Projekte und eigene Arbeiten sind aus Gründen der Geheimhaltung und des Datenschutzes nicht auf GitHub einsehbar und für Dritte nicht verfügbar. Auf persönliche Nachfrage gebe ich gerne Auskunft, wenn jemand Details prüfen möchte.",
+    "viewAll": "Alle Projekte ansehen →",
+    "viewProject": "Projekt ansehen",
+    "closeProject": "Details schließen",
+    "viewDemo": "Interaktive Demo ansehen",
+    "viewFullscreenDemo": "Vollbild-Demo",
+    "liveDemo": "Live Demo",
+    "viewGithub": "GitHub",
+    "labels": {
+      "problem": "Die Herausforderung",
+      "solution": "Die Lösung",
+      "benefit": "Der konkrete Vorteil",
+      "contribution": "Mein Beitrag"
+    },
+    "filters": {
+      "alle": "Alle",
+      "beruflich": "Beruflich",
+      "privat": "Privat",
+      "in-entwicklung": "In Entwicklung",
+      "experimentell": "Experimentell"
+    },
+    "statusLabels": {
+      "berufliche-erfahrung": "Berufliche Erfahrung",
+      "in-entwicklung": "In Entwicklung",
+      "konzept": "Konzept & Prototyping",
+      "experimentell": "Experimentell"
+    },
+    "items": {
+      "openlayers-kartenmodul": {
+        "title": "Moderne Kartenanwendung für komplexe Fachdaten",
+        "categoryLabel": "Beruflich · Karten · Web",
+        "shortDescription": "Gewachsene Kartenanwendung schrittweise modernisiert – mit übersichtlicheren Werkzeugen für Darstellung, Auswahl und Bearbeitung geografischer Daten.",
+        "problem": "Die bestehende Kartenlösung war technisch stark gewachsen und ließ sich nur noch mit hohem Aufwand erweitern. Neue Kartenwerkzeuge und moderne Bedienkonzepte mussten integriert werden, ohne bestehende Geschäftsprozesse zu unterbrechen.",
+        "solution": "Ich übertrug zentrale Funktionen schrittweise auf eine moderne und modular aufgebaute Kartenarchitektur. Dabei entstanden Werkzeuge zum Zeichnen, Messen, Auswählen, Bearbeiten und Visualisieren komplexer geografischer Informationen.",
+        "benefit": "Die Anwendung kann leichter erweitert und gewartet werden. Anwender erhalten übersichtlichere Werkzeuge, während bestehende Prozesse weiterhin funktionieren.",
+        "contribution": "Konzeption und Implementierung von Kartenwerkzeugen, Verarbeitung von GeoJSON-Daten, Umsetzung komplexer Darstellungsregeln sowie Integration in eine bestehende .NET-Anwendung."
+      },
+      "mapfish-templates": {
+        "title": "Automatisierte Kartenausgabe für Reports",
+        "categoryLabel": "Beruflich · Berichte · Karten",
+        "shortDescription": "Saubere und standardisierte Übertragung von Kartendarstellungen in Reports und Druckdokumente, ohne manuelle Nachbearbeitung.",
+        "problem": "Karteninhalte mussten bisher manuell in Berichte übertragen und formatiert werden, was zeitaufwendig und fehleranfällig war. Die Druckqualität war uneinheitlich.",
+        "solution": "Es wurden Vorlagen und Prozesse entwickelt, die Karteninhalte automatisiert in druckreife Formate überführen. Die Gestaltung ist an die jeweiligen Report-Standards angepasst.",
+        "benefit": "Zeitersparnis bei der Erstellung von Berichten, konsistente und professionelle Darstellung von Karten in Dokumenten.",
+        "contribution": "Entwicklung und Anpassung von Mapfish Print Templates, Definition von Drucklayouts und Integration in den bestehenden Workflow."
+      },
+      "kendo-ui": {
+        "title": "Übersichtliche Benutzeroberflächen für Fachanwendungen",
+        "categoryLabel": "Beruflich · Oberflächen",
+        "shortDescription": "Verbesserung bestehender Web-Oberflächen, um komplexe Daten einfacher darzustellen und zu bearbeiten, mit direkter Verknüpfung zu Kartenansichten.",
+        "problem": "Die bestehenden internen Anwendungen waren schwer zu bedienen und boten wenig Überblick über komplexe Datenmengen. Die Verknüpfung von Listen mit Kartenansichten war umständlich.",
+        "solution": "Ich implementierte moderne UI-Komponenten zur übersichtlichen Darstellung von Daten in Tabellen mit Filter- und Sortierfunktionen. Dialogfenster erleichtern die Bearbeitung, und eine direkte Verknüpfung zur Karte ermöglicht schnelles Navigieren.",
+        "benefit": "Benutzer finden benötigte Informationen schneller, die Bearbeitung von Daten wird intuitiver, und die Integration von Karten macht die Arbeit effizienter.",
+        "contribution": "Implementierung von Kendo UI Komponenten, Gestaltung interaktiver Tabellen und Dialoge sowie die Kopplung von Datenlisten mit OpenLayers-Kartenkomponenten."
+      },
+      "3d-scan": {
+        "title": "Geführte Bilderfassung für vollständige 3D-Scans",
+        "categoryLabel": "Privat · 3D · Experiment",
+        "shortDescription": "Eine Anwendung, die Nutzer Schritt für Schritt durch die Aufnahme eines Objekts führt und sichtbar macht, welche Perspektiven noch fehlen.",
+        "problem": "Beim Fotografieren von Objekten für 3D-Scans wurden oft wichtige Perspektiven vergessen, was zu unvollständigen Modellen führte. Dies erforderte wiederholte Aufnahmen und erhöhte den Zeitaufwand.",
+        "solution": "Ich entwickelte eine Anwendung mit einer geführten Kameraführung. Sie zeigt dem Nutzer in Echtzeit an, welche Bereiche des Objekts bereits erfasst wurden und welche Perspektiven noch fehlen.",
+        "benefit": "Die visuelle Führung reduziert unvollständige Aufnahmen und verbessert die Grundlage für die spätere 3D-Rekonstruktion.",
+        "contribution": "Entwicklung der Benutzeroberfläche und der Kamera-Integrationslogik, Visualisierung des Erfassungsfortschritts in Echtzeit und Implementierung der 3D-Modellvorschau."
+      },
+      "route-navi": {
+        "title": "Übersichtliche Routenplanung für viele Ziele",
+        "categoryLabel": "Privat · Karten · Planung",
+        "shortDescription": "Eine übersichtliche Anwendung, die zahlreiche Ziele strukturiert darstellt und die tägliche Routenplanung vereinfacht.",
+        "problem": "Bei vielen Stopps werden normale Navigationsanwendungen schnell unübersichtlich oder verlangen kostenpflichtige Abonnements. Adressen aus bestehenden Listen mussten außerdem zunächst manuell vorbereitet werden.",
+        "solution": "Ich entwickelte eine Anwendung, in der Adressen importiert, geprüft, auf einer Karte dargestellt und in eine sinnvolle Reihenfolge gebracht werden können.",
+        "benefit": "Der Nutzer erhält eine übersichtliche Kartenansicht, eine sortierte Stoppliste und eine bessere Grundlage für die tägliche Tourenplanung.",
+        "contribution": "Konzeption der Benutzeroberfläche für Import und Routenplanung, Implementierung der Kartenintegration mit OpenLayers, Logik für Routenoptimierung und Datenmanagement."
+      },
+      "dabubble": {
+        "title": "Eigene Kommunikationsplattform für Teams",
+        "categoryLabel": "Privat · Chat · Firebase",
+        "shortDescription": "Eine eigene Chat-Anwendung für Teamkommunikation mit Kanälen, Direktnachrichten und zentraler Benutzerverwaltung.",
+        "problem": "Teams benötigten eine flexible Kommunikationslösung, die sich an spezifische Bedürfnisse anpassen lässt und volle Kontrolle über Daten und Funktionen bietet, ohne auf externe Dienste angewiesen zu sein.",
+        "solution": "Ich entwickelte eine komplette Chat-Anwendung mit Funktionen wie Registrierung, Login, privaten und öffentlichen Kanälen, Direktnachrichten und Avatar-Verwaltung.",
+        "benefit": "Teams können in einer anpassbaren Umgebung kommunizieren, die Produktivität steigt durch zielgerichtete Informationsflüsse, und die Abhängigkeit von Standardlösungen wird reduziert.",
+        "contribution": "Entwicklung des gesamten Frontends mit Angular und TypeScript, Implementierung der Echtzeit-Kommunikation mit Firebase sowie Integration von Authentifizierung und Benutzerprofilen."
+      },
+      "join": {
+        "title": "Intuitiver Task-Manager mit Kanban-Board",
+        "categoryLabel": "Privat · Kanban · Firebase",
+        "shortDescription": "Visuelles Kanban-Board für Aufgaben – mit klarer Zuordnung, Status und Verantwortlichkeiten im Team.",
+        "problem": "Die Aufgabenverwaltung in Teams war unübersichtlich. Aufgaben wurden oft vergessen, Prioritäten waren unklar, und die Zuweisung zu Teammitgliedern war nicht transparent.",
+        "solution": "Ich entwickelte einen Task-Manager, der Aufgaben in einem visuellen Kanban-Board darstellt. Funktionen wie Drag-and-Drop für die Statusänderung, Zuweisung zu Personen und Kategorisierung machen die Planung intuitiv und transparent.",
+        "benefit": "Verbesserte Übersicht über den Projektfortschritt, klare Verantwortlichkeiten und eine effizientere Koordination von Aufgaben.",
+        "contribution": "Konzeption und Implementierung der gesamten Anwendung, Entwicklung des Drag-and-Drop-Kanban-Boards mit JavaScript und Anbindung an Firebase für Datenpersistenz und Benutzerverwaltung."
+      },
+      "sharkie": {
+        "title": "Interaktives Jump-and-Run Lernspiel",
+        "categoryLabel": "Privat · Spiele · JavaScript",
+        "shortDescription": "Ein einfaches 2D-Jump-and-Run-Spiel, das grundlegende Konzepte der objektorientierten Programmierung spielerisch vermittelt.",
+        "problem": "Anfänger in der Programmierung benötigen oft interaktive Beispiele, um abstrakte Konzepte wie Objektorientierung zu verstehen. Klassische Tutorials sind oft trocken und wenig motivierend.",
+        "solution": "Ich entwickelte ein Jump-and-Run-Spiel, bei dem die Spielelemente als Objekte modelliert und interagieren. Der Code ist modular aufgebaut und leicht nachvollziehbar.",
+        "benefit": "Spielerischer Zugang zu Programmierkonzepten, besseres Verständnis durch direkte Interaktion und eine motivierende Lernumgebung.",
+        "contribution": "Konzeption und Entwicklung der Spielmechanik, Implementierung der objektorientierten Struktur mit JavaScript und grafische Umsetzung der Spielelemente."
+      },
+      "roblox": {
+        "title": "Roblox Game-Logik für Spielerbindung",
+        "categoryLabel": "Privat · Spiele · Roblox",
+        "shortDescription": "Entwicklung von Spielemechaniken und Systemen in Roblox, die die Spielerbindung fördern und wiederkehrende Aufgaben automatisieren.",
+        "problem": "Beim Erstellen von Spielen in Roblox ist es eine Herausforderung, Spieler langfristig zu motivieren und effiziente Systeme für In-Game-Ökonomien oder Fortschritt zu implementieren.",
+        "solution": "Ich entwickelte modulare Systeme für Münzsammeln, Levelaufstiege, Shops und Upgrades innerhalb von Roblox. Diese basieren auf Lua-Skripten und sind so konzipiert, dass sie leicht erweitert werden können.",
+        "benefit": "Erhöhte Motivation durch klare Fortschrittsanzeigen und Belohnungssysteme. Vereinfachte Verwaltung von Spielinhalten und schnellere Iterationen bei der Entwicklung.",
+        "contribution": "Konzeption und Implementierung von In-Game-Systemen mit Lua in Roblox Studio und Entwicklung von modularen Skripten."
+      },
+      "ki-workflows": {
+        "title": "KI-gestützte Workflows für Entwicklung und Alltag",
+        "categoryLabel": "KI · Automatisierung · Experiment",
+        "shortDescription": "Welche KI-Werkzeuge im Alltag und bei der Entwicklung wirklich entlasten – systematisch erprobt und ehrlich eingeordnet.",
+        "problem": "Das Potenzial von KI-Tools ist groß, aber schwer einzuschätzen, welche Anwendungen tatsächlich einen Mehrwert bieten und wie sie effizient in bestehende Workflows integriert werden können.",
+        "solution": "Ich teste verschiedene KI-Werkzeuge – von Coding-Assistenten über Sprachmodelle bis hin zu lokalen LLMs – mit dem Ziel, konkrete Anwendungsfälle zu finden, die die Arbeit erleichtern.",
+        "benefit": "Identifizierung von KI-Lösungen, die echte Zeitersparnis ermöglichen, weniger manuelle Recherche und schnellere Code-Entwicklung bei realistischer Einschätzung der Möglichkeiten.",
+        "contribution": "Systematische Erprobung und Integration von KI-Tools in den Entwicklungs-Workflow, Implementierung von Schnittstellen zu lokalen LLMs und Entwicklung von Prompt-Strategien."
+      }
+    }
+  },
+  "skills": {
+    "headline": "Technologien, mit denen ich Lösungen umsetze",
+    "text": "Die konkrete Auswahl hängt vom Projekt ab. Entscheidend ist nicht das Werkzeug selbst, sondern ob es zuverlässig zur Aufgabe, zum bestehenden System und zur späteren Weiterentwicklung passt.",
+    "workStyleTitle": "Dein Vorteil in der Zusammenarbeit",
+    "learningTitle": "Was du spürst",
+    "workStyle": [
+      "Einfache Lösung statt unnötiger Komplexität",
+      "Fokus auf dein konkretes Ergebnis",
+      "Schnelle erste Version zum Ausprobieren",
+      "KI nur dort, wo sie dich wirklich entlastet"
+    ],
+    "learningAreas": [
+      "Mehr Überblick statt Suchen und Raten",
+      "Weniger Handarbeit bei wiederkehrenden Schritten",
+      "Vorhaben, die sichtbar und testbar werden",
+      "Ruhe: jemand kümmert sich um die Umsetzung"
+    ],
+    "viewAll": "Alle Kompetenzen ansehen →",
+    "groups": {
+      "frontend": {
+        "title": "Webseiten & Oberflächen",
+        "skills": [
+          "Angular",
+          "TypeScript",
+          "JavaScript",
+          "HTML",
+          "CSS / SCSS",
+          "Responsive Design",
+          "UI-Komponenten",
+          "Kendo UI",
+          "jQuery",
+          "Angular Material",
+          "Bootstrap",
+          "Schnelle Ladezeiten"
+        ]
+      },
+      "gis": {
+        "title": "Karten & Standorte",
+        "skills": [
+          "OpenLayers",
+          "Leaflet",
+          "WebGL",
+          "GeoServer",
+          "Karten-Styling",
+          "Filter & Suche",
+          "Kartenprojektionen",
+          "Auswahl auf der Karte",
+          "Ebenen verwalten",
+          "Markierungen",
+          "Mapfish",
+          "GIS"
+        ]
+      },
+      "backend": {
+        "title": "Daten & Hintergrund",
+        "skills": [
+          "C# / .NET",
+          "SQL",
+          "PostgreSQL",
+          "Supabase",
+          "Schnittstellen verstehen",
+          "REST-API",
+          "Daten aufbereiten",
+          "Firebase"
+        ]
+      },
+      "tools": {
+        "title": "Werkzeuge",
+        "skills": [
+          "Visual Studio",
+          "VS Code",
+          "Cursor AI",
+          "GitHub Copilot",
+          "Git / GitHub",
+          "Docker",
+          "npm",
+          "Gulp",
+          "Linux / Windows",
+          "Roblox Studio",
+          "Rojo",
+          "Scrum"
+        ]
+      },
+      "ki": {
+        "title": "KI & Automatisierung",
+        "skills": [
+          "Gute Anweisungen an KI",
+          "KI beim Programmieren",
+          "ChatGPT im Alltag",
+          "Cursor AI",
+          "GitHub Copilot",
+          "Lokale KI-Modelle",
+          "Abläufe automatisieren",
+          "Nutzen klar einschätzen"
+        ]
+      },
+      "soft": {
+        "title": "Arbeitsweise",
+        "skills": [
+          "Gründlich nachdenken",
+          "Gute Bedienbarkeit (UX)",
+          "Lösungsorientiert",
+          "Probleme Schritt für Schritt lösen",
+          "Entwürfe & Skizzen",
+          "Strukturiert umsetzen"
+        ]
+      }
+    }
+  },
+  "about": {
+    "headline": "Ich entwickle Lösungen zwischen Software, Karten und Automatisierung",
+    "shortText": "Du musst dein Anliegen nicht technisch formulieren. Beschreibe mir einfach, was heute schwierig ist und was zukünftig besser funktionieren soll.",
+    "text": [
+      "Ich bin Softwareentwickler mit einem besonderen Schwerpunkt auf Webanwendungen und interaktiven Kartenlösungen. In meiner beruflichen Arbeit modernisiere und erweitere ich komplexe Anwendungen, entwickle neue Kartenwerkzeuge und integriere Funktionen in bestehende Systeme.",
+      "Auch in eigenen Projekten setze ich vollständige digitale Lösungen um – vom ersten Konzept über Benutzeroberfläche und Datenverarbeitung bis zum Betrieb der Anwendung.",
+      "Besonders wichtig ist mir, technische Möglichkeiten nicht nur einzusetzen, weil sie modern sind. Eine Lösung muss ein echtes Problem lösen, verständlich bedienbar bleiben und sich später sinnvoll erweitern lassen.",
+      "Ich arbeite mich schnell in neue Themen ein, entscheide aber nicht nach Trends, sondern danach, was für die konkrete Aufgabe sinnvoll ist."
+    ],
+    "valuesTitle": "Worauf du dich verlassen kannst",
+    "values": [
+      "Dein Vorteil zuerst – nicht die Technik-Show",
+      "Klare Kommunikation – du weißt, wo wir stehen",
+      "Schnelle erste Versionen zum Ausprobieren",
+      "Nur Werkzeuge, die dem Ergebnis dienen",
+      "Oberflächen, die man sofort versteht",
+      "KI nur, wo sie dich wirklich entlastet",
+      "Pragmatisch statt Overengineering"
+    ],
+    "expectationsTitle": "Was du bekommst",
+    "expectations": [
+      "Eine ehrliche Einschätzung, was dein Vorhaben braucht",
+      "Regelmäßige Updates – ohne Blackbox",
+      "Eine Umsetzung, die dein Problem löst",
+      "Eine erste Version zum Testen, bevor alles feststeht",
+      "Das Gefühl: Endlich läuft es"
+    ]
+  },
+  "contact": {
+    "headline": "Was soll zukünftig einfacher funktionieren?",
+    "text": "Beschreibe mir kurz, welcher Ablauf heute zu viel Zeit kostet, welche Anwendung Schwierigkeiten verursacht oder welches Ergebnis du erreichen möchtest. Du benötigst dafür noch kein technisches Konzept.",
+    "hint": "Auch eine grobe Beschreibung reicht für den ersten Austausch aus.",
+    "cta": "Vorhaben besprechen",
+    "email": "E-Mail",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "locationLabel": "Standort"
+  },
+  "footer": {
+    "text": "Was heute kompliziert ist, kann digital einfacher werden.",
+    "copyright": "© Michal Galas"
+  },
+  "form": {
+    "name": "Name",
+    "email": "E-Mail",
+    "company": "Unternehmen (optional)",
+    "topic": "Worum geht es?",
+    "message": "Nachricht",
+    "namePlaceholder": "Dein Name",
+    "emailPlaceholder": "deine@email.de",
+    "companyPlaceholder": "Firma oder Organisation",
+    "topicPlaceholder": "Bitte wählen",
+    "messagePlaceholder": "Was funktioniert heute nicht so, wie es sollte, und was möchtest du verbessern?",
+    "topics": {
+      "webapp": "Webanwendung",
+      "modernization": "Bestehende Software modernisieren",
+      "gis": "Karten- oder GIS-Lösung",
+      "automation": "Prozess automatisieren",
+      "ai": "KI sinnvoll einsetzen",
+      "consulting": "Technische Beratung",
+      "other": "Etwas anderes"
+    },
+    "checkbox1": "Ich habe die",
+    "checkbox2": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+    "privacyLink": "Datenschutzrichtlinie",
+    "submit": "Nachricht senden",
+    "sending": "Wird gesendet…",
+    "success": "Deine Nachricht wurde erfolgreich gesendet!",
+    "errorMessage": "Senden fehlgeschlagen. Versuch es später erneut oder schreib direkt an contact@michal-galas.de.",
+    "errors": {
+      "name": "Bitte gib deinen Namen an (mindestens 2 Zeichen).",
+      "email": "Bitte gib eine gültige E-Mail-Adresse an.",
+      "message": "Bitte beschreib kurz dein Vorhaben (mindestens 4 Zeichen).",
+      "agree": "Bitte stimme der Datenschutzerklärung zu."
+    }
+  },
+  "gisDemo": {
+    "title": "GIS-Migration: Leaflet → OpenLayers",
+    "subtitle": "Illustrative Demo eines typischen Karten-Umstiegs: Legacy-Stack mit Leaflet und jQuery-UI-Panel wechselt zu OpenLayers mit WebGL-Punkt-Rendering – rund um Mittweida mit synthetischen Daten.",
+    "disclaimer": "Hinweis: Diese Demo verwendet freie OSM-Kacheln und erfundene Beispieldaten. Sie zeigt keine echten Kundendaten und ersetzt keine produktive Kartenanwendung.",
+    "phaseLeaflet": "Leaflet",
+    "phaseTransition": "Migration",
+    "phaseOpenLayers": "OpenLayers",
+    "play": "Abspielen",
+    "pause": "Pause",
+    "restart": "Neu starten",
+    "backToProjects": "Zurück zu Projekte"
+  },
+  "seo": {
+    "home": {
+      "title": "Individuelle Webanwendungen, Kartenlösungen und Automatisierung | Michal Galas",
+      "description": "Ich entwickle digitale Lösungen für umständliche Arbeitsabläufe, schwer nutzbare Daten und bestehende Software – mit Webanwendungen, interaktiven Karten und sinnvoller Automatisierung."
+    },
+    "leistungen": {
+      "title": "Digitale Lösungen – Web, Karten & Automatisierung | Michal Galas",
+      "description": "Individuelle Webanwendungen, Kartenlösungen, Prozessautomatisierung, Software-Modernisierung und sinnvolle KI-Integration. Übersicht der Leistungen von Michal Galas."
+    },
+    "projekte": {
+      "title": "Projekte und Ergebnisse | Michal Galas",
+      "description": "Ausgewählte Projekte: gelöste Probleme, konkrete Ergebnisse und mein Beitrag – von Kartenanwendungen bis Web-Apps."
+    },
+    "skills": {
+      "title": "Technologien & Kompetenzen | Michal Galas",
+      "description": "Angular, TypeScript, OpenLayers, GIS, .NET, KI-Workflows und weitere Technologien – gruppiert nach Einsatzbereich."
+    },
+    "about": {
+      "title": "Über mich – Michal Galas",
+      "description": "Softwareentwickler für Webanwendungen, interaktive Kartenlösungen und Automatisierung – lösungsorientiert und verständlich kommuniziert."
+    },
+    "kontakt": {
+      "title": "Kontakt – Vorhaben besprechen | Michal Galas",
+      "description": "Beschreibe, welcher Ablauf heute zu viel Zeit kostet oder welche Anwendung Schwierigkeiten macht – ich schaue mir an, welche Lösung sinnvoll ist."
+    },
+    "imprint": {
+      "title": "Impressum | Michal Galas",
+      "description": "Impressum und Anbieterkennzeichnung der Website michal-galas.de."
+    },
+    "privacy": {
+      "title": "Datenschutz | Michal Galas",
+      "description": "Datenschutzerklärung der Website michal-galas.de."
+    },
+    "gisDemo": {
+      "title": "GIS-Migration Demo – Leaflet zu OpenLayers | Michal Galas",
+      "description": "Interaktive Demo eines typischen Karten-Umstiegs von Leaflet zu OpenLayers mit WebGL-Punkt-Rendering."
+    }
+  },
+  "schema": {
+    "jobTitle": "Webentwickler",
+    "serviceName": "Michal Galas – Webentwicklung",
+    "serviceTypes": [
+      "Webentwicklung",
+      "Web-Apps",
+      "GIS & Kartenentwicklung",
+      "KI-Workflows",
+      "Automatisierung"
+    ],
+    "knowsAbout": ["Angular", "TypeScript", "OpenLayers", "GIS", "KI-Workflows"]
+  },
+  "legal": {
+    "imprint": "<h1>Impressum</h1><h2>Angaben gemäß § 5 DDG</h2><h3>Michal Galas</h3><h2>Postanschrift:<span>Bahnhofstraße 60</span><span>09648 Mittweida</span></h2><h3><span>Telefon: 015224610296</span><span>E-Mail: contact@michal-galas.de</span></h3>",
+    "privacy": "<h1>Datenschutzerklärung</h1><h2>Verantwortlicher</h2><p>Michal Galas, Bahnhofstraße 60, 09648 Mittweida, Deutschland. E-Mail: <a href='mailto:contact@michal-galas.de'>contact@michal-galas.de</a>, Telefon: 015224610296</p><h2>Allgemeines</h2><p>Der Schutz Ihrer persönlichen Daten ist mir wichtig. Diese Datenschutzerklärung informiert Sie darüber, welche Daten beim Besuch dieser Website verarbeitet werden. Rechtsgrundlage ist die Datenschutz-Grundverordnung (DSGVO) sowie das Bundesdatenschutzgesetz (BDSG) und das Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz (TDDDG).</p><h2>Hosting und Server-Logfiles</h2><p>Diese Website wird bei der ALL-INKL.COM – Neue Medien Münnich (Hauptstraße 68, 02742 Friedersdorf, Deutschland) gehostet. Beim Aufruf der Website erhebt der Hoster automatisch Server-Logfiles (z. B. IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite, Browsertyp). Diese Daten dienen der Sicherstellung eines störungsfreien Betriebs und der Sicherheit der Website (Art. 6 Abs. 1 lit. f DSGVO) und werden nach kurzer Zeit automatisch gelöscht.</p><h2>Kontaktformular</h2><p>Wenn Sie das Kontaktformular nutzen, werden die von Ihnen angegebenen Daten (Name, E-Mail-Adresse und Nachricht) ausschließlich zur Bearbeitung Ihrer Anfrage verarbeitet (Art. 6 Abs. 1 lit. b DSGVO). Die Daten werden gelöscht, sobald sie für die Bearbeitung nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten bestehen. Eine Weitergabe an Dritte erfolgt nicht.</p><h2>Lokale Speicherung (Local Storage)</h2><p>Diese Website speichert Ihre Sprach- und Design-Einstellung (hell/dunkel) im Local Storage Ihres Browsers. Diese Speicherung ist technisch erforderlich, um die von Ihnen gewählten Einstellungen bereitzustellen (§ 25 Abs. 2 Nr. 2 TDDDG). Es findet kein Tracking statt und es werden keine Cookies zu Werbezwecken gesetzt.</p><h2>Schriftarten</h2><p>Diese Website verwendet Schriftarten, die lokal auf dem eigenen Server gehostet werden. Beim Aufruf der Seite wird keine Verbindung zu Servern von Google oder anderen Drittanbietern aufgebaut.</p><h2>Ihre Rechte</h2><p>Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16 DSGVO), Löschung (Art. 17 DSGVO), Einschränkung der Verarbeitung (Art. 18 DSGVO), Datenübertragbarkeit (Art. 20 DSGVO) sowie Widerspruch gegen die Verarbeitung (Art. 21 DSGVO). Außerdem haben Sie das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, z. B. beim Sächsischen Datenschutz- und Transparenzbeauftragten.</p><p>Bei Fragen zum Datenschutz erreichen Sie mich per E-Mail unter <a href='mailto:contact@michal-galas.de'>contact@michal-galas.de</a>.</p>"
+  }
+}

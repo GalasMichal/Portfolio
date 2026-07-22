@@ -1,0 +1,199 @@
+.preview--roblox {
+  position: relative;
+  height: 12rem;
+  overflow: hidden;
+  background: linear-gradient(180deg, #5bc0eb 0%, #87ceeb 55%, #4caf50 55%, #388e3c 100%);
+}
+
+.roblox-world {
+  position: absolute;
+  inset: 0;
+}
+
+.roblox-platform {
+  position: absolute;
+  bottom: 18%;
+  left: 50%;
+  width: 55%;
+  height: 12px;
+  transform: translateX(-50%);
+  background: #795548;
+  border-radius: 2px;
+  box-shadow: 0 4px 0 #5d4037;
+}
+
+.roblox-avatar {
+  position: absolute;
+  bottom: calc(18% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  animation: roblox-bounce 1.2s cubic-bezier(0.25, 1, 0.5, 1) infinite alternate;
+}
+
+.roblox-avatar__head {
+  width: 18px;
+  height: 16px;
+  margin: 0 auto;
+  background: #f4c542;
+  border: 2px solid #333;
+  border-radius: 2px;
+}
+
+.roblox-avatar__body {
+  width: 22px;
+  height: 20px;
+  margin-top: -2px;
+  background: #3b82f6;
+  border: 2px solid #333;
+  border-radius: 2px;
+}
+
+.roblox-coin {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #ffe566, #f4c542 60%, #c9a227);
+  border: 1px solid #b8860b;
+  opacity: 0;
+  animation: roblox-coin-pop 3s ease-in-out infinite;
+
+  &--1 {
+    bottom: 35%;
+    left: 28%;
+    animation-delay: 0s;
+  }
+  &--2 {
+    bottom: 42%;
+    left: 62%;
+    animation-delay: 1s;
+  }
+  &--3 {
+    bottom: 50%;
+    left: 45%;
+    animation-delay: 2s;
+  }
+}
+
+.roblox-hud {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.roblox-hud__level {
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-family: var(--font-label);
+  font-size: 0.55rem;
+  text-transform: uppercase;
+}
+
+.roblox-hud__value {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #f4c542;
+}
+
+.roblox-hud__health {
+  flex: 1;
+  height: 8px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.roblox-hud__health-fill {
+  height: 100%;
+  width: 75%;
+  background: linear-gradient(90deg, #22c55e, #4ade80);
+  border-radius: inherit;
+  animation: roblox-health-pulse 2.5s ease-in-out infinite;
+}
+
+.roblox-hud__coins {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #f4c542;
+  font-family: var(--font-label);
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+.roblox-hud__coin-icon {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #ffe566, #f4c542);
+  border: 1px solid #b8860b;
+}
+
+.roblox-hud__coin-count {
+  animation: roblox-count-up 3s steps(4) infinite;
+}
+
+@keyframes roblox-bounce {
+  from {
+    transform: translateX(-50%) translateY(0);
+  }
+  to {
+    transform: translateX(-50%) translateY(-6px);
+  }
+}
+
+@keyframes roblox-coin-pop {
+  0%,
+  70%,
+  100% {
+    opacity: 0;
+    transform: translateY(0) scale(0.5);
+  }
+  15%,
+  45% {
+    opacity: 1;
+    transform: translateY(-18px) scale(1);
+  }
+}
+
+@keyframes roblox-health-pulse {
+  0%,
+  100% {
+    width: 75%;
+  }
+  50% {
+    width: 68%;
+  }
+}
+
+@keyframes roblox-count-up {
+  0%,
+  24% {
+    opacity: 1;
+  }
+  25%,
+  49% {
+    opacity: 0.7;
+  }
+  50%,
+  74% {
+    opacity: 1;
+  }
+  75%,
+  100% {
+    opacity: 0.85;
+  }
+}

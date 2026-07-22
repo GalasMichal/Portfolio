@@ -1,0 +1,69 @@
+<div class="gis-demo micro-border bg-surface-container overflow-hidden" [class.gis-demo--compact]="compact()">
+  @if (!compact()) {
+  <div class="gis-demo__toolbar flex flex-wrap items-center justify-between gap-3 px-4 py-3 border-b border-outline-variant/30">
+    <div class="flex flex-wrap items-center gap-2 text-xs font-label uppercase tracking-wide">
+      <span class="gis-demo__phase" [class.gis-demo__phase--active]="phase() === 'leaflet'">{{ 'gisDemo.phaseLeaflet' | translate }}</span>
+      <span class="text-on-surface-variant">→</span>
+      <span class="gis-demo__phase" [class.gis-demo__phase--active]="phase() === 'transition'">{{ 'gisDemo.phaseTransition' | translate }}</span>
+      <span class="text-on-surface-variant">→</span>
+      <span class="gis-demo__phase" [class.gis-demo__phase--active]="phase() === 'openlayers'">{{ 'gisDemo.phaseOpenLayers' | translate }}</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <button type="button" class="gis-demo__btn" (click)="togglePlay()">
+        {{ (isPlaying() ? 'gisDemo.pause' : 'gisDemo.play') | translate }}
+      </button>
+      <button type="button" class="gis-demo__btn gis-demo__btn--secondary" (click)="restart()">
+        {{ 'gisDemo.restart' | translate }}
+      </button>
+    </div>
+  </div>
+  }
+
+  <div class="gis-demo__stage relative">
+    <div #mapHost class="gis-demo__map" [class.gis-demo__map--hidden]="phase() === 'transition'"></div>
+
+    @if (phase() === 'leaflet' && !compact()) {
+      <aside class="jquery-panel" aria-hidden="true">
+        <div class="jquery-panel__title">Layer</div>
+        <div class="jquery-panel__section jquery-panel__section--open">
+          <button type="button" class="jquery-panel__header" tabindex="-1">Basiskarte</button>
+          <div class="jquery-panel__content">
+            <label class="jquery-panel__row"><input type="checkbox" checked disabled /> OSM Tiles</label>
+            <label class="jquery-panel__row"><input type="checkbox" checked disabled /> Projektgebiet</label>
+            <label class="jquery-panel__row"><input type="checkbox" checked disabled /> Messpunkte ({{ 420 }})</label>
+          </div>
+        </div>
+        <div class="jquery-panel__section">
+          <button type="button" class="jquery-panel__header" tabindex="-1">Werkzeuge</button>
+        </div>
+      </aside>
+    }
+
+    @if (phase() === 'transition') {
+      <div class="transition-overlay" [class.transition-overlay--active]="transitionActive()">
+        <div class="transition-overlay__content">
+          <div class="transition-overlay__labels">
+            <span>Leaflet + jQuery UI</span>
+            <span class="transition-overlay__arrow" aria-hidden="true">→</span>
+            <span>OpenLayers WebGL</span>
+          </div>
+          <div class="transition-overlay__track">
+            <div class="transition-overlay__bar"></div>
+          </div>
+        </div>
+      </div>
+    }
+
+    @if (phase() === 'openlayers' && !compact()) {
+      <div class="ol-badge">WebGL Points · {{ 420 }} features</div>
+    }
+
+    @if (compact()) {
+      <div class="gis-demo__compact-phases" aria-hidden="true">
+        <span [class.gis-demo__compact-phase--active]="phase() === 'leaflet'">Leaflet</span>
+        <span [class.gis-demo__compact-phase--active]="phase() === 'transition'">→</span>
+        <span [class.gis-demo__compact-phase--active]="phase() === 'openlayers'">OpenLayers</span>
+      </div>
+    }
+  </div>
+</div>

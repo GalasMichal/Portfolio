@@ -1,0 +1,234 @@
+<article class="micro-border bg-surface-container overflow-hidden hover:border-primary/50 transition-all group flex flex-col h-full">
+
+  @if (hasPreview()) {
+
+    <div class="relative h-48 w-full overflow-hidden">
+
+      @switch (project().previewType) {
+
+        @case ('gis-migration') {
+
+          <app-gis-migration-demo [compact]="true" />
+
+        }
+
+        @case ('mapfish') {
+
+          <app-mapfish-preview />
+
+        }
+
+        @case ('kendo-grid') {
+
+          <app-kendo-grid-preview />
+
+        }
+
+        @case ('roblox') {
+
+          <app-roblox-preview />
+
+        }
+
+        @case ('route-navi') {
+
+          <app-route-navi-preview />
+
+        }
+
+        @case ('scan-3d') {
+
+          <app-scan-3d-preview />
+
+        }
+
+      }
+
+      @if (project().demoPath) {
+
+        <a
+
+          [routerLink]="project().demoPath!"
+
+          class="absolute bottom-2 right-2 z-10 px-3 py-1.5 rounded-md text-xs font-label uppercase tracking-wide bg-primary text-on-primary shadow-md hover:opacity-90 transition-opacity"
+
+        >
+
+          {{ 'projects.viewFullscreenDemo' | translate }} →
+
+        </a>
+
+      }
+
+    </div>
+
+  } @else if (project().imageUrl) {
+
+    <div class="h-48 w-full overflow-hidden bg-surface-container-high">
+
+      <img
+
+        [src]="project().imageUrl"
+
+        [alt]="key('title') | translate"
+
+        class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+
+        loading="lazy"
+
+      />
+
+    </div>
+
+  } @else {
+
+    <div class="h-48 w-full" [class]="visualClass()"></div>
+
+  }
+
+  <div class="p-6 flex flex-col flex-1">
+
+    <div class="flex flex-wrap items-center gap-2 mb-2">
+
+      <span class="text-primary text-xs font-label uppercase tracking-wide">{{ key('categoryLabel') | translate }}</span>
+
+      <span class="text-on-surface-variant text-xs font-label">· {{ ('projects.statusLabels.' + project().status) | translate }}</span>
+
+    </div>
+
+    <h3 class="font-headline text-lg font-semibold text-on-surface mb-2">{{ key('title') | translate }}</h3>
+
+    <p class="text-on-surface-variant text-sm leading-relaxed mb-4 flex-1">
+      {{ key('shortDescription') | translate }}
+    </p>
+
+    @if (expanded()) {
+      <div class="space-y-3 mb-4 text-sm text-on-surface-variant">
+        <div>
+          <p class="text-xs font-label uppercase tracking-wide text-primary mb-1">
+            {{ 'projects.labels.problem' | translate }}
+          </p>
+          <p>{{ key('problem') | translate }}</p>
+        </div>
+        <div>
+          <p class="text-xs font-label uppercase tracking-wide text-primary mb-1">
+            {{ 'projects.labels.solution' | translate }}
+          </p>
+          <p>{{ key('solution') | translate }}</p>
+        </div>
+        <div>
+          <p class="text-xs font-label uppercase tracking-wide text-primary mb-1">
+            {{ 'projects.labels.benefit' | translate }}
+          </p>
+          <p>{{ key('benefit') | translate }}</p>
+        </div>
+        <div>
+          <p class="text-xs font-label uppercase tracking-wide text-primary mb-1">
+            {{ 'projects.labels.contribution' | translate }}
+          </p>
+          <p>{{ key('contribution') | translate }}</p>
+        </div>
+      </div>
+    }
+
+    <div class="flex flex-wrap gap-2 mb-4">
+
+      @for (tech of project().technologies.slice(0, expanded() ? project().technologies.length : 4); track tech) {
+
+        <span class="text-[10px] uppercase border border-outline-variant/30 px-2 py-0.5 rounded text-on-surface-variant font-label">
+
+          {{ tech }}
+
+        </span>
+
+      }
+
+    </div>
+
+    @if (expanded()) {
+
+      @if (project().demoUrl || project().githubUrl || (project().demoPath && project().previewType !== 'gis-migration')) {
+
+        <div class="flex flex-wrap gap-4 mb-4">
+
+          @if (project().demoUrl) {
+
+            <a
+
+              [href]="project().demoUrl"
+
+              target="_blank"
+
+              rel="noopener noreferrer"
+
+              class="text-sm font-label text-primary hover:underline"
+
+            >
+
+              {{ 'projects.liveDemo' | translate }} →
+
+            </a>
+
+          }
+
+          @if (project().githubUrl) {
+
+            <a
+
+              [href]="project().githubUrl"
+
+              target="_blank"
+
+              rel="noopener noreferrer"
+
+              class="text-sm font-label text-primary hover:underline"
+
+            >
+
+              {{ 'projects.viewGithub' | translate }} →
+
+            </a>
+
+          }
+
+          @if (project().demoPath && project().previewType !== 'gis-migration') {
+
+            <a
+
+              [routerLink]="project().demoPath"
+
+              class="text-sm font-label text-primary hover:underline"
+
+            >
+
+              {{ 'projects.viewDemo' | translate }} →
+
+            </a>
+
+          }
+
+        </div>
+
+      }
+
+    }
+
+    <button
+
+      type="button"
+
+      class="text-left text-sm font-label text-primary hover:underline self-start"
+
+      (click)="toggle.emit()"
+
+    >
+
+      {{ (expanded() ? 'projects.closeProject' : 'projects.viewProject') | translate }}
+
+    </button>
+
+  </div>
+
+</article>
+
+

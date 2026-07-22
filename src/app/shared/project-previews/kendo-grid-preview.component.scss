@@ -1,0 +1,131 @@
+.preview--kendo {
+  height: 12rem;
+  background: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: #333;
+}
+
+.kendo-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 8px;
+  background: linear-gradient(180deg, #e9e9e9, #dedede);
+  border-bottom: 1px solid #bbb;
+}
+
+.kendo-toolbar__title {
+  font-weight: 700;
+  flex: 1;
+}
+
+.kendo-toolbar__btn {
+  width: 18px;
+  height: 14px;
+  border-radius: 2px;
+  border: 1px solid #aaa;
+  background: #fff;
+
+  &--active {
+    background: #ff6358;
+    border-color: #d6534a;
+    animation: kendo-toolbar-pulse 3s ease-in-out infinite;
+  }
+}
+
+.kendo-grid {
+  flex: 1;
+  overflow: hidden;
+}
+
+.kendo-grid__header,
+.kendo-grid__row {
+  display: grid;
+  grid-template-columns: 24px 36px 1fr 52px;
+  align-items: center;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.kendo-grid__header {
+  background: #ebebeb;
+  font-weight: 600;
+  color: #444;
+}
+
+.kendo-grid__row {
+  background: #fff;
+  animation: kendo-row-highlight 4s ease-in-out infinite;
+}
+
+.kendo-grid__cell {
+  padding: 5px 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &--check {
+    display: flex;
+    justify-content: center;
+  }
+
+  &--id {
+    color: #666;
+  }
+}
+
+.kendo-check {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #999;
+  border-radius: 2px;
+  background: #fff;
+  position: relative;
+
+  &--on::after {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 0;
+    width: 4px;
+    height: 7px;
+    border: solid #ff6358;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+}
+
+.kendo-status {
+  font-size: 9px;
+  padding: 1px 4px;
+  border-radius: 2px;
+  background: #e5e5e5;
+  color: #666;
+
+  &--active {
+    background: #d4edda;
+    color: #155724;
+  }
+}
+
+@keyframes kendo-row-highlight {
+  0%,
+  100% {
+    background: #fff;
+  }
+  15% {
+    background: #fff8e6;
+  }
+}
+
+@keyframes kendo-toolbar-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.65;
+  }
+}

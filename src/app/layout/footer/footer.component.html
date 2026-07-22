@@ -1,0 +1,26 @@
+<footer class="bg-surface-container-lowest border-t border-outline-variant/20 mt-auto">
+  <div class="max-w-[1280px] mx-auto px-4 md:px-12 py-10 flex flex-col md:flex-row justify-between gap-8">
+    <div>
+      <a routerLink="/" class="inline-flex items-center gap-2.5 mb-3 hover:opacity-90 transition-opacity" [attr.aria-label]="profile.name">
+        <span aria-hidden="true"><app-logo variant="mark" class="h-9 w-9" /></span>
+        <span class="font-headline text-lg text-on-surface">{{ profile.name }}</span>
+      </a>
+      <p class="text-sm text-on-surface-variant max-w-xs">{{ 'footer.text' | translate }}</p>
+      <p class="text-xs text-on-surface-variant mt-2">{{ 'footer.copyright' | translate }} {{ year }}</p>
+    </div>
+    <div class="flex flex-wrap gap-x-6 gap-y-2">
+      @for (item of profile.navigation; track item.path) {
+        <a [routerLink]="item.path" class="text-sm text-on-surface-variant hover:text-primary transition-colors">
+          {{ 'nav.' + item.key | translate }}
+        </a>
+      }
+      <a routerLink="/imprint" class="text-sm text-on-surface-variant hover:text-primary transition-colors">{{ 'common.imprint' | translate }}</a>
+      <a routerLink="/privacy-policy" class="text-sm text-on-surface-variant hover:text-primary transition-colors">{{ 'common.privacy' | translate }}</a>
+    </div>
+    <div class="flex flex-wrap gap-4">
+      <a [href]="profile.contact.linkedin" target="_blank" rel="noopener" class="text-sm text-on-surface-variant hover:text-primary">LinkedIn</a>
+      <a [href]="profile.contact.github" target="_blank" rel="noopener" class="text-sm text-on-surface-variant hover:text-primary">GitHub</a>
+      <a [href]="'mailto:' + profile.contact.email" class="text-sm text-on-surface-variant hover:text-primary">{{ 'contact.email' | translate }}</a>
+    </div>
+  </div>
+</footer>

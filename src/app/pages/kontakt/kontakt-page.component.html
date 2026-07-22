@@ -1,0 +1,51 @@
+<section class="pt-24 pb-20 px-4 md:px-12 relative overflow-hidden">
+  <div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10">
+    <div>
+      <h1 class="font-headline text-3xl md:text-4xl font-bold text-on-surface mb-6">{{ 'contact.headline' | translate }}</h1>
+      <p class="text-on-surface-variant leading-relaxed mb-4">{{ 'contact.text' | translate }}</p>
+      <p class="text-on-surface-variant leading-relaxed mb-8">{{ 'contact.hint' | translate }}</p>
+      <div class="space-y-4">
+        <div class="flex items-center gap-4">
+          <div class="w-11 h-11 rounded-full bg-surface-container-high flex items-center justify-center text-primary micro-border">
+            <span class="material-symbols-outlined">mail</span>
+          </div>
+          <div>
+            <p class="text-xs font-label text-on-surface-variant">{{ 'contact.email' | translate }}</p>
+            <a [href]="'mailto:' + profile.contact.email" class="font-label text-on-surface hover:text-primary">{{ profile.contact.email }}</a>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="w-11 h-11 rounded-full bg-surface-container-high flex items-center justify-center text-primary micro-border">
+            <span class="material-symbols-outlined">link</span>
+          </div>
+          <div>
+            <p class="text-xs font-label text-on-surface-variant">LinkedIn</p>
+            <a [href]="profile.contact.linkedin" target="_blank" rel="noopener" class="font-label text-on-surface hover:text-primary">{{ 'common.profileView' | translate }}</a>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="w-11 h-11 rounded-full bg-surface-container-high flex items-center justify-center text-primary micro-border">
+            <span class="material-symbols-outlined">code</span>
+          </div>
+          <div>
+            <p class="text-xs font-label text-on-surface-variant">GitHub</p>
+            <a [href]="profile.contact.github" target="_blank" rel="noopener" class="font-label text-on-surface hover:text-primary">GalasMichal</a>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="w-11 h-11 rounded-full bg-surface-container-high flex items-center justify-center text-primary micro-border">
+            <span class="material-symbols-outlined">location_on</span>
+          </div>
+          <div>
+            <p class="text-xs font-label text-on-surface-variant">{{ 'contact.locationLabel' | translate }}</p>
+            <p class="font-label text-on-surface">{{ 'common.country' | translate }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="glass-panel p-6 md:p-8 rounded-xl">
+      <app-contact-form />
+    </div>
+  </div>
+  <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+</section>

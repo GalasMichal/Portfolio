@@ -1,0 +1,31 @@
+<section class="pt-24 pb-20 px-4 md:px-12">
+  <div class="max-w-[1280px] mx-auto space-y-12">
+    <div>
+      <h1 class="font-headline text-3xl md:text-4xl font-bold text-on-surface">{{ 'skills.headline' | translate }}</h1>
+      <p class="text-on-surface-variant mt-4 max-w-3xl leading-relaxed">{{ 'skills.text' | translate }}</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      @for (group of groups; track group.id) {
+        <app-skill-group [groupId]="group.id" />
+      }
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="micro-border bg-surface-container p-6">
+        <h2 class="font-headline text-lg font-semibold mb-4">{{ 'skills.workStyleTitle' | translate }}</h2>
+        <ul class="space-y-2 text-on-surface-variant text-sm">
+          @for (item of 'skills.workStyle' | translateArray; track item) {
+            <li class="flex gap-2"><span class="text-primary">·</span>{{ item }}</li>
+          }
+        </ul>
+      </div>
+      <div class="micro-border bg-surface-container p-6">
+        <h2 class="font-headline text-lg font-semibold mb-4">{{ 'skills.learningTitle' | translate }}</h2>
+        <ul class="space-y-2 text-on-surface-variant text-sm">
+          @for (item of 'skills.learningAreas' | translateArray; track item) {
+            <li class="flex gap-2"><span class="text-primary">·</span>{{ item }}</li>
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

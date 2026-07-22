@@ -1,0 +1,132 @@
+.hero-visual {
+  position: relative;
+  border-radius: 1rem;
+  overflow: visible;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    filter: saturate(0.92);
+  }
+
+  .hero-img-light {
+    display: none;
+  }
+}
+
+/* Foto je nach Theme umschalten */
+:host-context(.light) .hero-visual {
+  .hero-img-dark {
+    display: none;
+  }
+
+  .hero-img-light {
+    display: block;
+  }
+
+  /* Foto unten sanft in den Seitenhintergrund auslaufen lassen */
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 1rem;
+    background: linear-gradient(
+      to top,
+      color-mix(in srgb, var(--color-background) 55%, transparent),
+      transparent 35%
+    );
+    pointer-events: none;
+  }
+}
+
+/* Globus schwebt über der offenen Hand (links oberhalb der Handfläche) */
+.globe-scene {
+  position: absolute;
+  left: -7%;
+  top: 9%;
+  width: 45%;
+  aspect-ratio: 1;
+  filter: drop-shadow(0 0 18px color-mix(in srgb, var(--color-primary) 45%, transparent));
+  animation: globe-float 7s ease-in-out infinite;
+}
+
+.globe {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.globe-outline {
+  fill: none;
+  stroke: var(--color-primary);
+  stroke-width: 1.6;
+  opacity: 0.9;
+}
+
+.globe-grid {
+  fill: none;
+  stroke: color-mix(in srgb, var(--color-primary) 45%, transparent);
+  stroke-width: 0.7;
+}
+
+.globe-land {
+  animation: globe-spin 18s linear infinite;
+
+  .globe-land-tile path {
+    fill: color-mix(in srgb, var(--color-primary) 28%, transparent);
+    stroke: var(--color-primary);
+    stroke-width: 0.9;
+  }
+}
+
+@keyframes globe-spin {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-180px);
+  }
+}
+
+@keyframes globe-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Schrift folgt der Erdkrümmung: textPath auf Kreisbahn, die Bahn rotiert um den Globus */
+.orbit-ring {
+  transform-box: view-box;
+  transform-origin: center;
+  animation: ring-spin 16s linear infinite;
+}
+
+.orbit-ring-text {
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  fill: var(--color-primary);
+  filter: drop-shadow(0 0 4px color-mix(in srgb, var(--color-primary) 70%, transparent));
+}
+
+@keyframes ring-spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .globe-scene,
+  .globe-land,
+  .orbit-ring {
+    animation: none;
+  }
+}

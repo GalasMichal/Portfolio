@@ -1,0 +1,32 @@
+<article
+  class="micro-border bg-surface-container p-6 md:p-8 hover:border-primary/50 transition-all group h-full"
+  [class.md:col-span-2]="wide()"
+>
+  <span class="material-symbols-outlined text-primary text-4xl mb-4 block">{{ icon() }}</span>
+  <h3 class="font-headline text-xl font-semibold text-on-surface mb-1">{{ key('title') | translate }}</h3>
+  @if (hasText('category')) {
+    <p class="text-xs font-label uppercase tracking-wide text-primary mb-3">{{ key('category') | translate }}</p>
+  } @else {
+    <div class="mb-3"></div>
+  }
+  <p class="text-on-surface-variant text-sm leading-relaxed mb-4">{{ key('description') | translate }}</p>
+  @if ((key('outcomes') | translateArray).length) {
+    <ul class="text-sm text-on-surface-variant space-y-1 mb-4 list-disc pl-4">
+      @for (item of key('outcomes') | translateArray; track item) {
+        <li>{{ item }}</li>
+      }
+    </ul>
+  }
+  @if (hasText('techHint')) {
+    <p class="text-xs text-on-surface-variant/80 mb-4 italic">{{ key('techHint') | translate }}</p>
+  }
+  <div class="flex flex-wrap gap-2">
+    @for (tag of key('tags') | translateArray; track tag) {
+      <span
+        class="text-[10px] uppercase border border-outline-variant/30 px-2 py-0.5 rounded text-on-surface-variant font-label"
+      >
+        {{ tag }}
+      </span>
+    }
+  </div>
+</article>

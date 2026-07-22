@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://michal-galas.de/sitemap.xml
+
+# Agentic search / LLM summary: https://michal-galas.de/llms.txt

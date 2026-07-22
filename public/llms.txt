@@ -1,0 +1,45 @@
+# Michal Galas
+
+> Was heute kompliziert ist, kann digital einfacher werden. Webanwendungen, Kartenlösungen und Automatisierung für umständliche Abläufe und schwer nutzbare Daten.
+
+## Typische Ausgangssituationen
+
+- Manuelle Aufgaben kosten zu viel Zeit
+- Bestehende Anwendung lässt sich kaum erweitern
+- Informationen auf mehrere Stellen verteilt
+- Standorte, Flächen oder Routen schwer überblickbar
+- Standardsoftware passt nicht zum Ablauf
+- KI nur mit sinnvollem Anwendungsfall
+
+## Lösungen
+
+- Arbeitsabläufe in passenden Anwendungen zusammenführen
+- Wiederkehrende Aufgaben automatisieren
+- Standorte und geografische Daten verständlich darstellen
+- Bestehende Software schrittweise modernisieren
+- KI für konkrete Arbeitsabläufe einsetzen
+- Aus Herausforderungen umsetzbare Pläne entwickeln
+
+## Technologien (für die Umsetzung)
+
+Angular, TypeScript, .NET, OpenLayers, Leaflet, GeoServer, PostgreSQL, Supabase, KI-Workflows
+
+## Kontakt
+
+- Website: https://michal-galas.de
+- E-Mail: contact@michal-galas.de
+- LinkedIn: https://www.linkedin.com/in/michal-galas-4239b1296/
+- GitHub: https://github.com/GalasMichal
+
+## Seiten
+
+- [Start](https://michal-galas.de/): Überblick
+- [Lösungen](https://michal-galas.de/leistungen): Digitale Lösungen nach Aufgabe
+- [Projekte](https://michal-galas.de/projekte): Ergebnisse und Herausforderungen
+- [Kompetenzen](https://michal-galas.de/skills): Technologien im Einsatz
+- [Über mich](https://michal-galas.de/about): Ansatz und Arbeitsweise
+- [Kontakt](https://michal-galas.de/kontakt): Vorhaben besprechen
+
+## Ausführliche Zusammenfassung
+
+- [llms-full.txt](https://michal-galas.de/llms-full.txt)

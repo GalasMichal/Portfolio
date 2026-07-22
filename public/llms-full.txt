@@ -1,0 +1,52 @@
+# Michal Galas – Ausführliche Zusammenfassung
+
+## Wer
+
+Michal Galas ist Softwareentwickler aus Deutschland (Mittweida). Schwerpunkte: individuelle Webanwendungen, interaktive Karten (GIS/OpenLayers) und sinnvolle Automatisierung inklusive KI.
+
+## Was ich mache
+
+Ich entwickle digitale Lösungen für umständliche Arbeitsabläufe, schwer nutzbare Daten und bestehende Software. Beruflich: Web- und Karten-Anwendungen für Unternehmen. In eigenen Projekten: Community-Tools, 3D-Scans, Routenplanung, Spiele und KI-Workflows.
+
+## Typische Ausgangssituationen
+
+- Manuelle Aufgaben kosten zu viel Zeit
+- Bestehende Anwendungen lassen sich kaum erweitern
+- Wichtige Informationen sind auf mehrere Stellen verteilt
+- Standorte, Flächen oder Routen sind schwer zu überblicken
+- Standardsoftware passt nicht zum tatsächlichen Ablauf
+- KI soll helfen – aber nur mit einem sinnvollen Anwendungsfall
+
+## Lösungen im Detail
+
+1. **Arbeitsabläufe in passenden Anwendungen zusammenführen** – individuelle Webanwendungen, Portale, Dashboards
+2. **Wiederkehrende Aufgaben sinnvoll automatisieren** – weniger Tipparbeit, strukturierte Datenübertragung
+3. **Standorte und geografische Daten verständlich darstellen** – OpenLayers, Leaflet, interaktive Karten, Druck/Export
+4. **Bestehende Software schrittweise modernisieren** – Wartbarkeit und Erweiterbarkeit ohne Komplettneubau
+5. **KI für einen konkreten Arbeitsablauf einsetzen** – realistische Einschätzung und praktische Integration
+6. **Aus einer Herausforderung einen umsetzbaren Plan entwickeln** – Ziel klären, erste Version, Werkzeug-Auswahl
+
+## Top-Technologien
+
+Angular, TypeScript, JavaScript, OpenLayers, Leaflet, WebGL, GIS, HTML/CSS/SCSS, Kendo UI, .NET, Firebase, Supabase, PostgreSQL, Git/GitHub, Cursor AI, GitHub Copilot, Docker
+
+## Ausgewählte Projekte
+
+- **Moderne Kartenanwendung für komplexe Fachdaten** (beruflich): schrittweise Modernisierung und Erweiterung
+- **Automatisierte Kartenausgabe für Reports** (beruflich): Mapfish Print Templates
+- **Übersichtliche Benutzeroberflächen für Fachanwendungen** (beruflich): Tabellen, Dialoge, Karten-Verknüpfung
+- **GIS-Migration Demo**: Leaflet → OpenLayers mit WebGL
+- **DaBubble**: Team-Chat mit Kanälen und Benutzerverwaltung
+- **KI-Workflows**: Cursor AI, Copilot, lokale LLMs – ehrlich eingeordnet
+
+## Kontakt
+
+- E-Mail: contact@michal-galas.de
+- Website: https://michal-galas.de
+- LinkedIn: https://www.linkedin.com/in/michal-galas-4239b1296/
+- GitHub: https://github.com/GalasMichal
+- CTA: Vorhaben besprechen – kein fertiges Konzept nötig
+
+## Sprachen
+
+Deutsch (Hauptsprache), Englisch, Polski – umschaltbar auf der Website.
