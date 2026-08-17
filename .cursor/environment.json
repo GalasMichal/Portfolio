@@ -1,0 +1,4 @@
+{
+  "install": "npm ci",
+  "start": "npm run build && npx --yes serve dist/portfolio/browser -l 4200"
+}

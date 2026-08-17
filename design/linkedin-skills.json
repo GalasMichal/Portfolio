@@ -1,0 +1,40 @@
+{
+  "tkiChemnitz": [
+    "Geoinformationssysteme (GIS)",
+    "JavaScript-Bibliotheken",
+    "JavaScript Frameworks",
+    "WebGL",
+    "jQuery",
+    "Künstliche Intelligenz (KI)",
+    "OpenLayers",
+    "Leaflet",
+    "Kendo UI",
+    "JavaScript",
+    "SCSS"
+  ],
+  "developerAkademie": [
+    "Analytische Fähigkeiten",
+    "User Experience (UX)",
+    "Mockups",
+    "Programmieren",
+    "Lösungsorientiertes Arbeiten",
+    "Web-Performance",
+    "Webtechnologien",
+    "Webanwendungen",
+    "Softwareentwicklung",
+    "Frontend-Entwicklung",
+    "Angular",
+    "TypeScript",
+    "Objektorientierte Programmierung (OOP)",
+    "Scrum",
+    "REST-API",
+    "SASS",
+    "Git",
+    "Angular Material",
+    "Firebase",
+    "Bootstrap",
+    "HTML5",
+    "Cascading Style Sheets (CSS)",
+    "Problemlösung"
+  ]
+}

@@ -1,0 +1,33 @@
+---
+description: Portfolio michal-galas.de — Angular 21, i18n, All-Inkl Deploy
+globs: "**/*.{ts,html,scss,json}"
+alwaysApply: false
+---
+
+# Portfolio (michal-galas.de)
+
+## Stack
+
+- Angular 21 standalone, Signals bevorzugt, `inject()` statt Constructor-DI
+- SCSS + Tailwind 4, ngx-translate (DE/EN in `src/assets/i18n/`)
+- Maps: OpenLayers (`ol`) und Leaflet — je nach Feature
+- Tests: Vitest (`ng test`)
+
+## Struktur
+
+- `src/app/` — Komponenten (above-the-fold, about-me, skills, portfolio, contact)
+- `archive/portfolio-v17/` — alte Version, nicht ohne Grund anfassen
+- `design/` — Design-Referenzen, nicht auto-ausführen
+
+## Build & Deploy
+
+- Lokal: `npm start` (Port 4200)
+- Build: `npm run build` → `dist/portfolio/`
+- Deploy: GitHub Actions `deploy-allinkl.yml` auf `main` → All-Inkl FTPS
+- Secrets: `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`, `FTP_REMOTE_DIR`
+
+## Konventionen
+
+- Minimale Diffs, bestehende Komponenten-Stil beibehalten
+- Keine neuen Markdown-Docs ohne User-Anfrage
+- Plans: `~/.cursor/plans/portfolio/` — nur bei expliziter Ausführungs-Anfrage

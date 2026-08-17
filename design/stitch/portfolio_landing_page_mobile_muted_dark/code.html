@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&amp;family=Hanken+Grotesk:wght@400;500;600&amp;family=Geist:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#ffb783",
+                    "primary": "#c0c1ff",
+                    "on-tertiary-container": "#452000",
+                    "background": "#131313",
+                    "inverse-surface": "#e5e2e1",
+                    "secondary": "#b9c8de",
+                    "on-surface": "#e5e2e1",
+                    "tertiary": "#ffb783",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-primary-fixed-variant": "#2f2ebe",
+                    "on-error": "#690005",
+                    "on-background": "#e5e2e1",
+                    "surface-tint": "#c0c1ff",
+                    "outline": "#908fa0",
+                    "on-secondary-fixed": "#0d1c2d",
+                    "surface-container-low": "#1c1b1b",
+                    "on-primary-container": "#0d0096",
+                    "on-secondary": "#233143",
+                    "on-tertiary": "#4f2500",
+                    "surface-dim": "#131313",
+                    "inverse-primary": "#494bd6",
+                    "secondary-fixed": "#d4e4fa",
+                    "outline-variant": "#464554",
+                    "primary-fixed": "#e1e0ff",
+                    "secondary-fixed-dim": "#b9c8de",
+                    "on-surface-variant": "#c7c4d7",
+                    "surface-variant": "#353535",
+                    "on-secondary-fixed-variant": "#39485a",
+                    "error-container": "#93000a",
+                    "tertiary-container": "#d97721",
+                    "error": "#ffb4ab",
+                    "inverse-on-surface": "#313030",
+                    "surface-container-highest": "#353535",
+                    "primary-fixed-dim": "#c0c1ff",
+                    "on-error-container": "#ffdad6",
+                    "surface-container-high": "#2a2a2a",
+                    "secondary-container": "#39485a",
+                    "on-tertiary-fixed": "#301400",
+                    "on-primary-fixed": "#07006c",
+                    "on-tertiary-fixed-variant": "#703700",
+                    "surface-container": "#20201f",
+                    "surface-bright": "#393939",
+                    "primary-container": "#8083ff",
+                    "on-secondary-container": "#a7b6cc",
+                    "surface": "#131313",
+                    "on-primary": "#1000a9",
+                    "tertiary-fixed": "#ffdcc5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "container-max": "1280px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "margin-desktop": "48px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Sora"],
+                    "body-md": ["Hanken Grotesk"],
+                    "label-md": ["Geist"],
+                    "headline-lg": ["Sora"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "label-sm": ["Geist"],
+                    "headline-xl": ["Sora"],
+                    "headline-md": ["Sora"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #121212;
+            color: #e5e2e1;
+        }
+        .micro-border {
+            border: 1px solid #2D2D2D;
+        }
+        .glass-panel {
+            background: rgba(26, 26, 26, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(45, 45, 45, 0.5);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/30 px-margin-mobile h-16 flex justify-between items-center">
+<div class="text-headline-md font-headline-md font-bold text-primary">GeoArchitect</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary px-4 py-2 font-label-md text-label-md rounded-lg">Hire Me</button>
+<span class="material-symbols-outlined text-on-surface-variant">menu</span>
+</div>
+</nav>
+<main class="pt-24 pb-32 space-y-16">
+<!-- Hero Section -->
+<section class="px-margin-mobile flex flex-col gap-6">
+<div class="space-y-4">
+<span class="text-primary font-label-md text-label-md tracking-widest uppercase">Portfolio 2024</span>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Präzision in räumlichen Daten &amp; AI.</h1>
+<p class="text-on-surface-variant max-w-[90%]">
+                    Michal Galas — Senior Frontend Engineer spezialisiert auf Angular, WebGL und die Integration künstlicher Intelligenz.
+                </p>
+</div>
+<div class="w-full aspect-[4/3] rounded-xl overflow-hidden micro-border relative">
+<img alt="Technical Visualization" class="w-full h-full object-cover opacity-60" data-alt="A sophisticated digital visualization of a 3D architectural mesh shimmering with Tech Cobalt blue highlights against a deep anthracite background. The style is technical and precise, with thin geometric lines forming a complex spatial grid. The lighting is low-key, emphasizing depth and engineering complexity, perfectly aligned with a premium engineering workspace aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKtDKuuWf7u45lf0SiDoHCKBT9ViAbTSfI_As-y-K1LmCPKwVdVWTgnVPpHRbT-Z-7TPjPaKd6QQYFF76Ci_zGl6cpKwfBsAKD7LX4JDZBwJKOmogRQgv4XBIyt0AQH3kYpNMal3c7-X2Cea7cG6CqjLZz5ydffg6SULju_XxWcYu28gleaigwC5PfzdtufrPy0kBoYoZoA_ioQuMlD4qeFthOvlmed0Lezm9hIGkAz_uUzcv-RNaKhEqdJZVgh0Nlv-38_-evzzIN"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+</div>
+</section>
+<!-- About Bento -->
+<section class="px-margin-mobile space-y-4">
+<div class="flex items-center gap-3">
+<div class="h-[1px] flex-1 bg-outline-variant/30"></div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Über Mich</h2>
+</div>
+<div class="grid grid-cols-1 gap-4">
+<div class="glass-panel p-6 rounded-xl space-y-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">architecture</span>
+<h3 class="font-headline-md text-headline-md">Philosophie</h3>
+<p class="text-on-surface-variant text-label-md">Software ist wie Architektur: Das Fundament bestimmt die Langlebigkeit. Ich baue skalierbare Systeme für komplexe Datenstrukturen.</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-high p-4 rounded-xl micro-border flex flex-col justify-between h-32">
+<span class="text-headline-lg font-headline-lg text-primary">10+</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Jahre Erfahrung</span>
+</div>
+<div class="bg-surface-container-high p-4 rounded-xl micro-border flex flex-col justify-between h-32">
+<span class="text-headline-lg font-headline-lg text-tertiary">40+</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Projekte geliefert</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Services -->
+<section class="bg-surface-container-low py-12 px-margin-mobile space-y-8">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-center">Kernkompetenzen</h2>
+<div class="space-y-4">
+<div class="flex items-start gap-4 p-4 micro-border rounded-xl bg-background">
+<div class="w-12 h-12 flex-shrink-0 bg-secondary-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container">terminal</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-bold mb-1">Angular Enterprise</h4>
+<p class="text-label-sm text-on-surface-variant">Robuste, performante Frontends für komplexe Business-Logik und Dashboards.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 micro-border rounded-xl bg-background">
+<div class="w-12 h-12 flex-shrink-0 bg-tertiary-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-on-tertiary-container">view_in_ar</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-bold mb-1">WebGL &amp; Geodaten</h4>
+<p class="text-label-sm text-on-surface-variant">Interaktive 3D-Karten und räumliche Visualisierungen in Echtzeit.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 micro-border rounded-xl bg-background">
+<div class="w-12 h-12 flex-shrink-0 bg-primary-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container">psychology</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-bold mb-1">AI Integration</h4>
+<p class="text-label-sm text-on-surface-variant">LLM-basierte Workflows und intelligente Agenten direkt im Browser.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Horizontal Scroll -->
+<section class="space-y-6">
+<div class="px-margin-mobile flex justify-between items-end">
+<h2 class="font-headline-md text-headline-md">Projekte</h2>
+<span class="text-primary text-label-sm">Alle ansehen</span>
+</div>
+<div class="flex overflow-x-auto pb-4 gap-4 px-margin-mobile scrollbar-hide snap-x">
+<div class="flex-shrink-0 w-72 snap-start glass-panel rounded-xl overflow-hidden">
+<div class="h-40 relative">
+<img alt="Project Alpha" class="w-full h-full object-cover opacity-80" data-alt="A clean, data-heavy dashboard interface displayed on a dark sleek screen. The UI features complex line graphs and heat maps in shades of Tech Cobalt and muted Slate. The scene is shot with a shallow depth of field, focusing on the interface details. The lighting is moody and professional, reflecting the high-end charcoal and anthracite brand aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7rnGsftmo7tvq2lzIxwjeYeRjJHB4OtAiSrAlgIbhJcIi3CTy9X5XTkm3W9DsPdNJoK4CXCNJ5fNh6NpSpXGMI7JdW2zY_WLn-RqkCBPY0cYdeK0YpbwS_zfoiNPQxPiTckRRP7LOimkk84DKuFhpQqlnhDCku0JwmZQywM1EtHt3a2sfyMioFo3CIxwE4EMVDa4dR_h7JtxeLvkH2CJwgblL2-9JvQB0K7BYMGO7hpXCiCzaSTkVRo8hHiGlTwrFEd9_hqm9DI5x"/>
+</div>
+<div class="p-4 space-y-2">
+<div class="flex gap-2">
+<span class="text-[10px] uppercase border border-outline-variant px-2 py-0.5 rounded text-on-surface-variant">Angular</span>
+<span class="text-[10px] uppercase border border-outline-variant px-2 py-0.5 rounded text-on-surface-variant">WebGL</span>
+</div>
+<h4 class="font-label-md font-bold">Spatial Graph Engine</h4>
+</div>
+</div>
+<div class="flex-shrink-0 w-72 snap-start glass-panel rounded-xl overflow-hidden">
+<div class="h-40 relative">
+<img alt="Project Beta" class="w-full h-full object-cover opacity-80" data-alt="Detailed server rack LEDs glowing softly in a dark data center room. The lighting is primarily deep indigo and cool white, creating a futuristic and technical atmosphere. The composition uses a strong diagonal perspective to suggest scale and engineering depth. The overall mood is focused, reliable, and premium, consistent with a charcoal-themed technical portfolio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-8AsiIBlJQqnKW6O9uRijnl-6ui3yA2Om6tfRs8w1SOY3YNhsx6SMjC5vroXZ2IUie6Jva9k53mi-OJ1hijwNJe_9C_YTK6oiuByva5YMGeaA_ttsPFTTCvdfoGJabExTDCkNv0a85W4l573eVfadP0qTsSgCAJXpxcTJZtgK_awSAwrmd2O99ahtcjnm7-D9TeFia4xA-8tA5mWPpo-xgTLxJIPZkHXwjZmttqvKgeL1mDwZkLTEoIEYnbov6fruBZrRqyq-Fwnh"/>
+</div>
+<div class="p-4 space-y-2">
+<div class="flex gap-2">
+<span class="text-[10px] uppercase border border-outline-variant px-2 py-0.5 rounded text-on-surface-variant">Python</span>
+<span class="text-[10px] uppercase border border-outline-variant px-2 py-0.5 rounded text-on-surface-variant">AI</span>
+</div>
+<h4 class="font-label-md font-bold">Neural Data Pipeline</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- Tech Stack -->
+<section class="px-margin-mobile space-y-6">
+<h2 class="font-headline-md text-headline-md text-center">Tech Stack</h2>
+<div class="flex flex-wrap justify-center gap-2">
+<span class="px-4 py-2 bg-surface-container-highest rounded-full text-label-sm micro-border">Angular</span>
+<span class="px-4 py-2 bg-surface-container-highest rounded-full text-label-sm micro-border">TypeScript</span>
+<span class="px-4 py-2 bg-surface-container-highest rounded-full text-label-sm micro-border">RxJS</span>
+<span class="px-4 py-2 bg-surface-container-highest rounded-full text-label-sm micro-border">Three.js</span>
+<span class="px-4 py-2 bg-surface-container-highest rounded-full text-label-sm micro-border">Node.js</span>
+<span class="px-4 py-2 bg-surface-container-highest rounded-full text-label-sm micro-border">PostgreSQL</span>
+<span class="px-4 py-2 bg-surface-container-highest rounded-full text-label-sm micro-border">TensorFlow</span>
+<span class="px-4 py-2 bg-surface-container-highest rounded-full text-label-sm micro-border">Docker</span>
+</div>
+</section>
+<!-- Contact Form -->
+<section class="px-margin-mobile">
+<div class="glass-panel p-6 rounded-2xl space-y-6">
+<div class="space-y-2">
+<h2 class="font-headline-md text-headline-md text-primary">Projekt starten</h2>
+<p class="text-label-sm text-on-surface-variant">Lassen Sie uns über Ihre Vision sprechen.</p>
+</div>
+<form class="space-y-4">
+<div class="space-y-1">
+<label class="text-label-sm text-on-surface-variant ml-1">Name</label>
+<input class="w-full bg-[#0D0D0D] border-[#2D2D2D] focus:border-primary focus:ring-primary/20 rounded-lg py-3 px-4 text-on-surface placeholder:text-outline-variant" placeholder="Max Mustermann" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="text-label-sm text-on-surface-variant ml-1">E-Mail</label>
+<input class="w-full bg-[#0D0D0D] border-[#2D2D2D] focus:border-primary focus:ring-primary/20 rounded-lg py-3 px-4 text-on-surface placeholder:text-outline-variant" placeholder="max@beispiel.de" type="email"/>
+</div>
+<div class="space-y-1">
+<label class="text-label-sm text-on-surface-variant ml-1">Nachricht</label>
+<textarea class="w-full bg-[#0D0D0D] border-[#2D2D2D] focus:border-primary focus:ring-primary/20 rounded-lg py-3 px-4 text-on-surface placeholder:text-outline-variant" placeholder="Beschreiben Sie Ihr Projekt..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary font-bold py-4 rounded-xl transition-all active:scale-95" type="submit">Anfrage senden</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 w-full z-50 bg-surface/90 backdrop-blur-xl border-t border-outline-variant/20 flex justify-around items-center h-20 px-4 md:hidden">
+<div class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-[10px] font-label-sm uppercase tracking-tighter">Home</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="text-[10px] font-label-sm uppercase tracking-tighter">Projekte</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-[10px] font-label-sm uppercase tracking-tighter">Über</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined">mail</span>
+<span class="text-[10px] font-label-sm uppercase tracking-tighter">Kontakt</span>
+</div>
+</nav>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/20 py-12 px-margin-mobile mb-20">
+<div class="flex flex-col gap-8">
+<div class="space-y-4">
+<div class="text-headline-sm font-headline-sm text-on-surface">GeoArchitect</div>
+<p class="text-body-md text-on-surface-variant opacity-80">© 2024 GeoArchitect. Engineering precision in spatial data.</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<a class="text-secondary font-label-md hover:text-tertiary transition-colors opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+<a class="text-secondary font-label-md hover:text-tertiary transition-colors opacity-80 hover:opacity-100" href="#">GitHub</a>
+<a class="text-secondary font-label-md hover:text-tertiary transition-colors opacity-80 hover:opacity-100" href="#">Stack Overflow</a>
+<a class="text-secondary font-label-md hover:text-tertiary transition-colors opacity-80 hover:opacity-100" href="#">Documentation</a>
+</div>
+</div>
+</footer>
+</body></html>
