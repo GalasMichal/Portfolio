@@ -281,6 +281,9 @@ body {
   h3 {
     @apply font-headline text-lg font-semibold mt-4 mb-2;
   }
+  address {
+    @apply not-italic text-on-surface-variant leading-relaxed mb-3;
+  }
   p,
   li {
     @apply text-on-surface-variant leading-relaxed mb-3;

@@ -8,7 +8,9 @@ export const serverRoutes: ServerRoute[] = [
   { path: 'about', renderMode: RenderMode.Prerender },
   { path: 'kontakt', renderMode: RenderMode.Prerender },
   { path: 'imprint', renderMode: RenderMode.Prerender },
+  { path: 'impressum', renderMode: RenderMode.Prerender },
   { path: 'privacy-policy', renderMode: RenderMode.Prerender },
+  { path: 'datenschutz', renderMode: RenderMode.Prerender },
   { path: 'demo/gis-migration', renderMode: RenderMode.Client },
   { path: '**', renderMode: RenderMode.Client },
 ];

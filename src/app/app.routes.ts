@@ -29,7 +29,15 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/imprint/imprint-page.component').then((m) => m.ImprintPageComponent),
   },
   {
+    path: 'impressum',
+    loadComponent: () => import('./pages/imprint/imprint-page.component').then((m) => m.ImprintPageComponent),
+  },
+  {
     path: 'privacy-policy',
+    loadComponent: () => import('./pages/privacy/privacy-page.component').then((m) => m.PrivacyPageComponent),
+  },
+  {
+    path: 'datenschutz',
     loadComponent: () => import('./pages/privacy/privacy-page.component').then((m) => m.PrivacyPageComponent),
   },
   {

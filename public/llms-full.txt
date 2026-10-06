@@ -28,7 +28,7 @@ Ich entwickle digitale Lösungen für umständliche Arbeitsabläufe, schwer nutz
 
 ## Top-Technologien
 
-Angular, TypeScript, JavaScript, OpenLayers, Leaflet, WebGL, GIS, HTML/CSS/SCSS, Kendo UI, .NET, Firebase, Supabase, PostgreSQL, Git/GitHub, Cursor AI, GitHub Copilot, Docker
+Angular, TypeScript, JavaScript, Flutter, Dart, OpenLayers, Leaflet, WebGL, GIS, HTML/CSS/SCSS, Kendo UI, .NET, Firebase, Supabase, PostgreSQL, Git/GitHub, Cursor AI, GitHub Copilot, Docker
 
 ## Ausgewählte Projekte
 
@@ -36,6 +36,8 @@ Angular, TypeScript, JavaScript, OpenLayers, Leaflet, WebGL, GIS, HTML/CSS/SCSS,
 - **Automatisierte Kartenausgabe für Reports** (beruflich): Mapfish Print Templates
 - **Übersichtliche Benutzeroberflächen für Fachanwendungen** (beruflich): Tabellen, Dialoge, Karten-Verknüpfung
 - **GIS-Migration Demo**: Leaflet → OpenLayers mit WebGL
+- **genesis**: Flutter-Gitarren-Lern-App (Lektionen, Mic-Pitch-Check, Play-Along, Tuner) – lokal ohne Backend
+- **MG Games**: werbefreie Kinderspiele unter https://mg-games.de (Quellcode privat)
 - **DaBubble**: Team-Chat mit Kanälen und Benutzerverwaltung
 - **KI-Workflows**: Cursor AI, Copilot, lokale LLMs – ehrlich eingeordnet
 

@@ -14,6 +14,7 @@ export const SKILL_GROUPS: SkillGroup[] = [
 export const FEATURED_SKILLS = [
   'Angular',
   'TypeScript',
+  'Flutter',
   'OpenLayers',
   'Leaflet',
   'Supabase',

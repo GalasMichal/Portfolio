@@ -22,7 +22,7 @@
 
 ## Technologien (für die Umsetzung)
 
-Angular, TypeScript, .NET, OpenLayers, Leaflet, GeoServer, PostgreSQL, Supabase, KI-Workflows
+Angular, TypeScript, Flutter, Dart, .NET, OpenLayers, Leaflet, GeoServer, PostgreSQL, Supabase, KI-Workflows
 
 ## Kontakt
 

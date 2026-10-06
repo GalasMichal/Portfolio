@@ -4,6 +4,10 @@
 
   RewriteBase /
 
+  RewriteRule ^impressum/?$ /imprint [R=301,L]
+
+  RewriteRule ^datenschutz/?$ /privacy-policy [R=301,L]
+
 
 
   # Prerendered routes: /leistungen -> /leistungen/index.html

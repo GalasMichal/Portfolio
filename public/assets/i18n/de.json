@@ -135,7 +135,12 @@
         "title": "Arbeitsabläufe in einer passenden Anwendung zusammenführen",
         "category": "Individuelle Webanwendungen",
         "description": "Ich entwickle Anwendungen, die genau zu deinem Arbeitsablauf passen. Von einer ersten nutzbaren Version bis zur schrittweisen Erweiterung entsteht eine Lösung, die verständlich bedienbar und langfristig wartbar ist.",
-        "tags": ["Dein Prozess", "Weniger Reibung", "Sofort nutzbar", "Alles an einem Ort"],
+        "tags": [
+          "Dein Prozess",
+          "Weniger Reibung",
+          "Sofort nutzbar",
+          "Alles an einem Ort"
+        ],
         "outcomes": [
           "interne Verwaltungsanwendungen",
           "Kundenportale",
@@ -150,7 +155,12 @@
         "title": "Wiederkehrende Aufgaben sinnvoll automatisieren",
         "category": "Prozessdigitalisierung und Automatisierung",
         "description": "Ich analysiere bestehende Abläufe und entwickle Lösungen, die unnötige Arbeitsschritte reduzieren. Daten werden automatisch verarbeitet, Informationen zusammengeführt und wiederkehrende Aufgaben zuverlässig ausgeführt.",
-        "tags": ["Weniger Tipparbeit", "Weniger Fehler", "Mehr Freiraum", "Alltag leichter"],
+        "tags": [
+          "Weniger Tipparbeit",
+          "Weniger Fehler",
+          "Mehr Freiraum",
+          "Alltag leichter"
+        ],
         "outcomes": [
           "weniger manuelle Dateneingabe",
           "automatische Verarbeitung von Dokumenten",
@@ -163,7 +173,12 @@
         "title": "Standorte und geografische Daten verständlich darstellen",
         "category": "Karten- und GIS-Lösungen",
         "description": "Ich entwickle interaktive Kartenlösungen, mit denen Standorte, Strecken, Flächen und andere räumliche Informationen einfach dargestellt, bearbeitet und ausgewertet werden können.",
-        "tags": ["Sofort Orientierung", "Markieren & wählen", "Druck & Export", "Weniger Nachfragen"],
+        "tags": [
+          "Sofort Orientierung",
+          "Markieren & wählen",
+          "Druck & Export",
+          "Weniger Nachfragen"
+        ],
         "outcomes": [
           "interaktive Karten",
           "Routen- und Standortlösungen",
@@ -178,7 +193,12 @@
         "title": "Bestehende Software schrittweise modernisieren",
         "category": "Software-Modernisierung",
         "description": "Nicht jede Anwendung muss komplett neu gebaut werden. Ich modernisiere bestehende Lösungen schrittweise, ersetze problematische Bereiche und achte darauf, dass wichtige Funktionen während der Umstellung erhalten bleiben.",
-        "tags": ["Schrittweise", "Weniger Risiko", "Bestehendes nutzen", "Langfristig wartbar"],
+        "tags": [
+          "Schrittweise",
+          "Weniger Risiko",
+          "Bestehendes nutzen",
+          "Langfristig wartbar"
+        ],
         "outcomes": [
           "bessere Wartbarkeit",
           "modernere Benutzeroberflächen",
@@ -192,7 +212,12 @@
         "title": "KI für einen konkreten Arbeitsablauf einsetzen",
         "category": "Sinnvolle KI-Integration",
         "description": "Ich unterstütze bei der Auswahl und Umsetzung sinnvoller KI-Anwendungen. Dabei steht nicht der Begriff künstliche Intelligenz im Mittelpunkt, sondern die Frage, ob eine Aufgabe dadurch schneller, einfacher oder zuverlässiger erledigt werden kann.",
-        "tags": ["Konkreter Nutzen", "Ohne Buzzword-Nebel", "Sofort umsetzbar", "Ehrlich eingeschätzt"],
+        "tags": [
+          "Konkreter Nutzen",
+          "Ohne Buzzword-Nebel",
+          "Sofort umsetzbar",
+          "Ehrlich eingeschätzt"
+        ],
         "outcomes": [
           "Unterstützung bei Recherche und Auswertung",
           "Verarbeitung und Strukturierung von Texten",
@@ -206,7 +231,12 @@
         "title": "Aus einer Herausforderung einen umsetzbaren Plan entwickeln",
         "category": "Technische Konzeption",
         "description": "Du benötigst noch kein fertiges Lastenheft. Gemeinsam übersetzen wir deine Ausgangssituation in konkrete Funktionen, sinnvolle Schritte und eine realistische technische Lösung.",
-        "tags": ["Klarer nächster Schritt", "Erste Version", "Kein Blindflug", "Fokus auf Nutzen"]
+        "tags": [
+          "Klarer nächster Schritt",
+          "Erste Version",
+          "Kein Blindflug",
+          "Fokus auf Nutzen"
+        ]
       }
     }
   },
@@ -244,10 +274,10 @@
       "openlayers-kartenmodul": {
         "title": "Moderne Kartenanwendung für komplexe Fachdaten",
         "categoryLabel": "Beruflich · Karten · Web",
-        "shortDescription": "Gewachsene Kartenanwendung schrittweise modernisiert – mit übersichtlicheren Werkzeugen für Darstellung, Auswahl und Bearbeitung geografischer Daten.",
+        "shortDescription": "Öffentliche Vorschau: typische Kartenwerkzeuge an synthetischen Daten rund um Mittweida – nicht das berufliche Produktivsystem.",
         "problem": "Die bestehende Kartenlösung war technisch stark gewachsen und ließ sich nur noch mit hohem Aufwand erweitern. Neue Kartenwerkzeuge und moderne Bedienkonzepte mussten integriert werden, ohne bestehende Geschäftsprozesse zu unterbrechen.",
         "solution": "Ich übertrug zentrale Funktionen schrittweise auf eine moderne und modular aufgebaute Kartenarchitektur. Dabei entstanden Werkzeuge zum Zeichnen, Messen, Auswählen, Bearbeiten und Visualisieren komplexer geografischer Informationen.",
-        "benefit": "Die Anwendung kann leichter erweitert und gewartet werden. Anwender erhalten übersichtlichere Werkzeuge, während bestehende Prozesse weiterhin funktionieren.",
+        "benefit": "Die Anwendung kann leichter erweitert und gewartet werden. Anwender erhalten übersichtlichere Werkzeuge, während bestehende Prozesse weiterhin funktionieren. Die öffentliche Demo ist nur eine Vorschau mit freien OSM-Kacheln und erfundenen Beispieldaten.",
         "contribution": "Konzeption und Implementierung von Kartenwerkzeugen, Verarbeitung von GeoJSON-Daten, Umsetzung komplexer Darstellungsregeln sowie Integration in eine bestehende .NET-Anwendung."
       },
       "mapfish-templates": {
@@ -322,6 +352,24 @@
         "benefit": "Erhöhte Motivation durch klare Fortschrittsanzeigen und Belohnungssysteme. Vereinfachte Verwaltung von Spielinhalten und schnellere Iterationen bei der Entwicklung.",
         "contribution": "Konzeption und Implementierung von In-Game-Systemen mit Lua in Roblox Studio und Entwicklung von modularen Skripten."
       },
+      "genesis": {
+        "title": "genesis – Gitarren-Lern-App",
+        "categoryLabel": "Privat · Flutter · Mobile",
+        "shortDescription": "Flutter-Lern-App für Gitarre (Material 3, Dark): Lektionen, Mic-Pitch-Check, Song-Play-Along, Tuner und Griffbrett – alles lokal ohne Backend.",
+        "problem": "Anfänger brauchen strukturiertes Lernen plus ehrliches Feedback beim Spielen – ohne Cloud-Abhängigkeit und ohne durchgewunkene Fortschritte.",
+        "solution": "Ich baute eine lokale Flutter-App mit Lektionspfad, Übungsmodus (YIN-Pitch über Mikrofon), Song-Play-Along, Tuner, Griffbrett mit Fingerfarben sowie Schlag-/Zupftechnik (MVP P0–P6).",
+        "benefit": "Lernende üben mit klarem Zielbild und Mikrofonsprüfung auf dem Gerät; Audio bleibt lokal, kein Account und kein Backend nötig.",
+        "contribution": "Konzeption und Umsetzung der gesamten App: UI (Material 3 Dark), Pitch-Pipeline, Übungs- und Song-Flows, Tuner, Griffbrett-Visualisierung und lokale Release-APK."
+      },
+      "mg-games": {
+        "title": "MG Games – werbefreie Kinderspiele",
+        "categoryLabel": "Privat · Kinderspiele · Website",
+        "shortDescription": "Zweite Website mit ruhigen Lernspielen für Kinder: kein Tracking, kein Account, Fortschritt bleibt auf dem Gerät. Store-Listing wartet noch.",
+        "problem": "Viele Kinder-Apps sind laut, werbelastig oder wollen ein Konto – Eltern brauchen eine klare, ruhige Alternative.",
+        "solution": "Ich baue unter mg-games.de ein kleines Studio für werbefreie Minispiele (u. a. Formen, Zählen, Memory), mit Impressum, Datenschutz und geplanter Play-Store-Veröffentlichung.",
+        "benefit": "Eltern sehen Angebot und Datenschutz klar; Kinder spielen offline, ohne Werbung und ohne Login.",
+        "contribution": "Konzeption, Website, Rechtstexte und App-Vorbereitung. Der Quellcode bleibt privat."
+      },
       "ki-workflows": {
         "title": "KI-gestützte Workflows für Entwicklung und Alltag",
         "categoryLabel": "KI · Automatisierung · Experiment",
@@ -358,6 +406,8 @@
           "Angular",
           "TypeScript",
           "JavaScript",
+          "Dart",
+          "Flutter",
           "HTML",
           "CSS / SCSS",
           "Responsive Design",
@@ -521,7 +571,7 @@
   "gisDemo": {
     "title": "GIS-Migration: Leaflet → OpenLayers",
     "subtitle": "Illustrative Demo eines typischen Karten-Umstiegs: Legacy-Stack mit Leaflet und jQuery-UI-Panel wechselt zu OpenLayers mit WebGL-Punkt-Rendering – rund um Mittweida mit synthetischen Daten.",
-    "disclaimer": "Hinweis: Diese Demo verwendet freie OSM-Kacheln und erfundene Beispieldaten. Sie zeigt keine echten Kundendaten und ersetzt keine produktive Kartenanwendung.",
+    "disclaimer": "Hinweis: Das ist eine öffentliche Vorschau mit freien OSM-Kacheln und erfundenen Beispieldaten. Sie zeigt kein berufliches Produktivsystem, keine echten Kundendaten und ersetzt keine produktive Kartenanwendung.",
     "phaseLeaflet": "Leaflet",
     "phaseTransition": "Migration",
     "phaseOpenLayers": "OpenLayers",
@@ -578,10 +628,16 @@
       "KI-Workflows",
       "Automatisierung"
     ],
-    "knowsAbout": ["Angular", "TypeScript", "OpenLayers", "GIS", "KI-Workflows"]
+    "knowsAbout": [
+      "Angular",
+      "TypeScript",
+      "OpenLayers",
+      "GIS",
+      "KI-Workflows"
+    ]
   },
   "legal": {
-    "imprint": "<h1>Impressum</h1><h2>Angaben gemäß § 5 DDG</h2><h3>Michal Galas</h3><h2>Postanschrift:<span>Bahnhofstraße 60</span><span>09648 Mittweida</span></h2><h3><span>Telefon: 015224610296</span><span>E-Mail: contact@michal-galas.de</span></h3>",
-    "privacy": "<h1>Datenschutzerklärung</h1><h2>Verantwortlicher</h2><p>Michal Galas, Bahnhofstraße 60, 09648 Mittweida, Deutschland. E-Mail: <a href='mailto:contact@michal-galas.de'>contact@michal-galas.de</a>, Telefon: 015224610296</p><h2>Allgemeines</h2><p>Der Schutz Ihrer persönlichen Daten ist mir wichtig. Diese Datenschutzerklärung informiert Sie darüber, welche Daten beim Besuch dieser Website verarbeitet werden. Rechtsgrundlage ist die Datenschutz-Grundverordnung (DSGVO) sowie das Bundesdatenschutzgesetz (BDSG) und das Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz (TDDDG).</p><h2>Hosting und Server-Logfiles</h2><p>Diese Website wird bei der ALL-INKL.COM – Neue Medien Münnich (Hauptstraße 68, 02742 Friedersdorf, Deutschland) gehostet. Beim Aufruf der Website erhebt der Hoster automatisch Server-Logfiles (z. B. IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite, Browsertyp). Diese Daten dienen der Sicherstellung eines störungsfreien Betriebs und der Sicherheit der Website (Art. 6 Abs. 1 lit. f DSGVO) und werden nach kurzer Zeit automatisch gelöscht.</p><h2>Kontaktformular</h2><p>Wenn Sie das Kontaktformular nutzen, werden die von Ihnen angegebenen Daten (Name, E-Mail-Adresse und Nachricht) ausschließlich zur Bearbeitung Ihrer Anfrage verarbeitet (Art. 6 Abs. 1 lit. b DSGVO). Die Daten werden gelöscht, sobald sie für die Bearbeitung nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten bestehen. Eine Weitergabe an Dritte erfolgt nicht.</p><h2>Lokale Speicherung (Local Storage)</h2><p>Diese Website speichert Ihre Sprach- und Design-Einstellung (hell/dunkel) im Local Storage Ihres Browsers. Diese Speicherung ist technisch erforderlich, um die von Ihnen gewählten Einstellungen bereitzustellen (§ 25 Abs. 2 Nr. 2 TDDDG). Es findet kein Tracking statt und es werden keine Cookies zu Werbezwecken gesetzt.</p><h2>Schriftarten</h2><p>Diese Website verwendet Schriftarten, die lokal auf dem eigenen Server gehostet werden. Beim Aufruf der Seite wird keine Verbindung zu Servern von Google oder anderen Drittanbietern aufgebaut.</p><h2>Ihre Rechte</h2><p>Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16 DSGVO), Löschung (Art. 17 DSGVO), Einschränkung der Verarbeitung (Art. 18 DSGVO), Datenübertragbarkeit (Art. 20 DSGVO) sowie Widerspruch gegen die Verarbeitung (Art. 21 DSGVO). Außerdem haben Sie das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, z. B. beim Sächsischen Datenschutz- und Transparenzbeauftragten.</p><p>Bei Fragen zum Datenschutz erreichen Sie mich per E-Mail unter <a href='mailto:contact@michal-galas.de'>contact@michal-galas.de</a>.</p>"
+    "imprint": "<h1>Impressum</h1><p>Angaben gemäß § 5 DDG.</p><h2>Anbieter</h2><address>Michal Galas<br>Bahnhofstraße 60<br>09648 Mittweida<br>Deutschland</address><h2>Kontakt</h2><p>E-Mail: <a href='mailto:contact@michal-galas.de'>contact@michal-galas.de</a></p><p>Für eine schnelle Kontaktaufnahme nutze bitte das <a href='/kontakt'>Kontaktformular</a>.</p><h2>Steuernummer</h2><p>Steuernummer: 222/222/00524</p>",
+    "privacy": "<h1>Datenschutzerklärung</h1><p>Der Schutz deiner Daten ist mir besonders wichtig. Ich erhebe nur, was für den Betrieb der Website und die Beantwortung von Anfragen nötig ist – kein Tracking, keine Werbe-Cookies, keine Schrift-CDNs Dritter.</p><h2>Verantwortlicher</h2><p>Michal Galas, Bahnhofstraße 60, 09648 Mittweida, Deutschland. E-Mail: <a href='mailto:contact@michal-galas.de'>contact@michal-galas.de</a></p><h2>Allgemeines</h2><p>Diese Datenschutzerklärung informiert dich darüber, welche Daten beim Besuch dieser Website verarbeitet werden. Rechtsgrundlage ist die Datenschutz-Grundverordnung (DSGVO) sowie das Bundesdatenschutzgesetz (BDSG) und das Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz (TDDDG).</p><h2>Hosting und Server-Logfiles</h2><p>Diese Website wird bei der ALL-INKL.COM – Neue Medien Münnich (Hauptstraße 68, 02742 Friedersdorf, Deutschland) gehostet. Beim Aufruf der Website erhebt der Hoster automatisch Server-Logfiles (z. B. IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite, Browsertyp). Diese Daten dienen der Sicherstellung eines störungsfreien Betriebs und der Sicherheit der Website (Art. 6 Abs. 1 lit. f DSGVO) und werden nach kurzer Zeit automatisch gelöscht.</p><h2>Kontaktformular</h2><p>Wenn du das Kontaktformular nutzt, werden die von dir angegebenen Daten (Name, E-Mail-Adresse und Nachricht) ausschließlich zur Bearbeitung deiner Anfrage verarbeitet (Art. 6 Abs. 1 lit. b DSGVO). Die Daten werden gelöscht, sobald sie für die Bearbeitung nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten bestehen. Eine Weitergabe an Dritte erfolgt nicht.</p><h2>Lokale Speicherung (Local Storage)</h2><p>Diese Website speichert deine Sprach- und Design-Einstellung (hell/dunkel) im Local Storage deines Browsers. Diese Speicherung ist technisch erforderlich, um die von dir gewählten Einstellungen bereitzustellen (§ 25 Abs. 2 Nr. 2 TDDDG). Es findet kein Tracking statt und es werden keine Cookies zu Werbezwecken gesetzt.</p><h2>Schriftarten</h2><p>Diese Website verwendet Schriftarten, die lokal auf dem eigenen Server gehostet werden. Beim Aufruf der Seite wird keine Verbindung zu Servern von Google oder anderen Drittanbietern aufgebaut.</p><h2>Deine Rechte</h2><p>Du hast das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16 DSGVO), Löschung (Art. 17 DSGVO), Einschränkung der Verarbeitung (Art. 18 DSGVO), Datenübertragbarkeit (Art. 20 DSGVO) sowie Widerspruch gegen die Verarbeitung (Art. 21 DSGVO). Außerdem hast du das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, z. B. beim Sächsischen Datenschutz- und Transparenzbeauftragten.</p><p>Bei Fragen zum Datenschutz erreichst du mich per E-Mail unter <a href='mailto:contact@michal-galas.de'>contact@michal-galas.de</a>.</p>"
   }
 }
