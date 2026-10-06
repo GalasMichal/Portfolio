@@ -10,7 +10,7 @@ on:
       ftp_remote_dir:
         description: FTP server-dir on All-Inkl (KAS document root for da-bubble.michal-galas.de)
         required: false
-        default: 'da-bubble/'
+        default: 'da-bubble.michal-galas.de/'
 
 permissions:
   contents: read
@@ -82,7 +82,7 @@ jobs:
       - name: Normalize FTP server-dir
         id: ftpdir
         env:
-          OVERRIDE_DIR: ${{ inputs.ftp_remote_dir || 'da-bubble/' }}
+          OVERRIDE_DIR: ${{ inputs.ftp_remote_dir || 'da-bubble.michal-galas.de/' }}
         run: |
           set -euo pipefail
           DIR="$OVERRIDE_DIR"
@@ -126,9 +126,8 @@ jobs:
                 echo "Deploy verified: new bundle on $SITE_URL"
                 exit 0
               fi
-              if [ "$i" -ge 8 ] && [ -n "$BUNDLE" ]; then
-                echo "Deploy verified (bundle may be unchanged name): $SITE_URL"
-                exit 0
+              if [ -n "$BUNDLE" ] && [ "$BUNDLE" = "$OLD" ]; then
+                echo "Still on old bundle $OLD"
               fi
             fi
             echo "Attempt $i/16: waiting 15s..."
