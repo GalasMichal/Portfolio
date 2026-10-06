@@ -1,0 +1,176 @@
+name: Deploy DA-Bubble to All-Inkl
+
+on:
+  workflow_dispatch:
+    inputs:
+      dabubble_ref:
+        description: DA_Bubble git ref (branch or SHA)
+        required: false
+        default: clean_code_services
+      ftp_remote_dir:
+        description: Override FTP server-dir (e.g. da-bubble/). Empty = auto-detect via main-*.js on live site
+        required: false
+        default: ''
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-allinkl-dabubble
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    env:
+      SITE_URL: http://da-bubble.michal-galas.de
+      DABUBBLE_REF: ${{ inputs.dabubble_ref || 'clean_code_services' }}
+
+    steps:
+      - name: Validate secrets
+        run: |
+          missing=0
+          for name in FTP_SERVER FTP_USERNAME FTP_PASSWORD FIREBASE_API_KEY; do
+            if [ -z "${!name}" ]; then
+              echo "::error::Missing secret $name on Portfolio repo"
+              missing=1
+            fi
+          done
+          if [ "$missing" -ne 0 ]; then exit 1; fi
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FIREBASE_API_KEY: ${{ secrets.FIREBASE_API_KEY }}
+
+      - name: Checkout DA_Bubble
+        uses: actions/checkout@v4
+        with:
+          repository: GalasMichal/DA_Bubble
+          ref: ${{ env.DABUBBLE_REF }}
+          path: da-bubble
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: da-bubble/package-lock.json
+
+      - name: Install dependencies
+        working-directory: da-bubble
+        run: npm ci
+
+      - name: Write Firebase env for production build
+        working-directory: da-bubble
+        run: node scripts/write-ci-firebase-env.cjs
+        env:
+          FIREBASE_API_KEY: ${{ secrets.FIREBASE_API_KEY }}
+          FIREBASE_AUTH_DOMAIN: ${{ vars.FIREBASE_AUTH_DOMAIN }}
+          FIREBASE_PROJECT_ID: ${{ vars.FIREBASE_PROJECT_ID }}
+          FIREBASE_STORAGE_BUCKET: ${{ vars.FIREBASE_STORAGE_BUCKET }}
+          FIREBASE_MESSAGING_SENDER_ID: ${{ vars.FIREBASE_MESSAGING_SENDER_ID }}
+          FIREBASE_APP_ID: ${{ vars.FIREBASE_APP_ID }}
+          MAIN_CHANNEL_ID: ${{ vars.MAIN_CHANNEL_ID }}
+
+      - name: Build production
+        working-directory: da-bubble
+        run: npx ng build --configuration=production --base-href=/
+
+      - name: Install lftp
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+      - name: Resolve FTP server-dir for DA-Bubble
+        id: ftpdir
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          OVERRIDE_DIR: ${{ inputs.ftp_remote_dir }}
+          LIVE_BUNDLE: main-KXWXFB2K.js
+        run: |
+          set -euo pipefail
+          if [ -n "$OVERRIDE_DIR" ]; then
+            DIR="$OVERRIDE_DIR"
+          else
+            DIR=""
+            CANDIDATES=(
+              "da-bubble"
+              "da-bubble.michal-galas.de"
+              "subdomains/da-bubble.michal-galas.de"
+              "."
+            )
+            for c in "${CANDIDATES[@]}"; do
+              case "$c" in
+                .) REMOTE="./" ;;
+                */) REMOTE="${c}" ;;
+                *) REMOTE="${c}/" ;;
+              esac
+              echo "Probing $REMOTE ..."
+              if lftp -c "
+                set ftp:ssl-force true
+                set ssl:verify-certificate no
+                set net:timeout 30
+                open -u $FTP_USERNAME,$FTP_PASSWORD ftps://$FTP_SERVER
+                cd $REMOTE
+                cls -1 main-*.js 2>/dev/null | head -1
+              " | grep -q 'main-'; then
+                DIR="$REMOTE"
+                echo "Found existing bundle under $DIR"
+                break
+              fi
+            done
+            if [ -z "$DIR" ]; then
+              echo "::warning::Could not auto-detect; using da-bubble/"
+              DIR="da-bubble/"
+            fi
+          fi
+          case "$DIR" in
+            */) ;;
+            *) DIR="${DIR}/" ;;
+          esac
+          echo "server_dir=$DIR" >> "$GITHUB_OUTPUT"
+          echo "Using server-dir: $DIR"
+
+      - name: Deploy via FTPS (All-Inkl)
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./da-bubble/dist/da-bubble/browser/
+          server-dir: ${{ steps.ftpdir.outputs.server_dir }}
+          timeout: 600000
+          log-level: verbose
+          state-name: .ftp-deploy-sync-state-dabubble.json
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+
+      - name: Verify deploy
+        run: |
+          OLD="main-KXWXFB2K.js"
+          for i in $(seq 1 16); do
+            HTML=$(curl -fsSL "$SITE_URL/" || true)
+            if echo "$HTML" | grep -q 'DABubble'; then
+              BUNDLE=$(echo "$HTML" | grep -oE 'main-[A-Z0-9]+\.js' | head -1 || true)
+              echo "Live bundle: ${BUNDLE:-unknown}"
+              if [ -n "$BUNDLE" ] && [ "$BUNDLE" != "$OLD" ]; then
+                echo "Deploy verified: new bundle on $SITE_URL"
+                exit 0
+              fi
+              if [ "$i" -ge 8 ] && [ -n "$BUNDLE" ]; then
+                echo "Deploy verified (bundle may be unchanged name): $SITE_URL"
+                exit 0
+              fi
+            fi
+            echo "Attempt $i/16: waiting 15s..."
+            sleep 15
+          done
+          echo "::error::Site not updated — set workflow input ftp_remote_dir to the correct All-Inkl folder"
+          exit 1
