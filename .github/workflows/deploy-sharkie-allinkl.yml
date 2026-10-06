@@ -1,0 +1,101 @@
+name: Deploy Sharkie to All-Inkl
+
+on:
+  workflow_dispatch:
+    inputs:
+      sharkie_ref:
+        description: Sharkie git ref (branch or SHA)
+        required: false
+        default: main
+      ftp_remote_dir:
+        description: FTP server-dir on All-Inkl (document root for sharkie.michal-galas.de)
+        required: false
+        default: 'sharkie.michal-galas.de/'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-allinkl-sharkie
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    env:
+      SITE_URL: https://sharkie.michal-galas.de
+      SHARKIE_REF: ${{ inputs.sharkie_ref || 'main' }}
+
+    steps:
+      - name: Validate FTP secrets
+        run: |
+          missing=0
+          for name in FTP_SERVER FTP_USERNAME FTP_PASSWORD; do
+            if [ -z "${!name}" ]; then
+              echo "::error::Missing secret $name on Portfolio repo"
+              missing=1
+            fi
+          done
+          if [ "$missing" -ne 0 ]; then exit 1; fi
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+
+      - name: Checkout Sharkie
+        uses: actions/checkout@v4
+        with:
+          repository: GalasMichal/Sharkie
+          ref: ${{ env.SHARKIE_REF }}
+          path: sharkie
+
+      - name: Normalize FTP server-dir
+        id: ftpdir
+        env:
+          OVERRIDE_DIR: ${{ inputs.ftp_remote_dir || 'sharkie.michal-galas.de/' }}
+        run: |
+          set -euo pipefail
+          DIR="$OVERRIDE_DIR"
+          if [ "$DIR" = "/" ] || [ -z "$DIR" ]; then
+            DIR="./"
+          fi
+          case "$DIR" in
+            */) ;;
+            *) DIR="${DIR}/" ;;
+          esac
+          echo "server_dir=$DIR" >> "$GITHUB_OUTPUT"
+          echo "Using server-dir: $DIR"
+
+      - name: Deploy via FTPS (All-Inkl)
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./sharkie/
+          server-dir: ${{ steps.ftpdir.outputs.server_dir }}
+          timeout: 600000
+          log-level: verbose
+          state-name: .ftp-deploy-sync-state-sharkie.json
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+
+      - name: Verify legal footer
+        run: |
+          for i in $(seq 1 12); do
+            HTML=$(curl -fsSL "$SITE_URL/index.html" || true)
+            if echo "$HTML" | grep -q 'michal-galas.de/imprint'; then
+              echo "Deploy verified: Sharkie Impressum link on $SITE_URL"
+              exit 0
+            fi
+            echo "Attempt $i/12: waiting 15s..."
+            sleep 15
+          done
+          echo "::error::Sharkie footer not updated — set workflow input ftp_remote_dir to the correct All-Inkl folder"
+          exit 1
