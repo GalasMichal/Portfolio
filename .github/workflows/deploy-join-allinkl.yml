@@ -32,17 +32,17 @@ jobs:
       - name: Validate FTP secrets
         run: |
           missing=0
-          for name in FTP_SERVER FTP_USERNAME FTP_PASSWORD; do
+          for name in FTP_SERVER FTP_HAUPT_USERNAME FTP_HAUPT_PASSWORD; do
             if [ -z "${!name}" ]; then
-              echo "::error::Missing secret $name on Portfolio repo"
+              echo "::error::Missing secret $name on Portfolio repo (Hauptnutzer, Verzeichnis /)"
               missing=1
             fi
           done
           if [ "$missing" -ne 0 ]; then exit 1; fi
         env:
           FTP_SERVER: ${{ secrets.FTP_SERVER }}
-          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
-          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_HAUPT_USERNAME: ${{ secrets.FTP_HAUPT_USERNAME }}
+          FTP_HAUPT_PASSWORD: ${{ secrets.FTP_HAUPT_PASSWORD }}
 
       - name: Checkout Join-
         uses: actions/checkout@v4
@@ -72,8 +72,8 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          username: ${{ secrets.FTP_HAUPT_USERNAME }}
+          password: ${{ secrets.FTP_HAUPT_PASSWORD }}
           protocol: ftps
           port: 21
           local-dir: ./join/

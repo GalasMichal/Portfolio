@@ -25,24 +25,24 @@ jobs:
     timeout-minutes: 45
 
     env:
-      SITE_URL: http://da-bubble.michal-galas.de
+      SITE_URL: https://da-bubble.michal-galas.de
       DABUBBLE_REF: ${{ inputs.dabubble_ref || 'clean_code_services' }}
 
     steps:
       - name: Validate secrets
         run: |
           missing=0
-          for name in FTP_SERVER FTP_USERNAME FTP_PASSWORD FIREBASE_API_KEY; do
+          for name in FTP_SERVER FTP_HAUPT_USERNAME FTP_HAUPT_PASSWORD FIREBASE_API_KEY; do
             if [ -z "${!name}" ]; then
-              echo "::error::Missing secret $name on Portfolio repo"
+              echo "::error::Missing secret $name on Portfolio repo (Hauptnutzer, Verzeichnis /)"
               missing=1
             fi
           done
           if [ "$missing" -ne 0 ]; then exit 1; fi
         env:
           FTP_SERVER: ${{ secrets.FTP_SERVER }}
-          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
-          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_HAUPT_USERNAME: ${{ secrets.FTP_HAUPT_USERNAME }}
+          FTP_HAUPT_PASSWORD: ${{ secrets.FTP_HAUPT_PASSWORD }}
           FIREBASE_API_KEY: ${{ secrets.FIREBASE_API_KEY }}
 
       - name: Checkout DA_Bubble
@@ -100,8 +100,8 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          username: ${{ secrets.FTP_HAUPT_USERNAME }}
+          password: ${{ secrets.FTP_HAUPT_PASSWORD }}
           protocol: ftps
           port: 21
           local-dir: ./da-bubble/dist/da-bubble/browser/
