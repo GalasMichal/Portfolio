@@ -1,0 +1,13 @@
+---
+description: Schriften und Assets nur lokal im Repo — keine Font-CDNs in Produktion
+alwaysApply: true
+globs: "**/*.{html,css,scss,ts,tsx,js,jsx,vue}"
+---
+
+# Fonts & externe Assets
+
+1. Schriftarten lokal (`assets/fonts/` o. Ä.) per `@font-face`. Keine Google/Adobe/Bunny/jsDelivr Font-CDNs zur Laufzeit.
+2. Keine Drittanbieter-Scripts/Tracking/Analytics in Produktion — außer User fordert es (Payment/Play-Badge).
+3. Display-Fonts als `.woff2` committen; System-Stack als Fallback ok.
+4. Datenschutz-Texte ohne „Google Fonts“, wenn lokal gehostet.
+5. Design-Drafts mit CDN-Links vor Go-Live bereinigen.
