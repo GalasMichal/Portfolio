@@ -364,10 +364,10 @@
       "mg-games": {
         "title": "MG Games – gry dla dzieci bez reklam",
         "categoryLabel": "Prywatne · Gry dla dzieci · Strona",
-        "shortDescription": "Druga strona ze spokojnymi grami edukacyjnymi dla dzieci: bez trackingu, bez konta, postęp zostaje na urządzeniu. Listing w sklepie jeszcze w przygotowaniu.",
+        "shortDescription": "Gry edukacyjne dla dzieci na mg-games.de: pięć gier, bez reklam, bez abonamentu. 10 darmowych poziomów na grę, 20 poziomów na grę. Postęp zostaje na urządzeniu. Listing w sklepie jeszcze w przygotowaniu.",
         "problem": "Wiele aplikacji dla dzieci jest głośnych, pełnych reklam albo wymaga konta – rodzice potrzebują spokojnej, jasnej alternatywy.",
-        "solution": "Pod mg-games.de buduję małe studio gier bez reklam (m.in. kształty, liczenie, memory), z impressum, polityką prywatności i planowaną publikacją w Play Store.",
-        "benefit": "Rodzice widzą ofertę i ochronę danych; dzieci grają offline, bez reklam i bez logowania.",
+        "solution": "Pod mg-games.de buduję Kinder-Spiele: puzzle pojazdów, głosy zwierząt, kształty i kolory, liczenie oraz memory. Impressum i polityka prywatności są online, publikacja w Play Store jest przygotowana.",
+        "benefit": "Rodzice widzą ofertę i ochronę danych. Bez reklam, bez abonamentu, bez osobnego konta. Opcjonalny jednorazowy zakup idzie przez Google Play.",
         "contribution": "Koncepcja, strona, teksty prawne i przygotowanie aplikacji. Kod źródłowy pozostaje prywatny."
       },
       "ki-workflows": {

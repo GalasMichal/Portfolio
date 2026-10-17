@@ -109,7 +109,7 @@ export const PROJECTS: Project[] = [
     id: 'mg-games',
     category: 'privat',
     status: 'in-entwicklung',
-    technologies: ['Kinderspiele', 'Offline', 'Google Play'],
+    technologies: ['Kinderspiele', 'ohne Werbung', 'Google Play'],
     visual: 'app',
     featured: true,
     demoUrl: 'https://mg-games.de',
