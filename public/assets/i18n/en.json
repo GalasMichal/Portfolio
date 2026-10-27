@@ -363,12 +363,12 @@
       },
       "mg-games": {
         "title": "MG Games – ad-free children's games",
-        "categoryLabel": "Personal · Kids games · Website",
-        "shortDescription": "Learning games for children at mg-games.de: five games, no ads, no subscriptions. 10 free levels per game, 20 levels per game. Progress stays on the device. Store listing still pending.",
+        "categoryLabel": "Personal · Kids games · Google Play",
+        "shortDescription": "Learning games for children at mg-games.de: five games, no ads, no subscriptions. 10 free levels per game, 20 levels per game. Progress stays on the device. Now on Google Play.",
         "problem": "Many kids' apps are loud, ad-heavy or demand an account – parents need a quiet, clear alternative.",
-        "solution": "Under mg-games.de I am building Kinder-Spiele: vehicle puzzle, animal sounds, shapes and colours, counting, and memory. Legal pages are live; the Play Store release is prepared.",
+        "solution": "On mg-games.de and Google Play: Kinder-Spiele with vehicle puzzle, animal sounds, shapes and colours, counting, and memory. Legal pages are live.",
         "benefit": "Parents see the offer and privacy clearly. No ads, no subscription, no separate account. The optional one-time purchase goes through Google Play.",
-        "contribution": "Concept, website, legal texts and app preparation. Source code stays private."
+        "contribution": "Concept, website, legal texts and app. Source code stays private."
       },
       "ki-workflows": {
         "title": "AI-powered workflows for development and everyday life",

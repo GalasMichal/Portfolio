@@ -363,12 +363,12 @@
       },
       "mg-games": {
         "title": "MG Games – werbefreie Kinderspiele",
-        "categoryLabel": "Privat · Kinderspiele · Website",
-        "shortDescription": "Lernspiele für Kinder unter mg-games.de: fünf Spiele, keine Werbung, keine Abos. 10 Gratis-Level pro Spiel, 20 Level pro Spiel. Fortschritt bleibt auf dem Gerät. Store-Listing wartet noch.",
+        "categoryLabel": "Privat · Kinderspiele · Google Play",
+        "shortDescription": "Lernspiele für Kinder unter mg-games.de: fünf Spiele, keine Werbung, keine Abos. 10 Gratis-Level pro Spiel, 20 Level pro Spiel. Fortschritt bleibt auf dem Gerät. Jetzt bei Google Play.",
         "problem": "Viele Kinder-Apps sind laut, werbelastig oder wollen ein Konto – Eltern brauchen eine klare, ruhige Alternative.",
-        "solution": "Ich baue unter mg-games.de Kinder-Spiele: Fahrzeug-Puzzle, Tier-Stimmen, Formen & Farben, Zählen und Memory. Impressum und Datenschutz sind online, die Play-Store-Veröffentlichung ist vorbereitet.",
+        "solution": "Unter mg-games.de und im Google Play Store: Kinder-Spiele mit Fahrzeug-Puzzle, Tier-Stimmen, Formen & Farben, Zählen und Memory. Impressum und Datenschutz sind online.",
         "benefit": "Eltern sehen Angebot und Datenschutz klar. Keine Werbung, kein Abo, kein eigenes Konto. Der optionale Einmalkauf läuft über Google Play.",
-        "contribution": "Konzeption, Website, Rechtstexte und App-Vorbereitung. Der Quellcode bleibt privat."
+        "contribution": "Konzeption, Website, Rechtstexte und App. Der Quellcode bleibt privat."
       },
       "ki-workflows": {
         "title": "KI-gestützte Workflows für Entwicklung und Alltag",

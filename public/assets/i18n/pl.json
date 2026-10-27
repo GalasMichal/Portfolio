@@ -363,12 +363,12 @@
       },
       "mg-games": {
         "title": "MG Games – gry dla dzieci bez reklam",
-        "categoryLabel": "Prywatne · Gry dla dzieci · Strona",
-        "shortDescription": "Gry edukacyjne dla dzieci na mg-games.de: pięć gier, bez reklam, bez abonamentu. 10 darmowych poziomów na grę, 20 poziomów na grę. Postęp zostaje na urządzeniu. Listing w sklepie jeszcze w przygotowaniu.",
+        "categoryLabel": "Prywatne · Gry dla dzieci · Google Play",
+        "shortDescription": "Gry edukacyjne dla dzieci na mg-games.de: pięć gier, bez reklam, bez abonamentu. 10 darmowych poziomów na grę, 20 poziomów na grę. Postęp zostaje na urządzeniu. Już w Google Play.",
         "problem": "Wiele aplikacji dla dzieci jest głośnych, pełnych reklam albo wymaga konta – rodzice potrzebują spokojnej, jasnej alternatywy.",
-        "solution": "Pod mg-games.de buduję Kinder-Spiele: puzzle pojazdów, głosy zwierząt, kształty i kolory, liczenie oraz memory. Impressum i polityka prywatności są online, publikacja w Play Store jest przygotowana.",
+        "solution": "Na mg-games.de i w Google Play: Kinder-Spiele z puzzle pojazdów, głosami zwierząt, kształtami i kolorami, liczeniem oraz memory. Impressum i polityka prywatności są online.",
         "benefit": "Rodzice widzą ofertę i ochronę danych. Bez reklam, bez abonamentu, bez osobnego konta. Opcjonalny jednorazowy zakup idzie przez Google Play.",
-        "contribution": "Koncepcja, strona, teksty prawne i przygotowanie aplikacji. Kod źródłowy pozostaje prywatny."
+        "contribution": "Koncepcja, strona, teksty prawne i aplikacja. Kod źródłowy pozostaje prywatny."
       },
       "ki-workflows": {
         "title": "Workflowy wspierane przez AI do tworzenia i codzienności",

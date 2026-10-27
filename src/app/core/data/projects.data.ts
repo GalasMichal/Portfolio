@@ -108,11 +108,11 @@ export const PROJECTS: Project[] = [
   {
     id: 'mg-games',
     category: 'privat',
-    status: 'in-entwicklung',
+    status: 'experimentell',
     technologies: ['Kinderspiele', 'ohne Werbung', 'Google Play'],
     visual: 'app',
     featured: true,
-    demoUrl: 'https://mg-games.de',
+    demoUrl: 'https://play.google.com/store/apps/details?id=de.galas.kinderspiele',
   },
   {
     id: 'dabubble',
